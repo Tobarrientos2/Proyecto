@@ -1,0 +1,57 @@
+{
+    "nacional": {
+      "patentes": {
+        "busqueda": {
+          "slug": "busqueda",
+          "titulo": "Búsqueda de Patentes",
+          "subtitulo": "Garantizando la Originalidad de tu Invento",
+          "descripcion": "Nuestra búsqueda exhaustiva de patentes tiene como objetivo asegurar la originalidad de tu invento. Utilizamos herramientas avanzadas y conocimientos legales para identificar posibles conflictos y brindarte la tranquilidad de que tu patente es única y valiosa."
+        },
+        "demandas_apelaciones": {
+          "slug": "demandas-apelaciones",
+          "titulo": "Demandas y Apelaciones",
+          "subtitulo": "Asesoramiento Legal Especializado",
+          "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva."
+        },
+        "observaciones": {
+          "slug": "observaciones-nulidades",
+          "titulo": "Observaciones de Fondo y Nulidades",
+          "subtitulo": "Análisis Detallado y Estrategias Legales",
+          "descripcion": "Realizamos análisis detallados de patentes y presentamos observaciones de fondo y nulidades cuando sea necesario. Nuestro enfoque estratégico y nuestra experiencia legal nos permiten abordar de manera efectiva cualquier cuestión relacionada con la validez de las patentes, asegurando la protección sólida de tus activos intelectuales."
+        }
+      },
+      "modelos_utilidad": {
+        "novedad": {
+          "slug": "novedad",
+          "titulo": "Novedad del Modelo",
+          "subtitulo": "Evalúa la Singularidad de tu Modelo",
+          "descripcion": "Antes de registrar tu modelo de utilidad, evaluamos su novedad en detalle. Nuestros expertos analizan exhaustivamente la literatura existente y las patentes similares para garantizar que tu modelo sea verdaderamente único. Este paso crucial es fundamental para el éxito de tu registro y la protección a largo plazo de tu invención."
+        },
+        "utilidad": {
+          "slug": "utilidad",
+          "titulo": "Utilidad del Modelo",
+          "subtitulo": "Análisis Práctico para el Registro",
+          "descripcion": "Analizamos la utilidad práctica de tu modelo de utilidad para respaldar su registro. Nuestro enfoque va más allá de la novedad, asegurándonos de que tu modelo tenga aplicaciones prácticas y beneficios tangibles. Este análisis detallado fortalece tu caso durante el proceso de registro y mejora la protección de tu invención."
+        },
+        "mantenimiento": {
+          "slug": "mantenimiento",
+          "titulo": "Mantenimiento del Modelo",
+          "subtitulo": "Garantizando la Vigencia Continua",
+          "descripcion": "Ofrecemos servicios de mantenimiento para garantizar la vigencia continua de tu modelo de utilidad. Nos encargamos de los trámites y renovaciones necesarias, asegurándonos de que tu modelo esté siempre protegido. Nuestra atención meticulosa a los plazos y requisitos legales te permite concentrarte en aprovechar al máximo tu invención."
+        },
+        "proteccion": {
+          "slug": "proteccion",
+          "titulo": "Protección del Modelo",
+          "subtitulo": "Estrategias para Reforzar la Protección",
+          "descripcion": "Implementamos estrategias específicas para fortalecer la protección legal de tu modelo de utilidad. Desde acuerdos de confidencialidad hasta medidas preventivas, trabajamos contigo para minimizar los riesgos y garantizar que tu invención esté resguardada de manera integral. La protección sólida es la base de la longevidad y el éxito de tu modelo."
+        },
+        "registro_mantenimiento": {
+          "slug": "registro-mantenimiento",
+          "titulo": "Registro y Mantenimiento",
+          "subtitulo": "Gestión Integral de tu Modelo",
+          "descripcion": "Gestionamos el registro inicial y nos encargamos del mantenimiento periódico de tu modelo de utilidad. Desde la presentación de documentos hasta la renovación de registros, nuestro equipo se encarga de todos los aspectos legales y administrativos. Así, puedes enfocarte en desarrollar y comercializar tu invención con total tranquilidad."
+        }
+      }
+    }
+  }
+  
