@@ -1,22 +1,7 @@
-<script lang="ts">
-import type { PageData } from "../../modelos-de-utilidad/[slug]/$types";
-import { onMount } from "svelte";
-import { cargarServicios } from "../../servicios";
-
-let servicios = {};
-
-  onMount(async () => {
-    try {
-      // Cargar datos al inicio
-      servicios = await cargarServicios();
-      console.log(servicios)
-    } catch (error) {
-      // Manejar errores aquí
-      console.error("Error en onMount:", error);
-    }
-  });
-  export let data: PageData;
-
+<script context="module" lang="ts">
+	import type { PageData } from './$types';
+	
+	export let data: PageData;
 </script>
 
 <html lang="js">
@@ -50,9 +35,13 @@ let servicios = {};
                         class="column article-hero-column"
                         style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
                     >
+                   {#each patentes as {titulo, slug}}
+                   {#if slug === currentSlug} 
                         <h1 class="article-post-h1">
-                            
+                            {titulo}
                         </h1>
+                    {/if}
+                    {/each}
                         <div class="article-post-info hide">
                             <div class="author-text">By</div>
                             <div class="author-text">Hola</div>
@@ -118,11 +107,11 @@ let servicios = {};
                         id="w-node-b671c621-3752-558d-1da8-2600d586d471-bddece41"
                         class="article-xl-rich-text w-richtext"
                     >
-                    {#if Object.keys(servicios).length > 0}
+                   
                         <p>
-                            {servicios.nacional.patentes.busqueda.titulo}
+                            Hola
                         </p>
-                    {/if}
+                  
                         <p>
                             Research Studio identifies, screens and enriches
                             potential M&amp;A target data, assessing fit, value

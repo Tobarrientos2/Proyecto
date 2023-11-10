@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { PageData } from "../../diseños-industriales/[slug]/$types";
+import type { PageData } from "../../disenos-industriales/[slug]/$types";
 import { onMount } from "svelte";
 import { cargarServicios } from "../../servicios";
 

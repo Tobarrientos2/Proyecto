@@ -1,37 +1,55 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
     import { onMount } from "svelte";
-    import type{ PageData } from "../../routes/$types";
+    import { afterNavigate } from "$app/navigation";
+    import type { PageData } from "../../routes/$types";
     import { cargarServicios } from "../../routes/servicios";
+    import { onDestroy } from "svelte";
 
-   /** @type {{ nacional?: { patentes?: Record<string, { titulo: string, slug: string }> } }} */
+
+
+  // Función para navegar a la página de inicio después de la navegación
+  const goToInicio = async () => {
+    await goto('/', {replaceState:true});
+  };
+    /** @type {{ nacional?: { patentes?: Record<string, { titulo: string, slug: string }> } }} */
     let servicios = {};
-    let patentesSlugs: string[] = [];
-    let patentesTitles: string[] = [];
-    let modelosDeUtilidadSlugs: string[] = [];
-    let modelosDeUtilidadTitles: string[] = [];
-
-onMount(async () => {
-  try {
-    // Cargar datos al inicio
-     servicios = await cargarServicios();
-     /** @type {Array<string>} */
-     patentesTitles = Object.keys(servicios.nacional?.patentes).map(servicio => servicios.nacional?.patentes[servicio].titulo);
-     patentesSlugs = Object.keys(servicios.nacional?.patentes).map(servicio => servicios.nacional?.patentes[servicio].slug);
-     modelosDeUtilidadSlugs = Object.keys(servicios.nacional?.modelos_utilidad).map(servicio => servicios.nacional?.modelos_utilidad[servicio].slug);
-     modelosDeUtilidadTitles = Object.keys(servicios.nacional?.modelos_utilidad).map(servicio => servicios.nacional?.modelos_utilidad[servicio].titulo);
-
-    console.log(modelosDeUtilidadSlugs, modelosDeUtilidadTitles);
-  } catch (error) {
-    // Manejar errores aquí
-    console.error("Error en onMount:", error);
-  }
-});
-
-export let data: PageData;
+    let patentes: string[] = [];
+    let modelos: string[] = [];
+    let disenosIndustriales: string[] = [];
 
 
+    onMount(async () => {
+        try {
+            // Cargar datos al inicio
+            servicios = await cargarServicios();
+            /** @type {Array<string>} */
+            patentes = Object.keys(servicios.nacional.patentes).map(
+                (servicio) => servicios.nacional.patentes[servicio]
+            );
+            modelos = Object.keys(
+                servicios.nacional.patentes.modelos_utilidad
+            ).map(
+                (servicio) =>
+                    servicios.nacional.patentes.modelos_utilidad[servicio]
+            );
+           
+            disenosIndustriales = Object.keys(
+                servicios.mundial.disenos_industriales
+            ).map(
+                (servicio) => servicios.mundial.disenos_industriales[servicio]
+            );
+
+            console.log(modelo);
+
+        } catch (error) {
+            // Manejar errores aquí
+            console.error("Error en onMount:", error);
+        }
+    });
+
+    export let data: PageData;
 </script>
-
 
 <div
     data-collapse="medium"
@@ -72,7 +90,10 @@ export let data: PageData;
                         tabindex="0"
                     >
                         <div class="allcaps mobilenav">
-                           <a style="color: inherit; text-decoration: none;" href="/">Inicio</a>
+                            <a style="color: inherit; text-decoration: none; cursor: pointer"
+                                on:click={goToInicio}
+                                >Inicio
+                                </a>
                         </div>
                         <div
                             class="underline products-underline"
@@ -87,7 +108,6 @@ export let data: PageData;
                             />
                         </div>
                     </div>
-                    
                 </div>
                 <div
                     data-hover="false"
@@ -124,9 +144,7 @@ export let data: PageData;
                             <div class="dropdown-scroll-vertical">
                                 <div class="industryinnerwrap rightline-2">
                                     <div class="sticky-module">
-                                        <h6 class="headernav">
-                                            En Chile
-                                        </h6>
+                                        <h6 class="headernav">En Chile</h6>
                                     </div>
                                     <div
                                         class="w-layout-grid menudropdown-industries three line"
@@ -136,16 +154,17 @@ export let data: PageData;
                                             class="dropdown-list-column no-margin"
                                         >
                                             <h3 class="dropdown-heading nav">
-                                              Patentes
+                                                Patentes
                                             </h3>
                                             <div class="dropdown-scroller">
-                                             {#each patentesSlugs as slug, i (slug)}
-                                                <a
-                                                    href= {`/patentes/${slug}`}
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">{patentesTitles[i]}</a
-                                                >
-                                            {/each}
+                                                {#each patentes as {slug, titulo}}
+                                                    <a
+                                                        href={`/patentes/${slug}`}
+                                                        class="dropdown-text-link"
+                                                        tabindex="0"
+                                                        >{titulo}</a
+                                                    >
+                                                {/each}
                                             </div>
                                         </div>
                                         <div
@@ -156,12 +175,13 @@ export let data: PageData;
                                                 Modelos de Utilidad
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each modelosDeUtilidadSlugs as slug, i (slug)}
-                                                <a
-                                                    href={`/modelos-de-utilidad/${slug}`}
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">{modelosDeUtilidadTitles[i]}</a
-                                                >
+                                                {#each modelos as {slug, titulo} }
+                                                    <a
+                                                        href={`/modelos-de-utilidad/${slug}`}
+                                                        class="dropdown-text-link"
+                                                        tabindex="0"
+                                                        >{titulo}</a
+                                                    >
                                                 {/each}
                                             </div>
                                         </div>
@@ -186,73 +206,29 @@ export let data: PageData;
                                                 Diseños Ind.
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                <a
-                                                    href="/diseños-industriales/electronica"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Electrónica de consumo</a
-                                                ><a
-                                                    href="/diseños-industriales/envases-embalajes"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Envases y embalajes</a
-                                                ><a
-                                                    href="/diseños-industriales/moda-calzado"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">Moda y calzado</a
-                                                ><a
-                                                    href="/diseños-industriales/automocion"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Automoción</a
-                                                ><a
-                                                    href="/diseños-industriales/equipamiento-deportivo"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Equipamiento deportivo</a
-                                                ><a
-                                                    href="/diseños-industriales/iluminacion"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Iluminación</a
-                                                >
-                                                <a
-                                                    href="/diseños-industriales/maquinaria"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Maquinaria y Herramientas</a
-                                                >
-                                                <a
-                                                    href="/diseños-industriales/joyeria-relojeria"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0"
-                                                    >Joyería y relojería</a
-                                                >
+                                                {#each disenosIndustriales as { slug, titulo }}
+                                                    {#if titulo}
+                                                        <a
+                                                            style="cursor: pointer;"
+                                                            on:click={() =>
+                                                                goto(
+                                                                    "/disenos-industriales/" +
+                                                                        encodeURIComponent(
+                                                                            slug
+                                                                        ),
+                                                                    {
+                                                                        replaceState: true,
+                                                                    }
+                                                                )}
+                                                            class="dropdown-text-link"
+                                                            tabindex="0"
+                                                            >{titulo}
+                                                        </a>
+                                                    {/if}
+                                                {/each}
                                             </div>
                                         </div>
-                                        <div
-                                            id="w-node-_10f96c4c-18b2-7003-9fe9-a62c1db7cfd5-f7ef6077"
-                                            class="dropdown-list-column"
-                                        >
-                                            <h3 class="dropdown-heading nav">
-                                                Por categoría
-                                            </h3>
-                                            <div class="dropdown-scroller">
-                                                <a
-                                                    href="/diseños-industriales/categoria/consumo"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">Productos de consumo</a
-                                                ><a
-                                                    href="/diseños-industriales/categoria/manufactura"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">Industria y manufactura</a
-                                                ><a
-                                                    href="/diseños-industriales/categoria/especializado"
-                                                    class="dropdown-text-link"
-                                                    tabindex="0">Diseño especializado</a
-                                                >
-                                            </div>
-                                        </div>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -264,38 +240,6 @@ export let data: PageData;
                     </nav>
                 </div>
                 <div
-                data-hover="false"
-                data-delay="0"
-                class="dropdown last-dropdown w-dropdown"
-            >
-                <div
-                    class="dropdown-toggle products-toggle w-dropdown-toggle"
-                    id="w-dropdown-toggle-6"
-                    aria-controls="w-dropdown-list-6"
-                    aria-haspopup="menu"
-                    aria-expanded="false"
-                    role="button"
-                    tabindex="0"
-                >
-                    <div class="allcaps mobilenav">
-                       <a style="color: inherit; text-decoration: none;" href="/experiencias">Experiencias</a>
-                    </div>
-                    <div
-                        class="underline products-underline"
-                        style="opacity: 0;"
-                    />
-                    <div class="dropdown-toggle-circle">
-                        <img
-                            src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
-                            loading="lazy"
-                            alt="Arrow in circle pointing down"
-                            class="dropdown-arrow"
-                        />
-                    </div>
-                </div>
-                
-            </div>
-            <div
                     data-hover="false"
                     data-delay="0"
                     class="dropdown last-dropdown w-dropdown"
@@ -310,7 +254,10 @@ export let data: PageData;
                         tabindex="0"
                     >
                         <div class="allcaps mobilenav">
-                           <a style="color: inherit; text-decoration: none;" href="/beneficios">Beneficios</a>
+                            <a
+                                style="color: inherit; text-decoration: none;"
+                                href="/experiencias">Experiencias</a
+                            >
                         </div>
                         <div
                             class="underline products-underline"
@@ -325,7 +272,6 @@ export let data: PageData;
                             />
                         </div>
                     </div>
-                    
                 </div>
                 <div
                     data-hover="false"
@@ -342,7 +288,10 @@ export let data: PageData;
                         tabindex="0"
                     >
                         <div class="allcaps mobilenav">
-                           <a style="color: inherit; text-decoration: none;" href="/nuestro-equipo">Nuestro Equipo</a>
+                            <a
+                                style="color: inherit; text-decoration: none;"
+                                href="/beneficios">Beneficios</a
+                            >
                         </div>
                         <div
                             class="underline products-underline"
@@ -357,7 +306,40 @@ export let data: PageData;
                             />
                         </div>
                     </div>
-                    
+                </div>
+                <div
+                    data-hover="false"
+                    data-delay="0"
+                    class="dropdown last-dropdown w-dropdown"
+                >
+                    <div
+                        class="dropdown-toggle products-toggle w-dropdown-toggle"
+                        id="w-dropdown-toggle-6"
+                        aria-controls="w-dropdown-list-6"
+                        aria-haspopup="menu"
+                        aria-expanded="false"
+                        role="button"
+                        tabindex="0"
+                    >
+                        <div class="allcaps mobilenav">
+                            <a
+                                style="color: inherit; text-decoration: none; cursor:pointer;"
+                                on:click={() => goto('/nuestro-equipo')}>Nuestro Equipo</a
+                            >
+                        </div>
+                        <div
+                            class="underline products-underline"
+                            style="opacity: 0;"
+                        />
+                        <div class="dropdown-toggle-circle">
+                            <img
+                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
+                                loading="lazy"
+                                alt="Arrow in circle pointing down"
+                                class="dropdown-arrow"
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-social-links">
                     <div class="nav-separator" />
