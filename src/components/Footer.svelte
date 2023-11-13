@@ -1,3 +1,8 @@
+<script>
+	import { goto } from '$app/navigation';
+
+</script>
+
 <div id="contact" class="section prefooter">
     <div class="container grid">
         <h3
@@ -40,6 +45,7 @@
                 <div
                     class="cms-card-button-text"
                     style="opacity: 1;"
+                   
                 >
                     Ver Más
                 </div>
@@ -55,9 +61,9 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff5d-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff5d"
-            href="/patentes/demandas-apelaciones"
+            on:click={() => {goto(encodeURIComponent('/asdsd'))}}
             class="prefooter-link w-inline-block"
-            style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+            style="cursor:pointer; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
                     <div class="preefooter-icon-border">
@@ -171,7 +177,8 @@
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="footer-logo"
-            /></a
+            />
+            </a
         >
         <div
             id="w-node-_766e89bf-7a16-6943-c609-98354b213df8-27841a2c"
@@ -217,7 +224,6 @@
                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                 /></a
             ><a
-                href=""
                 target="_blank"
                 class="social-link footer w-inline-block"
                 ><img

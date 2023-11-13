@@ -2,7 +2,7 @@
   "nacional": {
     "patentes": {
       "busqueda": {
-        "slug": "busqueda",
+        "slug": "/patentes/busqueda",
         "titulo": "Búsqueda de Patentes",
         "subtitulo": "Garantizando la Originalidad de tu Invento",
         "descripcion": "Nuestra búsqueda exhaustiva de patentes tiene como objetivo asegurar la originalidad de tu invento. Utilizamos herramientas avanzadas y conocimientos legales para identificar posibles conflictos y brindarte la tranquilidad de que tu patente es única y valiosa.",
@@ -16,7 +16,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "demandas_apelaciones": {
-        "slug": "demandas-apelaciones",
+        "slug": "/patentes/demandas-apelaciones",
         "titulo": "Demandas y Apelaciones",
         "subtitulo": "Asesoramiento Legal Especializado",
         "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
@@ -30,7 +30,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "observaciones": {
-        "slug": "observaciones-nulidades",
+        "slug": "/patentes/observaciones-nulidades",
         "titulo": "Observaciones de Fondo y Nulidades",
         "subtitulo": "Análisis Detallado y Estrategias Legales",
         "descripcion": "Realizamos análisis detallados de patentes y presentamos observaciones de fondo y nulidades cuando sea necesario. Nuestro enfoque estratégico y nuestra experiencia legal nos permiten abordar de manera efectiva cualquier cuestión relacionada con la validez de las patentes, asegurando la protección sólida de tus activos intelectuales.",
@@ -42,10 +42,10 @@
         "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-      },
+      }},
       "modelos_utilidad": {
         "novedad": {
-          "slug": "novedad",
+          "slug": "/modelos-de-utilidad/novedad",
           "titulo": "Novedad del Modelo",
           "subtitulo": "Evalúa la Singularidad de tu Modelo",
           "descripcion": "Antes de registrar tu modelo de utilidad, evaluamos su novedad en detalle. Nuestros expertos analizan exhaustivamente la literatura existente y las patentes similares para garantizar que tu modelo sea verdaderamente único. Este paso crucial es fundamental para el éxito de tu registro y la protección a largo plazo de tu invención.",
@@ -59,7 +59,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "utilidad": {
-          "slug": "utilidad",
+          "slug": "/modelos-de-utilidad/utilidad",
           "titulo": "Utilidad del Modelo",
           "subtitulo": "Análisis Práctico para el Registro",
           "descripcion": "Analizamos la utilidad práctica de tu modelo de utilidad para respaldar su registro. Nuestro enfoque va más allá de la novedad, asegurándonos de que tu modelo tenga aplicaciones prácticas y beneficios tangibles. Este análisis detallado fortalece tu caso durante el proceso de registro y mejora la protección de tu invención.",
@@ -73,7 +73,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "mantenimiento": {
-          "slug": "mantenimiento",
+          "slug": "/modelos-de-utilidad/mantenimiento",
           "titulo": "Mantenimiento del Modelo",
           "subtitulo": "Garantizando la Vigencia Continua",
           "descripcion": "Ofrecemos servicios de mantenimiento para garantizar la vigencia continua de tu modelo de utilidad. Nos encargamos de los trámites y renovaciones necesarias, asegurándonos de que tu modelo esté siempre protegido. Nuestra atención meticulosa a los plazos y requisitos legales te permite concentrarte en aprovechar al máximo tu invención.",
@@ -87,7 +87,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "proteccion": {
-          "slug": "proteccion",
+          "slug": "/modelos-de-utilidad/proteccion",
           "titulo": "Protección del Modelo",
           "subtitulo": "Estrategias para Reforzar la Protección",
           "descripcion": "Implementamos estrategias específicas para fortalecer la protección legal de tu modelo de utilidad. Desde acuerdos de confidencialidad hasta medidas preventivas, trabajamos contigo para minimizar los riesgos y garantizar que tu invención esté resguardada de manera integral. La protección sólida es la base de la longevidad y el éxito de tu modelo.",
@@ -101,7 +101,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "registro_mantenimiento": {
-          "slug": "registro-mantenimiento",
+          "slug": "/modelos-de-utilidad/registro-mantenimiento",
           "titulo": "Registro y Mantenimiento",
           "subtitulo": "Gestión Integral de tu Modelo",
           "descripcion": "Gestionamos el registro inicial y nos encargamos del mantenimiento periódico de tu modelo de utilidad. Desde la presentación de documentos hasta la renovación de registros, nuestro equipo se encarga de todos los aspectos legales y administrativos. Así, puedes enfocarte en desarrollar y comercializar tu invención con total tranquilidad.",
@@ -115,12 +115,11 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         }
       }
-    }
-  },
+    },
   "mundial": {
-      "disenos_industriales": {
+      "disenos": {
         "electronica_consumo": {
-          "slug": "electronica-consumo",
+          "slug": "disenos/electronica-consumo",
           "titulo": "Electrónica de Consumo",
           "descripcion": "Explora diseños industriales innovadores y funcionales para productos de electrónica de consumo. Desde dispositivos móviles hasta electrodomésticos, ofrecemos soluciones de diseño que combinan estética y usabilidad para destacar en el mercado global.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -133,7 +132,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "envases_embalajes": {
-          "slug": "envases-embalajes",
+          "slug": "disenos/envases-embalajes",
           "titulo": "Envases y Embalajes",
           "descripcion": "Optimiza la presentación y protección de tus productos con nuestros diseños industriales en envases y embalajes. Nos especializamos en soluciones creativas y eficientes que cumplen con los estándares de la industria y atraen la atención del consumidor.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -146,7 +145,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "moda_calzado": {
-          "slug": "moda-calzado",
+          "slug": "/disenos/moda-calzado",
           "titulo": "Moda y Calzado",
           "descripcion": "Descubre tendencias y estilos únicos en el mundo de la moda y el calzado. Nuestros diseñadores industriales trabajan para crear productos distintivos que reflejen la identidad de tu marca y atraigan a los consumidores exigentes de la industria de la moda.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -159,7 +158,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "automocion": {
-          "slug": "automocion",
+          "slug": "/disenos/automocion",
           "titulo": "Automoción",
           "descripcion": "Innovación y funcionalidad se combinan en nuestros diseños industriales para la industria automotriz. Ya sea para vehículos convencionales o eléctricos, ofrecemos soluciones que cumplen con los estándares de seguridad y aportan un diseño atractivo al mundo del automóvil.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -172,7 +171,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "equipamiento_deportivo": {
-          "slug": "equipamiento-deportivo",
+          "slug": "/disenos/equipamiento-deportivo",
           "titulo": "Equipamiento Deportivo",
           "descripcion": "Mejora el rendimiento y la experiencia del usuario con nuestros diseños industriales en equipamiento deportivo. Desde artículos para deportes al aire libre hasta equipos de entrenamiento, nos esforzamos por ofrecer soluciones que satisfagan las necesidades de los entusiastas del deporte.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -185,7 +184,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "iluminacion": {
-          "slug": "iluminacion",
+          "slug": "/disenos/iluminacion",
           "titulo": "Iluminación",
           "descripcion": "Transforma espacios con nuestras soluciones de diseño industrial en iluminación. Ya sea para interiores o exteriores, nuestros diseños buscan combinar eficiencia energética, estética y funcionalidad para crear experiencias luminosas únicas.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -198,7 +197,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "maquinaria_herramientas": {
-          "slug": "maquinaria-herramientas",
+          "slug": "/disenos/maquinaria-herramientas",
           "titulo": "Maquinaria y Herramientas",
           "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -211,7 +210,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "joyeria_relojeria": {
-          "slug": "joyeria-relojeria",
+          "slug": "/disenos/joyeria-relojeria",
           "titulo": "Joyería y Relojería",
           "descripcion": "Descubre la elegancia y la precisión en nuestros diseños industriales para joyería y relojería. Cada pieza se crea con atención al detalle, utilizando materiales de alta calidad para garantizar la excelencia en el diseño de joyas y relojes.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",

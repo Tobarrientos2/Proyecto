@@ -1,27 +1,6 @@
 <script lang="ts">
-import type { PageData } from "../../disenos-industriales/[slug]/$types";
-import { onMount } from "svelte";
-import { cargarServicios } from "../../servicios";
-
-let servicios = {};
-
-  onMount(async () => {
-    try {
-      // Cargar datos al inicio
-      servicios = await cargarServicios();
-      console.log(servicios)
-    } catch (error) {
-      // Manejar errores aquí
-      console.error("Error en onMount:", error);
-    }
-  });
-  export let data: PageData;
 
 </script>
-
-<html lang="js">
-   <body class="chakra-ui-light"
-        ><div class="page-wrapper">
             <div class="section-title dark mobile-hidden">
                
                 <div class="section-labels-wrapper">
@@ -118,11 +97,11 @@ let servicios = {};
                         id="w-node-b671c621-3752-558d-1da8-2600d586d471-bddece41"
                         class="article-xl-rich-text w-richtext"
                     >
-                    {#if Object.keys(servicios).length > 0}
+                    <!-- {#if Object.keys(servicios).length > 0}
                         <p>
                             {servicios.nacional.modelos_utilidad.novedad.titulo}
                         </p>
-                    {/if}
+                    {/if} -->
                         <p>
                             Research Studio identifies, screens and enriches
                             potential M&amp;A target data, assessing fit, value
@@ -2600,150 +2579,9 @@ let servicios = {};
                 </div>
             </div>
            
-        </div>
-        <script
-            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60866fa44e871fb63043a756"
-            type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
-        ></><script
-            src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/js/webflow.d1fb592f1.js"
-            type="text/javascript"
-        ></><script>
-            $("#current-page").val(location.href);
-        </script>
-        <script>
-            "use strict";
-            (function () {
-                var buttonClass = ".dropdown-link";
-                function handleButtonLink(e) {
-                    if (
-                        !(e.target instanceof HTMLElement) ||
-                        e.target instanceof HTMLAnchorElement ||
-                        (e instanceof KeyboardEvent && !(e.key === "Enter"))
-                    )
-                        return;
-                    var target = e.target.closest(buttonClass);
-                    if (!target) return;
-                    e.preventDefault();
-                    var anchorElement = target.querySelector("a");
-                    if (anchorElement) anchorElement.click();
-                    return false;
-                }
-                function handleAccessibility() {
-                    var buttons = document.querySelectorAll(buttonClass);
-                    buttons.forEach(function (button) {
-                        var anchorElement = button.querySelector("a");
-                        if (anchorElement && anchorElement.href) {
-                            button.setAttribute("role", "link");
-                            button.setAttribute("tabindex", "0");
-                            if (anchorElement.textContent)
-                                button.setAttribute(
-                                    "aria-label",
-                                    anchorElement.textContent
-                                );
-                        }
-                    });
-                }
-                window.addEventListener("click", handleButtonLink);
-                window.addEventListener("keydown", handleButtonLink);
-                document.addEventListener(
-                    "DOMContentLoaded",
-                    handleAccessibility
-                );
-            })();
-        </script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"
-            integrity="sha512-9PanvIYgF2gT2Yau/uKb9ms+cOBNVo+sQzWDb+nLX5F4FZvEUiuFhKIQPmVU2jCvZKKTVB3Y8giDezNt/1H3xg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-
-        <script>
-            let cardParagraphs = document.querySelectorAll(
-                ".cms-card-paragraph"
-            );
-            cardParagraphs.forEach((item) => $clamp(item, { clamp: 4 }));
-        </script>
-
-        <script type="text/javascript">
-            _linkedin_partner_id = "3035497";
-            window._linkedin_data_partner_ids =
-                window._linkedin_data_partner_ids || [];
-            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        </script><script type="text/javascript">
-            (function (l) {
-                if (!l) {
-                    window.lintrk = function (a, b) {
-                        window.lintrk.q.push([a, b]);
-                    };
-                    window.lintrk.q = [];
-                }
-                var s = document.getElementsByTagName("script")[0];
-                var b = document.createElement("script");
-                b.type = "text/javascript";
-                b.async = true;
-                b.src =
-                    "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-                s.parentNode.insertBefore(b, s);
-            })(window.lintrk);
-        </script>
-        <noscript>
-            <img
-                height="1"
-                width="1"
-                style="display:none;"
-                alt=""
-                src="https://px.ads.linkedin.com/collect/?pid=3035497&fmt=gif"
-            />
-        </noscript>
     
-        <div class="chakra-portal">
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-top"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
-            />
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-top-left"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"
-            />
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-top-right"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"
-            />
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-bottom-left"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"
-            />
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-bottom"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
-            />
-            <div
-                role="region"
-                aria-live="polite"
-                aria-label="Notifications"
-                id="chakra-toast-manager-bottom-right"
-                style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"
-            />
-        </div>
-        </body
-    >
-    <div><div/>
-</html>
+       
+    
+        
+       
+

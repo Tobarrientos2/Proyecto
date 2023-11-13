@@ -1,7 +1,15 @@
-<script>
+<script context="module" lang="ts">
+    import { modelosData, patentesData, disenosIndustrialesData } from "../stores/DataStore";
 
-</script>
-	<body>
+	let modelos;
+	modelosData.subscribe((items) => {
+	modelos = items;
+	});
+
+
+  </script>
+
+
 			<div class="section-title mobile-hidden">
 				<a href="#" class="nav-anchor w-inline-block"
 					><div class="anchor-text-container">Invenciones y Patentes</div></a
@@ -328,7 +336,7 @@
 									</div>
 								</div>
 							</div>
-							<div
+							<div data-sveltekit-reload=""
 								data-w-id="fe4b150b-a9f9-9362-d800-10f63d02dee1"
 								class="hero-slide w-slide"
 								aria-label="2 of 3"
@@ -1255,7 +1263,8 @@
 					</div>
 				</div>
 			</div>
+		</div>
 			
-		</body
-	>
+
+	
 

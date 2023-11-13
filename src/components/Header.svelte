@@ -1,55 +1,15 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
-    import { onMount } from "svelte";
-    import { afterNavigate } from "$app/navigation";
-    import type { PageData } from "../../routes/$types";
-    import { cargarServicios } from "../../routes/servicios";
-    import { onDestroy } from "svelte";
-
-
-
-  // Función para navegar a la página de inicio después de la navegación
-  const goToInicio = async () => {
-    await goto('/', {replaceState:true});
-  };
-    /** @type {{ nacional?: { patentes?: Record<string, { titulo: string, slug: string }> } }} */
-    let servicios = {};
-    let patentes: string[] = [];
-    let modelos: string[] = [];
-    let disenosIndustriales: string[] = [];
-
-
-    onMount(async () => {
-        try {
-            // Cargar datos al inicio
-            servicios = await cargarServicios();
-            /** @type {Array<string>} */
-            patentes = Object.keys(servicios.nacional.patentes).map(
-                (servicio) => servicios.nacional.patentes[servicio]
-            );
-            modelos = Object.keys(
-                servicios.nacional.patentes.modelos_utilidad
-            ).map(
-                (servicio) =>
-                    servicios.nacional.patentes.modelos_utilidad[servicio]
-            );
-           
-            disenosIndustriales = Object.keys(
-                servicios.mundial.disenos_industriales
-            ).map(
-                (servicio) => servicios.mundial.disenos_industriales[servicio]
-            );
-
-            console.log(modelo);
-
-        } catch (error) {
-            // Manejar errores aquí
-            console.error("Error en onMount:", error);
-        }
+    import { onMount, onDestroy } from "svelte";
+    import { patentesData, modelosData, unsuscribeDisenos, disenosIndustrialesData , unsuscribePatentes, unsuscribeModelos } from "../stores/DataStore";
+    
+    onDestroy(() => {
+      unsuscribePatentes();
+      unsuscribeModelos();
+      unsuscribeDisenos();
     });
-
-    export let data: PageData;
-</script>
+   
+  </script>
 
 <div
     data-collapse="medium"
@@ -91,7 +51,7 @@
                     >
                         <div class="allcaps mobilenav">
                             <a style="color: inherit; text-decoration: none; cursor: pointer"
-                                on:click={goToInicio}
+                            href="/"
                                 >Inicio
                                 </a>
                         </div>
@@ -157,13 +117,13 @@
                                                 Patentes
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each patentes as {slug, titulo}}
-                                                    <a
-                                                        href={`/patentes/${slug}`}
-                                                        class="dropdown-text-link"
+                                             {#each $patentesData as patente}
+                                                    <a class="dropdown-text-link" style="cursor: pointer;"
                                                         tabindex="0"
-                                                        >{titulo}</a
-                                                    >
+                                                    href={patente.slug}>
+                                                    {patente.titulo}
+
+                                                        </a>
                                                 {/each}
                                             </div>
                                         </div>
@@ -175,12 +135,11 @@
                                                 Modelos de Utilidad
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each modelos as {slug, titulo} }
-                                                    <a
-                                                        href={`/modelos-de-utilidad/${slug}`}
+                                                {#each $modelosData as modelo }
+                                                    <a href={modelo.slug}
                                                         class="dropdown-text-link"
                                                         tabindex="0"
-                                                        >{titulo}</a
+                                                        >{modelo.titulo}</a
                                                     >
                                                 {/each}
                                             </div>
@@ -206,25 +165,13 @@
                                                 Diseños Ind.
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each disenosIndustriales as { slug, titulo }}
-                                                    {#if titulo}
-                                                        <a
-                                                            style="cursor: pointer;"
-                                                            on:click={() =>
-                                                                goto(
-                                                                    "/disenos-industriales/" +
-                                                                        encodeURIComponent(
-                                                                            slug
-                                                                        ),
-                                                                    {
-                                                                        replaceState: true,
-                                                                    }
-                                                                )}
+                                                {#each $disenosIndustrialesData as diseno}
+                                                    <a href={diseno.slug}
                                                             class="dropdown-text-link"
                                                             tabindex="0"
-                                                            >{titulo}
+                                                            > 
+                                                            {diseno.titulo}
                                                         </a>
-                                                    {/if}
                                                 {/each}
                                             </div>
                                         </div>
@@ -255,9 +202,11 @@
                     >
                         <div class="allcaps mobilenav">
                             <a
-                                style="color: inherit; text-decoration: none;"
-                                href="/experiencias">Experiencias</a
-                            >
+                               
+                             style="color: inherit; text-decoration: none; cursor: pointer"
+                               href="/experiencias"
+                              >Experiencias
+                              </a>
                         </div>
                         <div
                             class="underline products-underline"
@@ -324,7 +273,8 @@
                         <div class="allcaps mobilenav">
                             <a
                                 style="color: inherit; text-decoration: none; cursor:pointer;"
-                                on:click={() => goto('/nuestro-equipo')}>Nuestro Equipo</a
+                               href="/nuestro-equipo"
+                                >Nuestro Equipo</a
                             >
                         </div>
                         <div
@@ -406,7 +356,7 @@
                 </div>
             </div>
             <div class="nav-link-wrapper on-desktop">
-                <a href="/oficina-nacional" class="nav-link w-inline-block"
+                <a href="/" class="nav-link w-inline-block"
                     ><div class="allcaps">Oficina en Chile</div></a
                 >
             </div>

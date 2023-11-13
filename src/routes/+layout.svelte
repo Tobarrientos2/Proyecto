@@ -1,18 +1,18 @@
-<script>
+<script context="module">
 import Footer from '../components/Footer.svelte';
-import Header from '../components/Header/+page.svelte';
+import Header from '../components/Header.svelte';
 import './styles.css';
+
+
+
 </script>
 
-<div class="page-wrapper">
+<svelte:head>
 
+</svelte:head>
 
-	<Header></Header>
+	<Header/>
+	<slot> </slot>
+	<Footer />
 
-	<main>
-		<slot />
-	</main>
-
-	<Footer></Footer>
-</div>
 
