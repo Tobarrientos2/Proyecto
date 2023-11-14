@@ -16,7 +16,7 @@
 	</style><meta
 		http-equiv="origin-trial"
 		content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="
-	/><meta charset="utf-8" /><title>SparkBeyond</title><meta
+	/><meta charset="utf-8" /><meta
 		content="We build problem-solving technologies"
 		name="description"
 	/><meta content="SparkBeyond" property="og:title" /><meta
@@ -319,17 +319,7 @@
 					(o.DocumentTouch && c instanceof DocumentTouch)) &&
 					(n.className += t + "touch");
 		})(window, document);
-	</script><link
-		href="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60f6e6b5d9127e2915fa3013_%5C.png"
-		rel="shortcut icon"
-		type="image/x-icon"
-	/><link
-		href="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60aee14bfb423f8423d72b84_FAV256.png"
-		rel="apple-touch-icon"
-	/><script
-		async=""
-		src="https://www.googletagmanager.com/gtag/js?id=UA-127594457-1"
-	></script><script type="text/javascript">
+	</script><script type="text/javascript">
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
 			dataLayer.push(arguments);

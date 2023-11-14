@@ -495,12 +495,12 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 													<h2
 														class="featured-article-heading"
 													>
-														Patentes de Diseños Industriales
+														{patentes?.map(item => item.titulo)[0]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 													>
-													Realizar patentes para Diseños Industriales y asegurar su efectividad a través de una observación constante. Es escencial para hacer la patente efectiva en todo el mundo.
+													{patentes?.map(item => item.descripcion)[0]}
 													</p>
 												</div>
 												<div

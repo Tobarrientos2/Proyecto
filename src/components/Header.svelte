@@ -365,7 +365,7 @@
         <div class="menu-button-wrapper">
             <div class="nav-link-wrapper on-tablet">
                 <div class="outline-wrapper" />
-                <a href="/oficina-nacional" class="nav-link w-inline-block"
+                <a href="/oficina-en-chile" class="nav-link w-inline-block"
                     ><div>Contacto</div></a
                 >
             </div>
