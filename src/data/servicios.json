@@ -15,9 +15,9 @@
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
-      "demandas_apelaciones": {
-        "slug": "/patentes/demandas-apelaciones",
-        "titulo": "Demandas y Apelaciones",
+      "solicitud": {
+        "slug": "/patentes/solicitud",
+        "titulo": "Registro de Patentes",
         "subtitulo": "Asesoramiento Legal Especializado",
         "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -29,9 +29,37 @@
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
-      "observaciones": {
-        "slug": "/patentes/observaciones-nulidades",
-        "titulo": "Observaciones de Fondo y Nulidades",
+      "demanda": {
+        "slug": "/patentes/demanda",
+        "titulo": "Demanda de Patentes",
+        "subtitulo": "Asesoramiento Legal Especializado",
+        "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
+        "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
+        "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
+        "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
+        "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
+        "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
+        "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
+        "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
+        "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
+      },
+      "apelaciones": {
+        "slug": "/patentes/apelacion",
+        "titulo": "Apelación de Patentes",
+        "subtitulo": "Asesoramiento Legal Especializado",
+        "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
+        "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
+        "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
+        "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
+        "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
+        "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
+        "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
+        "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
+        "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
+      },
+      "observacion": {
+        "slug": "/patentes/observacion",
+        "titulo": "Observación de Patentes",
         "subtitulo": "Análisis Detallado y Estrategias Legales",
         "descripcion": "Realizamos análisis detallados de patentes y presentamos observaciones de fondo y nulidades cuando sea necesario. Nuestro enfoque estratégico y nuestra experiencia legal nos permiten abordar de manera efectiva cualquier cuestión relacionada con la validez de las patentes, asegurando la protección sólida de tus activos intelectuales.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -44,9 +72,9 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       }},
       "modelos_utilidad": {
-        "novedad": {
-          "slug": "/modelos-de-utilidad/novedad",
-          "titulo": "Novedad del Modelo",
+        "busqueda": {
+          "slug": "/modelos-de-utilidad/busqueda",
+          "titulo": "Busqueda de Modelos",
           "subtitulo": "Evalúa la Singularidad de tu Modelo",
           "descripcion": "Antes de registrar tu modelo de utilidad, evaluamos su novedad en detalle. Nuestros expertos analizan exhaustivamente la literatura existente y las patentes similares para garantizar que tu modelo sea verdaderamente único. Este paso crucial es fundamental para el éxito de tu registro y la protección a largo plazo de tu invención.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -58,9 +86,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "utilidad": {
-          "slug": "/modelos-de-utilidad/utilidad",
-          "titulo": "Utilidad del Modelo",
+        "solicitud": {
+          "slug": "/modelos-de-utilidad/solicitud",
+          "titulo": "Registro de Modelos",
           "subtitulo": "Análisis Práctico para el Registro",
           "descripcion": "Analizamos la utilidad práctica de tu modelo de utilidad para respaldar su registro. Nuestro enfoque va más allá de la novedad, asegurándonos de que tu modelo tenga aplicaciones prácticas y beneficios tangibles. Este análisis detallado fortalece tu caso durante el proceso de registro y mejora la protección de tu invención.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -72,9 +100,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "mantenimiento": {
-          "slug": "/modelos-de-utilidad/mantenimiento",
-          "titulo": "Mantenimiento del Modelo",
+        "apelaciones": {
+          "slug": "/modelos-de-utilidad/apelacion",
+          "titulo": "Apelación de Modelos",
           "subtitulo": "Garantizando la Vigencia Continua",
           "descripcion": "Ofrecemos servicios de mantenimiento para garantizar la vigencia continua de tu modelo de utilidad. Nos encargamos de los trámites y renovaciones necesarias, asegurándonos de que tu modelo esté siempre protegido. Nuestra atención meticulosa a los plazos y requisitos legales te permite concentrarte en aprovechar al máximo tu invención.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -86,9 +114,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "proteccion": {
-          "slug": "/modelos-de-utilidad/proteccion",
-          "titulo": "Protección del Modelo",
+        "observacion": {
+          "slug": "/modelos-de-utilidad/observacion",
+          "titulo": "Observación de Modelos",
           "subtitulo": "Estrategias para Reforzar la Protección",
           "descripcion": "Implementamos estrategias específicas para fortalecer la protección legal de tu modelo de utilidad. Desde acuerdos de confidencialidad hasta medidas preventivas, trabajamos contigo para minimizar los riesgos y garantizar que tu invención esté resguardada de manera integral. La protección sólida es la base de la longevidad y el éxito de tu modelo.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -100,9 +128,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "registro_mantenimiento": {
-          "slug": "/modelos-de-utilidad/registro-mantenimiento",
-          "titulo": "Registro y Mantenimiento",
+        "nulidades": {
+          "slug": "/modelos-de-utilidad/nulidad",
+          "titulo": "Nulidad de Modelos",
           "subtitulo": "Gestión Integral de tu Modelo",
           "descripcion": "Gestionamos el registro inicial y nos encargamos del mantenimiento periódico de tu modelo de utilidad. Desde la presentación de documentos hasta la renovación de registros, nuestro equipo se encarga de todos los aspectos legales y administrativos. Así, puedes enfocarte en desarrollar y comercializar tu invención con total tranquilidad.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -118,24 +146,10 @@
     },
   "mundial": {
       "disenos": {
-        "electronica_consumo": {
-          "image":"https://anged.es/wp-content/uploads/2022/03/shutterstock_1445581070.jpg",
-          "slug": "/disenos/electronica-consumo",
-          "titulo": "Electrónica de Consumo",
-          "descripcion": "Explora diseños industriales innovadores y funcionales para productos de electrónica de consumo. Desde dispositivos móviles hasta electrodomésticos, ofrecemos soluciones de diseño que combinan estética y usabilidad para destacar en el mercado global.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "envases_embalajes": {
+        "envases_y_embalajes": {
           "image": "https://www.marketeroslatam.com/wp-content/uploads/2020/02/dise%C3%B1o-empaque-embalaje-packagig.jpg",
-          "slug": "/disenos/envases-embalajes",
-          "titulo": "Envases y Embalajes",
+          "slug": "/disenos/envases",
+          "titulo": "Envases",
           "descripcion": "Optimiza la presentación y protección de tus productos con nuestros diseños industriales en envases y embalajes. Nos especializamos en soluciones creativas y eficientes que cumplen con los estándares de la industria y atraen la atención del consumidor.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
@@ -146,9 +160,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "moda_calzado": {
+        "calzado": {
           "image": "https://adefinitivas.com/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-17-at-19.53.54.jpeg",          "slug": "/disenos/moda-calzado",
-          "titulo": "Moda y Calzado",
+          "titulo": "Calzado",
           "descripcion": "Descubre tendencias y estilos únicos en el mundo de la moda y el calzado. Nuestros diseñadores industriales trabajan para crear productos distintivos que reflejen la identidad de tu marca y atraigan a los consumidores exigentes de la industria de la moda.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
@@ -159,49 +173,9 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "automocion": {
-          "image": "https://www.tcmetrologia.com/content/uploads/blog/Fotolia_94905092_Subscription_Monthly_M1.jpg",
-          "slug": "/disenos/automocion",
-          "titulo": "Automoción",
-          "descripcion": "Innovación y funcionalidad se combinan en nuestros diseños industriales para la industria automotriz. Ya sea para vehículos convencionales o eléctricos, ofrecemos soluciones que cumplen con los estándares de seguridad y aportan un diseño atractivo al mundo del automóvil.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "equipamiento_deportivo": {
-          "slug": "/disenos/equipamiento-deportivo",
-          "titulo": "Equipamiento Deportivo",
-          "descripcion": "Mejora el rendimiento y la experiencia del usuario con nuestros diseños industriales en equipamiento deportivo. Desde artículos para deportes al aire libre hasta equipos de entrenamiento, nos esforzamos por ofrecer soluciones que satisfagan las necesidades de los entusiastas del deporte.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "iluminacion": {
-          "slug": "/disenos/iluminacion",
-          "titulo": "Iluminación",
-          "descripcion": "Transforma espacios con nuestras soluciones de diseño industrial en iluminación. Ya sea para interiores o exteriores, nuestros diseños buscan combinar eficiencia energética, estética y funcionalidad para crear experiencias luminosas únicas.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "maquinaria_herramientas": {
-          "slug": "/disenos/maquinaria-herramientas",
-          "titulo": "Maquinaria y Herramientas",
+        "maquinaria": {
+          "slug": "/disenos/maquinaria",
+          "titulo": "Maquinaria",
           "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
@@ -212,9 +186,22 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "joyeria_relojeria": {
-          "slug": "/disenos/joyeria-relojeria",
-          "titulo": "Joyería y Relojería",
+        "herramientas": {
+          "slug": "/disenos/herramientas",
+          "titulo": "Herramientas",
+          "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
+          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
+          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
+          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
+          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
+          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
+          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
+          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
+          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
+        },
+        "relojeria": {
+          "slug": "/disenos/relojeria",
+          "titulo": "Relojería",
           "descripcion": "Descubre la elegancia y la precisión en nuestros diseños industriales para joyería y relojería. Cada pieza se crea con atención al detalle, utilizando materiales de alta calidad para garantizar la excelencia en el diseño de joyas y relojes.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",

@@ -34,7 +34,8 @@
                     <h3 class="no-margin">Búsqueda de Patentes</h3>
                 </div>
                 <p class="prefooter-link-text">
-                    Basada en Modelos de Utilidad.
+                    Búsqueda con documentación profesional.
+                    <br>
                 </p>
             </div>
             <div
@@ -60,7 +61,7 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff5d-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff5d"
-            href="/patentes/demandas-apelaciones"
+            href="/patentes/demanda"
             class="prefooter-link w-inline-block"
             style="cursor:pointer; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
@@ -73,10 +74,10 @@
                             class="prefooter-icon"
                         />
                     </div>
-                    <h3 class="no-margin">Demandas y Apelaciones</h3>
+                    <h3 class="no-margin">Demanda de Patentes</h3>
                 </div>
                 <p class="prefooter-link-text">
-                    Estrategias basadas en Modelos de Utilidad.
+                    Estrategia y Analisis de casos con profesionales
                 </p>
             </div>
             <div
@@ -101,7 +102,7 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff6b-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff6b"
-            href="/patentes/observaciones-nulidades"
+            href="/patentes/observacion"
             class="prefooter-link w-inline-block"
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
@@ -134,10 +135,10 @@
                             />
                         </div>
                     </div>
-                    <h3 class="no-margin">Observaciones y Nulidades</h3>
+                    <h3 class="no-margin">Nulidad de Patentes</h3>
                 </div>
                 <p class="prefooter-link-text">
-                Casos de oposición y nulidades.
+                Nulidades de Patentes con documentación profesional.
                 </p>
             </div>
             <div
@@ -172,7 +173,7 @@
             aria-current="page"
             class="footer-brand w-inline-block w--current"
             ><img
-                src="https://media.discordapp.net/attachments/1171897462299033623/1171897506788028416/stockerInvenciones.png?ex=655e599a&is=654be49a&hm=29f5e6d6da3e4dbc103fe103190efd44d83fd78b02e153df2cf806cdde6aadd9&=&width=1000&height=1000"
+                src="https://media.discordapp.net/attachments/1171897462299033623/1173970928993050654/Monochrome_Modern_Technology_Black_Logo__4_-removebg-preview.png?ex=6565e4a0&is=65536fa0&hm=f3618f89bdacfd353b301e9ba2e290df4465047b51801046880f34814a7e781a&=&width=1000&height=1000"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="footer-logo"
@@ -187,69 +188,21 @@
                 id="w-node-_2e8e277a-0c51-e798-6722-2f4e27841a4b-27841a2c"
                 class="copyright-text"
             >
-                © 2023 Stocker Invenciones
+            La Capitanía 80, Of. 225, Las Condes, Santiago, Chile
+            <br>
+                 +56 9 7689 9543
+                 <br>
+                 oficina@stockerinvenciones.com
+                
             </div>
-        </div>
-        <div
-            id="w-node-_2e8e277a-0c51-e798-6722-2f4e27841a30-27841a2c"
-            class="social-links"
+            <div
+            id="w-node-_2e8e277a-0c51-e798-6722-2f4e27841a4b-27841a2c"
+            class="copyright-text"
         >
-            <a
-                href=""
-                target="_blank"
-                class="social-link footer w-inline-block"
-                ><img
-                    src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d45b2406517df390f_LinkedIn%20Logo.svg"
-                    loading="lazy"
-                    alt="Linked In Logo"
-                    class="social-icon"
-                />
-                <div
-                    class="social-icon-bg"
-                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                /></a
-            ><a
-                href=""
-                target="_blank"
-                class="social-link footer w-inline-block"
-                ><img
-                    src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d8528525910eab81f_Twitter%20Logo.svg"
-                    loading="lazy"
-                    alt="Twitter Logo"
-                    class="social-icon"
-                />
-                <div
-                    class="social-icon-bg"
-                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                /></a
-            ><a
-                target="_blank"
-                class="social-link footer w-inline-block"
-                ><img
-                    src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d23b7f35f4399abdf_Facebook%20Logo.svg"
-                    loading="lazy"
-                    alt="Facebook Logo"
-                    class="social-icon"
-                />
-                <div
-                    class="social-icon-bg"
-                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                /></a
-            ><a
-                href=""
-                target="_blank"
-                class="social-link footer w-inline-block"
-                ><img
-                    src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d372be95c8efea93f_Youtube%20Logo.svg"
-                    loading="lazy"
-                    alt="Youtube Logo"
-                    class="social-icon"
-                />
-                <div
-                    class="social-icon-bg"
-                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                /></a
-            >
+       
+                © 2023 Stocker Invenciones
         </div>
+        </div>
+     
     </div>
 </div>

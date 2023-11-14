@@ -10722,7 +10722,8 @@ blockquote {
 	.container.read-on-grid,
 	.container.reliably-grid {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		display: flex
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.container.grid-2 {

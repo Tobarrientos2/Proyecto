@@ -27,7 +27,7 @@
             class="brand-logo w-nav-brand w--current"
             aria-label="home"
             ><img
-                src="https://media.discordapp.net/attachments/1171897462299033623/1171897506788028416/stockerInvenciones.png?ex=655e599a&is=654be49a&hm=29f5e6d6da3e4dbc103fe103190efd44d83fd78b02e153df2cf806cdde6aadd9&=&width=1000&height=1000"
+                src="https://media.discordapp.net/attachments/1171897462299033623/1173970928993050654/Monochrome_Modern_Technology_Black_Logo__4_-removebg-preview.png?ex=6565e4a0&is=65536fa0&hm=f3618f89bdacfd353b301e9ba2e290df4465047b51801046880f34814a7e781a&=&width=1000&height=1000"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="logo"

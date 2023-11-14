@@ -3,7 +3,7 @@
 </script>
     <div class="section-title dark mobile-hidden">
         <div class="section-labels-wrapper">
-            <div class="section-label">contact us</div>
+            <div class="section-label">Oficina en Chile</div>
             <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
         </div>
     </div>

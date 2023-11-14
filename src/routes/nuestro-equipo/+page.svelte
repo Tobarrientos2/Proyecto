@@ -1,9 +1,7 @@
 <script lang="ts">
     export let data;
     let miembrosData = data.dataJSON;
-
 </script>
-
 
 <div class="section-title dark mobile-hidden">
     <div class="section-labels-wrapper">
@@ -96,20 +94,21 @@
         >
             Por qué estamos aquí
         </h2>
-        <p
+        <p 
             id="w-node-_8bf60a71-9c72-5f42-b0c0-d9b4aa73b8cc-a5dece3e"
             class="paragraph-large no-margin"
         >
-            Estamos aquí porque creemos en el poder de la innovación y la
-            creatividad. En un mundo donde las ideas valiosas pueden transformar
-            industrias y mejorar vidas, nos dedicamos a proteger tu ingenio.<br
-            /><br />Nuestra misión es proporcionar un espacio seguro y confiable
-            para que los innovadores como tú resguarden sus creaciones mediante
-            patentes. Estamos comprometidos con la preservación de la
-            originalidad y el fomento de un entorno donde la inventiva florezca.<br
-            /><br />En última instancia, estamos aquí para asegurarnos de que tu
-            patente sea tuya, preservando y respetando el esfuerzo único que has
-            dedicado a dar vida a tus ideas.
+            Creemos en el poder de la innovación y la creatividad. En un mundo
+            donde las ideas valiosas pueden transformar industrias y mejorar
+            vidas, nos dedicamos a proteger tu ingenio.
+            <br /><br />            Nuestra misión es proporcionar un espacio seguro y confiable para que
+            los innovadores como tú resguarden sus creaciones mediante patentes.
+            Estamos comprometidos con la preservación de la originalidad y el fomento
+            de un entorno donde la inventiva florezca.
+            <br /><br />
+            En última instancia, estamos aquí para asegurarnos de que tu patente
+            sea tuya, preservando y respetando el esfuerzo único que has dedicado
+            a dar vida a tus ideas.
         </p>
     </div>
 </div>
@@ -138,87 +137,87 @@
             class="leaders-collection-wrapper w-dyn-list"
         >
             <div role="list" class="leader-collection-list w-dyn-items">
-                {#each miembrosData as {nombre,puesto,descripcion,image } }
-                <div
-                    id="w-node-_29ff1378-e41d-4a1a-20a5-375a61848743-a5dece3e"
-                    data-w-id="29ff1378-e41d-4a1a-20a5-375a61848743"
-                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
-                    role="listitem"
-                    class="leader-item w-dyn-item"
-                >
+                {#each miembrosData as { nombre, puesto, descripcion, image }}
                     <div
-                        data-w-id="d298a80a-1d67-2f7b-9549-5709d2dd53e9"
-                        class="leader-card"
+                        id="w-node-_29ff1378-e41d-4a1a-20a5-375a61848743-a5dece3e"
+                        data-w-id="29ff1378-e41d-4a1a-20a5-375a61848743"
+                        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+                        role="listitem"
+                        class="leader-item w-dyn-item"
                     >
-                        <div class="leader-image">
-                            <img
-                                src={image}
-                                loading="lazy"
-                                alt={nombre}
-                                sizes="(max-width: 479px) 134.8828125px, (max-width: 767px) 83.984375px, 139.96875px"
-                                srcset={ image|| "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
-                                class="image leader-cms"
-                            />
-                        </div>
-                        <h4 class="leader-name">{nombre}</h4>
-                        <div class="leader-title">{puesto}</div>
                         <div
-                            data-w-id="88d6deb7-91e3-e5c2-91f0-c8f16626cb77"
-                            class="leader-bio"
-                            style="background-color: rgba(1, 19, 35, 0); display: none;"
+                            data-w-id="d298a80a-1d67-2f7b-9549-5709d2dd53e9"
+                            class="leader-card"
                         >
-                            <div
-                                data-w-id="df70d8b8-ca0b-192d-f656-590cfb97a542"
-                                class="leader-bio-text w-richtext"
-                                style="opacity: 0;"
-                            >
-                                <p>
-                                    {descripcion}
-                                </p>
+                            <div class="leader-image">
+                                <img
+                                    src={image}
+                                    loading="lazy"
+                                    alt={nombre}
+                                    sizes="(max-width: 479px) 134.8828125px, (max-width: 767px) 83.984375px, 139.96875px"
+                                    srcset={image ||
+                                        "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+                                    class="image leader-cms"
+                                />
                             </div>
-                            <div class="leader-bio-footer">
-                                <div class="leader-socials">
-                                    <a
-                                        data-w-id="fcf4f3b8-dd49-95ae-adf2-ca7bb2b7acc1"
-                                        href="https://linkedin.com"
-                                        target="_blank"
-                                        class="social-link leader-link left-link w-inline-block"
-                                        style="opacity: 0; transform: translate3d(-10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                        ><img
-                                            src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d45b2406517df390f_LinkedIn%20Logo.svg"
-                                            loading="lazy"
-                                            alt="Linked In Logo"
-                                            class="social-icon"
-                                        />
-                                        <div
-                                            class="social-icon-bg"
-                                            style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                        /></a
-                                    ><a
-                                        data-w-id="ec4ed251-3231-1f75-447a-120f9db7b8d0"
-                                        href="https://twitter.com/"
-                                        target="_blank"
-                                        class="social-link leader-link right-link w-inline-block"
-                                        style="opacity: 0; transform: translate3d(-10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                        ><img
-                                            src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d8528525910eab81f_Twitter%20Logo.svg"
-                                            loading="lazy"
-                                            alt="Twitter Logo"
-                                            class="social-icon"
-                                        />
-                                        <div
-                                            class="social-icon-bg"
-                                            style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                        /></a
-                                    >
+                            <h4 class="leader-name">{nombre}</h4>
+                            <div class="leader-title">{puesto}</div>
+                            <div
+                                data-w-id="88d6deb7-91e3-e5c2-91f0-c8f16626cb77"
+                                class="leader-bio"
+                                style="background-color: rgba(1, 19, 35, 0); display: none;"
+                            >
+                                <div
+                                    data-w-id="df70d8b8-ca0b-192d-f656-590cfb97a542"
+                                    class="leader-bio-text w-richtext"
+                                    style="opacity: 0;"
+                                >
+                                    <p>
+                                        {descripcion}
+                                    </p>
+                                </div>
+                                <div class="leader-bio-footer">
+                                    <div class="leader-socials">
+                                        <a
+                                            data-w-id="fcf4f3b8-dd49-95ae-adf2-ca7bb2b7acc1"
+                                            href="https://linkedin.com"
+                                            target="_blank"
+                                            class="social-link leader-link left-link w-inline-block"
+                                            style="opacity: 0; transform: translate3d(-10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                            ><img
+                                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d45b2406517df390f_LinkedIn%20Logo.svg"
+                                                loading="lazy"
+                                                alt="Linked In Logo"
+                                                class="social-icon"
+                                            />
+                                            <div
+                                                class="social-icon-bg"
+                                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                            /></a
+                                        ><a
+                                            data-w-id="ec4ed251-3231-1f75-447a-120f9db7b8d0"
+                                            href="https://twitter.com/"
+                                            target="_blank"
+                                            class="social-link leader-link right-link w-inline-block"
+                                            style="opacity: 0; transform: translate3d(-10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                            ><img
+                                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d8528525910eab81f_Twitter%20Logo.svg"
+                                                loading="lazy"
+                                                alt="Twitter Logo"
+                                                class="social-icon"
+                                            />
+                                            <div
+                                                class="social-icon-bg"
+                                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                            /></a
+                                        >
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-              {/each}
+                {/each}
             </div>
         </div>
-       
     </div>
 </div>
