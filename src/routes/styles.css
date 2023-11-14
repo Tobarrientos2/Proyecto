@@ -140,6 +140,7 @@ textarea {
 	margin: 0
 }
 
+
 button {
 	overflow: visible
 }
@@ -3535,6 +3536,7 @@ blockquote {
 .section.product-hero {
 	height: 600px;
 	color: var(--color-base);
+	filter:invert(1);
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg);
 	background-position: 0 0;
 	background-size: auto;
@@ -3819,8 +3821,8 @@ blockquote {
 	height: 100vh;
 	max-height: 800px;
 	max-width: 1440px;
-	background-color: var(--color-primario);
-	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/62bd91a0c16504a4e3045c09_Group%208126%402x.png);
+	background-color: var(--color-base);
+	background-image: url();
 	background-repeat: no-repeat;
 	background-size: contain;
 	align-items: center;
@@ -6555,6 +6557,7 @@ blockquote {
 }
 
 .article-post-h1 {
+	color: var(--color-primario);
 	margin-bottom: 30px;
 	font-size: 40px;
 	line-height: 1em
@@ -6575,6 +6578,7 @@ blockquote {
 	width: 100vw;
 	height: 100vh;
 	opacity: .05;
+	filter:invert(1);
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg);
 	background-position: 50% 100%;
 	background-size: auto;
@@ -6603,6 +6607,7 @@ blockquote {
 }
 
 .article-post-info {
+	color: var(--color-primario);
 	display: flex
 }
 
@@ -7020,6 +7025,7 @@ blockquote {
 	z-index: -1;
 	width: 100%;
 	opacity: .05;
+	filter:invert(1);
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg);
 	background-size: auto;
 	position: absolute;
@@ -10260,6 +10266,7 @@ blockquote {
 
 	.grid-bg {
 		opacity: .05;
+		filter:invert(1);
 		background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg)
 	}
 
@@ -10371,6 +10378,7 @@ blockquote {
 	}
 
 	.article-post-grid {
+		filter:invert(1);
 		background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg);
 		background-size: auto
 	}
@@ -14446,7 +14454,7 @@ blockquote {
 
 	.cta-blob-2 {
 		top: 70%;
-		right: -33%
+		right: -33%;
 	}
 
 	.leader-name {
@@ -14488,7 +14496,7 @@ blockquote {
 
 	.home-blob-2 {
 		opacity: .27;
-		overflow: visible
+		overflow: visible;
 	}
 
 	.home-blob-3 {
@@ -14501,7 +14509,7 @@ blockquote {
 	.product-blob-1,
 	.product-blob-2 {
 		width: 400px;
-		height: 400px
+		height: 400px;
 	}
 
 	.product-blob-3 {

@@ -21,15 +21,15 @@ patentesData.set(patentes);
 modelosData.set(modelos);
 disenosIndustrialesData.set(disenosIndustriales);
 
-export const unsuscribePatentes = patentesData.subscribe((data) => {
+export const unsubscribePatentes = patentesData.subscribe((data) => {
     console.log(data);
 })
 
-export const unsuscribeModelos = modelosData.subscribe((data) => {
+export const unsubscribeModelos = modelosData.subscribe((data) => {
     console.log(data);
 })
 
-export const unsuscribeDisenos = disenosIndustrialesData.subscribe((data) => {
+export const unsubscribeDisenos = disenosIndustrialesData.subscribe((data) => {
     console.log(data);
 })
 

@@ -1,0 +1,47 @@
+{
+    "paginaBeneficiosEmpresa": {
+      "titulo": "Maximiza los Beneficios de Patentar tus Inventos con PatentChile",
+      "subtitulo": "Innovación para el Éxito Empresarial",
+      "descripcion": "En PatentChile, estamos comprometidos con potenciar el éxito de tus inventos a través de nuestros servicios de patentamiento. Descubre cómo nuestra innovación puede beneficiar tu empresa:",
+      "beneficios": [
+        {
+          "titulo": "Protección Legal Sólida",
+          "descripcion": "Obtén una protección legal sólida para tus inventos en Chile e internacionalmente. Nuestro equipo de expertos en propiedad intelectual garantiza la defensa de tus innovaciones contra posibles infracciones."
+        },
+        {
+          "titulo": "Asesoramiento Especializado",
+          "descripcion": "Recibe asesoramiento personalizado de nuestros profesionales en patentamiento. Estamos aquí para guiarte a lo largo de todo el proceso, desde la evaluación inicial hasta la concesión de la patente, brindándote la atención y orientación que tu empresa necesita."
+        },
+        {
+          "titulo": "Diferenciación en el Mercado",
+          "descripcion": "Destaca en el mercado resaltando tus inventos patentados. Te ayudamos a promover tus innovaciones, aumentar su visibilidad y fortalecer la posición de tu empresa como líder en innovación."
+        },
+        {
+          "titulo": "Acceso a Red de Inversionistas",
+          "descripcion": "Conecta con una red exclusiva de inversionistas interesados en proyectos innovadores. Facilitamos el encuentro entre inventores y posibles financiadores para impulsar el desarrollo y la implementación de ideas revolucionarias."
+        },
+        {
+          "titulo": "Recursos Estratégicos",
+          "descripcion": "Accede a recursos estratégicos y análisis de mercado. Proporcionamos información clave para respaldar el desarrollo continuo de tus inventos y mantenerte al tanto de las tendencias y oportunidades del sector."
+        },
+        {
+          "titulo": "Eficiencia y Rapidez",
+          "descripcion": "Priorizamos la eficiencia en cada etapa del proceso de patentamiento. Nuestra plataforma y equipo ágil permiten que tu empresa obtenga la protección de inventos de manera rápida y sin complicaciones."
+        }
+      ],
+      "colaboraciones": [
+        {
+          "nombre": "Asociación para el Desarrollo Tecnológico",
+          "descripcion": "PatentChile colabora con la Asociación para el Desarrollo Tecnológico en programas para fomentar la innovación y la protección de la propiedad intelectual en Chile."
+        },
+        {
+          "nombre": "Red de Empresas Innovadoras",
+          "descripcion": "Formamos parte activa de la Red de Empresas Innovadoras, contribuyendo a la creación de un ecosistema empresarial más fuerte y competitivo mediante la protección de la propiedad intelectual."
+        }, {
+            "nombre": "Red de Empresas Innovadoras",
+            "descripcion": "Formamos parte activa de la Red de Empresas Innovadoras, contribuyendo a la creación de un ecosistema empresarial más fuerte y competitivo mediante la protección de la propiedad intelectual."
+          }
+      ]
+    }
+  }
+  

@@ -1,11 +1,22 @@
-<script context="module" lang="ts">
-    import { modelosData, patentesData, disenosIndustrialesData } from "../stores/DataStore";
+<script lang="ts">
 
-	let modelos;
-	modelosData.subscribe((items) => {
-	modelos = items;
-	});
+export let data;
 
+export function limitarPalabras(cadena, maxPalabras) {
+  const palabras = cadena.split(' '); // Dividir la cadena en palabras
+  if (palabras.length > maxPalabras) {
+    return palabras.slice(0, maxPalabras).join(' ') + '...'; // Unir las primeras maxPalabras palabras y agregar "..."
+  } else {
+    return cadena; // La cadena ya contiene o es menor que maxPalabras palabras
+  }
+}
+let patentes = data.props.dataPatente;
+let modelos = data.props.dataModelos;
+let disenos = data.props.dataDisenos;
+
+let patentesFirst = data.props.dataPatente?.map(item => item)[0];
+let modelosFirst = data.props.dataModelos?.map(item => item)[0];
+let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
   </script>
 
@@ -16,11 +27,11 @@
 				><a href="#" class="nav-anchor top-anchor w-inline-block"
 					><div class="anchor-text-container">Servicios</div></a
 				><a href="#Company" class="nav-anchor top-anchor w-inline-block"
-					><div class="anchor-text-container">Experiencias</div></a
+					><div class="anchor-text-container">Red de Categorias</div></a
 				><a
 					href="#explore"
 					class="nav-anchor top-anchor bright w-inline-block"
-					><div class="anchor-text-container">Red de Categorias</div></a
+					><div class="anchor-text-container">Diseños Industriales</div></a
 				><a
 					href="#events"
 					class="nav-anchor top-anchor bright w-inline-block"
@@ -88,15 +99,15 @@
 							class="column hero-column"
 						>
 							<h1 class="maintitle">
-								Tu invención <br />es tuya
+								Tu invención <br />es tuya.
 							</h1>
 							<div class="hero-column-border" />
 							<div class="nav-link-wrapper on-desktop">
 								<div class="outline-wrapper" />
 								<a
-									href="/contact"
+									href="/beneficios"
 									class="nav-link home-btn-white w-inline-block"
-									><div>Descubre nuestros servicios</div>
+									><div>Beneficios de nuestro grupo</div>
 									<div class="arrow-icon">
 										<img
 											src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
@@ -262,7 +273,7 @@
 											</div>
 											<a
 												data-w-id="bfec00f1-348e-10be-10c2-61408148ca5d"
-												href="/patentes/demandas-apelaciones"
+												href={patentes?.map(item => item.slug)[0]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -274,13 +285,13 @@
 														class="featured-article-heading"
 														aria-hidden="true"
 													>
-													Apelaciones al Tribunal de Patentes e Invenciones.
+													{patentes?.map(item => item.titulo)[0]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
 													>
-													El proceso de apelación ante el Tribunal de Patentes e Invenciones es fundamental para abordar disputas y asegurar una sólida protección de la propiedad intelectual.
+													{limitarPalabras(patentes?.map(item => item.descripcion)[0], 30)}
 													</p>
 												</div>
 												<div
@@ -881,8 +892,10 @@
 				</div>
 			</div>
 			<div id="explore" class="section explore-section">
-				<h2 class="explore-heading-title">Red de Categorias</h2>
+				<h2 class="explore-heading-title">Diseños Industriales por Rubro</h2>
+				
 				<div class="container grid">
+					
 					<div
 						id="w-node-fd35c3bd-7065-cd1c-0a3a-b758ba3ebcbc-72decde7"
 						class="explore-wrapper-1 w-dyn-list"
@@ -893,7 +906,7 @@
 								class="explore-item-1 w-dyn-item"
 							>
 								<a
-									href="/diseños-industriales/categoria/consumo"
+									href={disenos[0].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -901,10 +914,10 @@
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												Potencia la innovación: Diseños industriales para productos de consumo
+												{disenos[0].titulo}
 											</h5>
 											<p class="cmscardp">
-												Descubre cómo patentar tu diseño industrial de producto de consumo en Chile. Explora el proceso y beneficios de proteger tus ideas creativas para destacarte en el mercado.
+												{disenos[0].descripcion}
 											</p>
 										</div>
 										<div
@@ -929,21 +942,21 @@
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png"
+											src={disenos[0].image}
 											loading="lazy"
-											alt="Generative AI for data analytics: the future of enterprise sense-making"
+											alt={disenos[0].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-500.png 500w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-800.png 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-1080.png 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png 1440w"
+											srcset={disenos[0].image}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png"
+											src={disenos[0].image}
 											loading="lazy"
-											alt="Generative AI for data analytics: the future of enterprise sense-making"
+											alt={disenos[0].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-500.png 500w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-800.png 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-1080.png 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png 1440w"
+											srcset={disenos[0].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
@@ -962,7 +975,7 @@
 								class="explore-item-2 w-dyn-item"
 							>
 								<a
-									href="/diseños-industriales/categoria/manufactura"
+									href={disenos[1].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -970,12 +983,12 @@
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												Innovación en diseño industrial para la manufactura
+												{disenos[1].titulo}
 											</h5>
 										</div>
 										<div class="cms-paragraph-and-cta">
 											<p class="cmscardp">
-												Descubre cómo los nuevos modelos de datos están transformando la industria de la manufactura y cómo puedes proteger tus innovaciones mediante patentes en esta categoría. La pandemia ha cambiado el juego, y es crucial adaptarse para seguir siendo competitivo.
+												{disenos[1].descripcion}
 											</p>
 										</div>
 										<div
@@ -1000,21 +1013,21 @@
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5.jpg"
+											src={disenos[1].image}
 											loading="lazy"
-											alt="New data models for a new world"
+											alt={disenos[1].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5.jpg 1440w"
+											srcset={disenos[1].image}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5.jpg"
+											src={disenos[1].image}
 											loading="lazy"
-											alt="New data models for a new world"
+											alt={disenos[1].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/610c20494a4633542298d612_article-images-1440x960px-investa-5.jpg 1440w"
+											srcset={disenos[1].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
@@ -1033,7 +1046,7 @@
 								class="explore-item-3 w-dyn-item"
 							>
 								<a
-									href="/diseños-industriales/categoria/especializado"
+									href={disenos[2].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -1041,10 +1054,10 @@
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												Patentes: Diseños Industriales Especializados
+												{disenos[2].titulo}
 											</h5>
 											<p class="cmscardp">
-												La creatividad en los diseños industriales está impulsando una revolución en la industria de patentes. Descubre cómo la innovación en diseño, especialmente en áreas especializadas, está marcando el camino hacia soluciones únicas. Explora las últimas tendencias y cómo estos diseños especializados están transformando la forma en que se abordan los desafíos en diversas industrias.
+												{disenos[2].descripcion}
 											</p>
 										</div>
 										<div class="cms-paragraph-and-cta">
@@ -1071,21 +1084,21 @@
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1.jpg"
+											src={disenos[2].image}
 											loading="lazy"
-											alt="The Game Changers: AI in Banking"
+											alt={disenos[2].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-500.jpeg 500w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1.jpg 1440w"
+											srcset={disenos[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1.jpg"
+											src={disenos[2].image}
 											loading="lazy"
-											alt="The Game Changers: AI in Banking"
+											alt={disenos[2].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-500.jpeg 500w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60d275cec02ea664713475c8_banking-also-real-estate-1440x962px-website-template-OC-16-06-2021-1.jpg 1440w"
+											srcset={disenos[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
@@ -1105,7 +1118,7 @@
 								class="explore-item-4 w-dyn-item"
 							>
 								<a
-									href="/modelos-de-utilidad/novedad"
+									href={disenos[3].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -1113,10 +1126,10 @@
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												Innovación Práctica: Modelos de Utilidad para un Mundo Eficiente
+												{disenos[3].titulo}
 											</h5>
 											<p class="cmscardp">
-												Descubre cómo los modelos de utilidad están impulsando la eficiencia en diversas industrias. Desde soluciones tecnológicas hasta mejoras en procesos, estos modelos ofrecen una perspectiva práctica para resolver problemas cotidianos.
+												{disenos[3].descripcion}
 											</p>
 										</div>
 										<div class="cms-paragraph-and-cta">
@@ -1143,11 +1156,11 @@
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9.jpeg"
+											src={disenos[3].image}
 											loading="lazy"
-											alt="Guided by a Moral Compass"
+											alt={disenos[3].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9.jpeg 1440w"
+											srcset={disenos[3].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image"
 										/>
 									</div>
@@ -1166,7 +1179,9 @@
 							</div>
 						</div>
 					</div>
+				
 				</div>
+				
 			</div>
 			<div id="events" class="section events-section hide" style="">
 				<div class="container grid">

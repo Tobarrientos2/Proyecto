@@ -1,10 +1,10 @@
 <script lang="ts">
     export let data;
 
-    let patenteSlug = data.patenteEncontrado;
-    let patentesSliders = data.patentesAleatorios;
+    let disenoSlug = data.disenoEncontrado;
+    let disenosSliders = data.disenosAleatorios;
     console.log(data);
-    
+    console.log(disenoSlug.image);
 </script>
 <div class="section-title dark mobile-hidden">
     <div class="section-labels-wrapper">
@@ -29,7 +29,7 @@
                     style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
                 >
                 <h1 class="article-post-h1">
-                {patenteSlug.titulo}
+                {disenoSlug.titulo}
                   </h1>
                     <div class="article-post-info hide">
                         <div class="author-text">By</div>
@@ -40,11 +40,11 @@
             </div>
             <div class="article-hero-image">
                 <img
-                    src={patenteSlug.image}
+                    src={disenoSlug.image}
                     loading="lazy"
                     alt=""
                     sizes="(max-width: 991px) 100vw, (max-width: 1439px) 60vw, 862.796875px"
-                    srcset={patenteSlug.image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+                    srcset={disenoSlug.image||"http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
                     class="image"
                 />
             </div>
@@ -68,7 +68,7 @@
                         class="home-blob-2"
                         style="transform: translate3d(-12.5021px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-20deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;"
                     >
-                        <img style="filter:hue-rotate(-28deg);"
+                        <img  style="filter:hue-rotate(-28deg);"
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ad23b8b4d48936ebd2b028_Vector-5.svg"
                             loading="lazy"
                             alt=""
@@ -79,7 +79,7 @@
                         class="home-blob-3"
                         style="will-change: transform; transform: translate3d(57.2524px, -142.778px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(60.4267deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                     >
-                        <img 
+                        <img
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60acf87b222a365f83f89133_blob%20(2).svg"
                             loading="lazy"
                             alt=""
@@ -96,7 +96,7 @@
                     class="article-xl-rich-text w-richtext"
                 >
                     <p>
-                        {patenteSlug.titulo}
+                        {disenoSlug.titulo}
                         <br />
                     </p>
                 </div>
@@ -120,7 +120,7 @@
                     id="w-node-_380bd10b-b071-fd82-decb-27d930481b0d-bddece41"
                     class="article-rich-text w-richtext"
                 >
-                    <p>{patenteSlug.descripcion}
+                    <p>{disenoSlug.descripcion}
                     </p>
                 </div>
             </div>
@@ -351,14 +351,14 @@
                     id="w-node-_94be8d79-47c8-0c1a-9cfe-675cd3aab33a-bddece41"
                     class="no-margin w-condition-invisible"
                 >
-                    Related Articles
+                    Artículos Relacionados
                 </h3>
                 <div
                     id="w-node-a6cd336b-d080-c002-fafb-2eb18224a62c-bddece41"
                     class="small-articles-wrapper w-dyn-list"
                 >
                     <div role="list" class="small-articles-list w-dyn-items">
-                        {#each patentesSliders as {titulo, descripcion, slug, image} }
+                        {#each disenosSliders as {titulo, descripcion, slug, image} }
                         <div
                             id="w-node-a6cd336b-d080-c002-fafb-2eb18224a62e-bddece41"
                             role="listitem"

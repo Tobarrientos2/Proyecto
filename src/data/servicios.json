@@ -119,7 +119,8 @@
   "mundial": {
       "disenos": {
         "electronica_consumo": {
-          "slug": "disenos/electronica-consumo",
+          "image":"https://anged.es/wp-content/uploads/2022/03/shutterstock_1445581070.jpg",
+          "slug": "/disenos/electronica-consumo",
           "titulo": "Electrónica de Consumo",
           "descripcion": "Explora diseños industriales innovadores y funcionales para productos de electrónica de consumo. Desde dispositivos móviles hasta electrodomésticos, ofrecemos soluciones de diseño que combinan estética y usabilidad para destacar en el mercado global.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -132,7 +133,8 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "envases_embalajes": {
-          "slug": "disenos/envases-embalajes",
+          "image": "https://www.marketeroslatam.com/wp-content/uploads/2020/02/dise%C3%B1o-empaque-embalaje-packagig.jpg",
+          "slug": "/disenos/envases-embalajes",
           "titulo": "Envases y Embalajes",
           "descripcion": "Optimiza la presentación y protección de tus productos con nuestros diseños industriales en envases y embalajes. Nos especializamos en soluciones creativas y eficientes que cumplen con los estándares de la industria y atraen la atención del consumidor.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -145,7 +147,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "moda_calzado": {
-          "slug": "/disenos/moda-calzado",
+          "image": "https://adefinitivas.com/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-17-at-19.53.54.jpeg",          "slug": "/disenos/moda-calzado",
           "titulo": "Moda y Calzado",
           "descripcion": "Descubre tendencias y estilos únicos en el mundo de la moda y el calzado. Nuestros diseñadores industriales trabajan para crear productos distintivos que reflejen la identidad de tu marca y atraigan a los consumidores exigentes de la industria de la moda.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -158,6 +160,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "automocion": {
+          "image": "https://www.tcmetrologia.com/content/uploads/blog/Fotolia_94905092_Subscription_Monthly_M1.jpg",
           "slug": "/disenos/automocion",
           "titulo": "Automoción",
           "descripcion": "Innovación y funcionalidad se combinan en nuestros diseños industriales para la industria automotriz. Ya sea para vehículos convencionales o eléctricos, ofrecemos soluciones que cumplen con los estándares de seguridad y aportan un diseño atractivo al mundo del automóvil.",

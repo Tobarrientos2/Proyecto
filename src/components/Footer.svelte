@@ -1,5 +1,4 @@
 <script>
-	import { goto } from '$app/navigation';
 
 </script>
 
@@ -61,7 +60,7 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff5d-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff5d"
-            on:click={() => {goto(encodeURIComponent('/asdsd'))}}
+            href="/patentes/demandas-apelaciones"
             class="prefooter-link w-inline-block"
             style="cursor:pointer; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
@@ -102,7 +101,7 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff6b-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff6b"
-            href="/patentes/observaciones-apelaciones"
+            href="/patentes/observaciones-nulidades"
             class="prefooter-link w-inline-block"
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">

@@ -1,5 +1,6 @@
 import type { PageLoad } from './$types';
-import { patentesData, unsubscribePatentes } from '../../../stores/DataStore.js';
+import { disenosIndustrialesData, unsubscribeDisenos } from '../../../stores/DataStore.js';
+import { serialize } from 'cookie';
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -25,32 +26,33 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
   return objetosAleatorios;
 }
 
-let patentes;
+let disenos;
 
 export const load: PageLoad = ({ params }) => {
-  const obtenerpatentes = patentesData.subscribe((data) => {
-    patentes  = data;
+  const obtenerDisenos = disenosIndustrialesData.subscribe((data) => {
+    disenos  = data;
   });
-  unsubscribePatentes();
+  unsubscribeDisenos();
 
-  let slugObtenido = "/patentes/" + params.slug;
+  let slugObtenido = "/disenos/" + params.slug;
   console.log(slugObtenido);
 
   // Utiliza la función obtenerObjetosAleatorios para obtener 3 modelos aleatorios
-  const patentesAleatorios = obtenerObjetosAleatorios(patentes, 3);
+  const disenosAleatorios = obtenerObjetosAleatorios(disenos, 3);
 
   // Muestra un mensaje de error si no hay suficientes modelos en el array
-  if (!patentesAleatorios) {
+  if (!disenosAleatorios) {
     console.error("No hay suficientes diseños para seleccionar aleatoriamente.");
     return null;
   }
 
   // Utiliza la función console.log para imprimir los tres objetos aleatorios
-  console.log("patentes Aleatorios:", patentesAleatorios);
+  console.log("Disenos Aleatorios:", disenosAleatorios);
 
   // Utiliza el modeloEncontrado correspondiente al slug proporcionado en params
-  const patenteEncontrado = patentes.find((patente) => patente.slug === slugObtenido);
-  
+  const disenoEncontrado = disenos.find((diseno) => diseno.slug === slugObtenido);
+  console.log(disenoEncontrado)
+
   let partes = slugObtenido.split('/');
   let palabra = partes[partes.length - 1]; // Obtener la última parte
   let palabrasSeparadas = palabra.split('-');
@@ -59,21 +61,24 @@ export const load: PageLoad = ({ params }) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   }).join(' ');
 
-  return { 
-    page:{ 
-        path: pathFinal
-    }, 
-    patentesAleatorios: patentesAleatorios,
-    patenteEncontrado: {
-      titulo: patenteEncontrado.titulo,
-      descripcion: patenteEncontrado.descripcion,
-      introduccion_desafio: patenteEncontrado.introduccion_desafio,
-      explicacion_enfoque_tecnologia: patenteEncontrado.explicacion_enfoque_tecnologia,
-      importancia_relevancia_tema: patenteEncontrado.importancia_relevancia_tema,
-      funcionalidades_proceso_detallado: patenteEncontrado.funcionalidades_proceso_detallado,
-      ejemplos_casos_estudio: patenteEncontrado.ejemplos_casos_estudio,
-      adaptabilidad_flexibilidad: patenteEncontrado.adaptabilidad_flexibilidad,
-      consideraciones_postimplementacion: patenteEncontrado.consideraciones_postimplementacion
+  
+  
+  return {
+    page:{
+      path: pathFinal
+    },
+    disenosAleatorios: disenosAleatorios,
+    disenoEncontrado: {
+      titulo: disenoEncontrado.titulo,
+      image: disenoEncontrado.image,
+      descripcion: disenoEncontrado.descripcion,
+      introduccion_desafio: disenoEncontrado.introduccion_desafio,
+      explicacion_enfoque_tecnologia: disenoEncontrado.explicacion_enfoque_tecnologia,
+      importancia_relevancia_tema: disenoEncontrado.importancia_relevancia_tema,
+      funcionalidades_proceso_detallado: disenoEncontrado.funcionalidades_proceso_detallado,
+      ejemplos_casos_estudio: disenoEncontrado.ejemplos_casos_estudio,
+      adaptabilidad_flexibilidad: disenoEncontrado.adaptabilidad_flexibilidad,
+      consideraciones_postimplementacion: disenoEncontrado.consideraciones_postimplementacion
     }
   };
 };

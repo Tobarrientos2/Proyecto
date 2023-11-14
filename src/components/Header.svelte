@@ -1,12 +1,12 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { onMount, onDestroy } from "svelte";
-    import { patentesData, modelosData, unsuscribeDisenos, disenosIndustrialesData , unsuscribePatentes, unsuscribeModelos } from "../stores/DataStore";
+    import { patentesData, modelosData, unsubscribeDisenos, disenosIndustrialesData , unsubscribeModelos, unsubscribePatentes } from "../stores/DataStore";
     
     onDestroy(() => {
-      unsuscribePatentes();
-      unsuscribeModelos();
-      unsuscribeDisenos();
+      unsubscribePatentes();
+      unsubscribeModelos();
+      unsubscribeDisenos();
     });
    
   </script>
@@ -356,7 +356,7 @@
                 </div>
             </div>
             <div class="nav-link-wrapper on-desktop">
-                <a href="/" class="nav-link w-inline-block"
+                <a href="/oficina-en-chile" class="nav-link w-inline-block"
                     ><div class="allcaps">Oficina en Chile</div></a
                 >
             </div>
