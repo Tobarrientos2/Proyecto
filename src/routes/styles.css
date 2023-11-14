@@ -1995,7 +1995,7 @@ textarea.w-select {
 }
 
 .w-nav-link.w--current {
-	color: var(--color-base)
+	color: var(--color-base);
 }
 
 .w-nav-menu {
@@ -4425,7 +4425,7 @@ blockquote {
 	color: var(--color-base);
 	margin-top: 20px;
 	margin-bottom: 30px;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 18px;
 	position: relative;
 	overflow: visible
@@ -7871,7 +7871,7 @@ blockquote {
 
 .allcaps {
 	text-transform: uppercase;
-	font-size: 12px
+	font-size: 13px
 }
 
 .s-article-p {

@@ -127,7 +127,7 @@
             id="w-node-_08a0b78c-0321-1190-2da0-27d2a0928410-a5dece3e"
             class="margin-l leadership"
         >
-            Miembros
+            Equipo
         </h2>
         <div
             id="w-node-_29ff1378-e41d-4a1a-20a5-375a61848741-a5dece3e"

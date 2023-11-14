@@ -26,7 +26,7 @@
             aria-current="page"
             class="brand-logo w-nav-brand w--current"
             aria-label="home"
-            ><img
+            ><img 
                 src="https://media.discordapp.net/attachments/1171897462299033623/1174008110285848666/Monochrome_Modern_Technology_Black_Logo__5_-removebg-preview.png?ex=65660741&is=65539241&hm=36536f0fef32c6dd64ecfb46dfd616d930b158e96188e26f00e3b14698e0309f&=&width=1000&height=1000"
                 loading="lazy"
                 alt="Spark Beyond Logo"
