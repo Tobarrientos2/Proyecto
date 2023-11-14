@@ -3901,7 +3901,7 @@ blockquote {
 }
 
 .logo {
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	object-fit:cover;
 	object-position:center;
@@ -3919,8 +3919,8 @@ blockquote {
 }
 
 .brand-logo.w--current {
-	width: 210px;
-	height: 40px
+	width: 300px;
+	height: auto;
 }
 
 .navbar {

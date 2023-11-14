@@ -55,7 +55,7 @@ export const load: PageLoad =  ({ params, url }) =>{
 
       
         
-let patentesAleatorias = obtenerObjetosAleatorios(patentes, 3);
+let patentesAleatorias = obtenerObjetosAleatorios(patentes, 4);
      
 let modelosAleatorios= obtenerObjetosAleatorios(modelos, 3);
 

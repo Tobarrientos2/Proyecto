@@ -173,7 +173,7 @@
             aria-current="page"
             class="footer-brand w-inline-block w--current"
             ><img
-                src="https://media.discordapp.net/attachments/1171897462299033623/1174008110285848666/Monochrome_Modern_Technology_Black_Logo__5_-removebg-preview.png?ex=65660741&is=65539241&hm=36536f0fef32c6dd64ecfb46dfd616d930b158e96188e26f00e3b14698e0309f&=&width=1000&height=1000"
+                src="https://media.discordapp.net/attachments/1171897462299033623/1174097635246866502/Monochrome_Modern_Technology_Black_Logo__7_-removebg-preview.png?ex=65665aa1&is=6553e5a1&hm=993e27b68a0c41b1622e39c611a76f918cec985100417c1629f331bd2e120ec3&=&width=1000&height=1000"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="footer-logo"
