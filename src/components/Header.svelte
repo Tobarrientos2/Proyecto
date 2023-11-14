@@ -23,7 +23,7 @@
     <div class="nav-container">
         <a
             href="/"
-            style="width:350px"
+            style="width:40vw; max-width:350px;"
             aria-current="page"
             class="brand-logo w-nav-brand w--current"
             aria-label="home"
