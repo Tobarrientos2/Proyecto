@@ -99,12 +99,12 @@ export function limitarPalabras(cadena, maxPalabras) {
             style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
         >
             <img
-                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed.jpeg"
+                src=""
                 loading="lazy"
                 width="1440"
                 sizes="(max-width: 1439px) 100vw, 1438px"
                 alt=""
-                srcset="https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-500.jpeg 500w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-800.jpeg 800w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-1080.jpeg 1080w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-1600.jpeg 1600w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-2000.jpeg 2000w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed-p-2600.jpeg 2600w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/61b746d19f56a5348c88d512_Header_compressed.jpeg 2880w"
+                srcset="https://media.discordapp.net/attachments/1171897462299033623/1174075031995826256/Captura_de_pantalla_2023-11-14_a_las_16.54.53.png?ex=65664594&is=6553d094&hm=ac4036419fda27b6a6f12d9f3fc6d6cdb46cfc2077a99ffc0b771c0ae1b3ede2&=&width=1408&height=1056"
                 class="image climate-action"
             />
             <div class="gridoverlay hidden" />
@@ -131,7 +131,7 @@ export function limitarPalabras(cadena, maxPalabras) {
                 class="new-product-card carda"
             >
                 <div class="product-image">
-                    <img
+                    <img style="filter: invert(1);"
                         alt=""
                         loading="lazy"
                         width="120"
@@ -190,7 +190,7 @@ export function limitarPalabras(cadena, maxPalabras) {
                                 style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
                                 ><div class="small-article-item-body">
                                     <div class="small-article-thumbnail">
-                                        <img
+                                        <img 
                                             src={image}
                                             loading="lazy"
                                             alt="Circularity: Repurposing Excess Chemicals for Global Manufacturer"
@@ -265,64 +265,7 @@ export function limitarPalabras(cadena, maxPalabras) {
         </div>
         <div class="gridoverlay climate-action" />
     </div>
-    <div class="section dark-section noverticalpadding climage-action">
-        <div class="margin-m">
-            <h2 class="climage-action-h2">Trabajando Junto a</h2>
-        </div>
-        <div class="partners-list-wrapper w-dyn-list">
-            <div role="list" class="partners-list climate-action w-dyn-items">
-               {#each colaboraciones as { nombre, descripcion, image, url} }
-
-                <div
-                    id="w-node-_19e690d4-c27e-8fd7-927e-b46b6c8924a4-060e4710"
-                    role="listitem"
-                    class="partners-item w-dyn-item"
-                >
-                    <a
-                        data-w-id="19e690d4-c27e-8fd7-927e-b46b6c8924a5"
-                        href={url || "/beneficios"}
-                        target="_blank"
-                        class="partners-card w-inline-block"
-                        ><div
-                            class="partner-hover climate-action"
-                            style="opacity: 0; transform: translate3d(0px, 10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                        >
-                            <h4 class="margin-s mobile-hidden climate-action">
-                                {nombre}
-                            </h4>
-                            <p class="center-mobile">
-                                {descripcion}
-                            </p>
-                            <div class="continue-reading">
-                                <h5 class="continuereadingtext">Visit</h5>
-                                <img
-                                    src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086a181c7b29d2ee77e11eb_Gray%20Arrow.svg"
-                                    loading="lazy"
-                                    alt="Arrow"
-                                    class="arrow-continue-reading"
-                                />
-                            </div>
-                        </div>
-                        <div
-                            data-w-id="19e690d4-c27e-8fd7-927e-b46b6c8924af"
-                            class="partner-image"
-                            style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                        >
-                            <img
-                                src={image}
-                                loading="lazy"
-                                alt=""
-                                sizes="(max-width: 479px) 9vw, (max-width: 767px) 4vw, (max-width: 1439px) 5vw, 76.84375px"
-                                srcset={image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
-                                class="partner-logo climate-action"
-                            />
-                        </div></a
-                    >
-                </div>
-               {/each }
-            </div>
-        </div>
-    </div>
+ 
    
    
 

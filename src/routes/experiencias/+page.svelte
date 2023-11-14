@@ -88,10 +88,10 @@
             style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
         >
             <img
-                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/615b898f0b0fda86199f4ddb_news-header-2-1440x962px-13-09-2021-OC.jpg"
+                src="https://media.discordapp.net/attachments/1171897462299033623/1174075248417710080/Captura_de_pantalla_2023-11-14_a_las_16.55.46.png?ex=656645c8&is=6553d0c8&hm=3f995f7a25cae66963c89d8660ff106ffeb69a37c1c63a4a76ac59b42ff62641&=&width=1496&height=1056"
                 loading="lazy"
                 sizes="(max-width: 1439px) 100vw, 1438px"
-                srcset="https://global-uploads.webflow.com/60866fa44e871fb63043a756/615b898f0b0fda86199f4ddb_news-header-2-1440x962px-13-09-2021-OC-p-1080.jpeg 1080w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/615b898f0b0fda86199f4ddb_news-header-2-1440x962px-13-09-2021-OC.jpg 1440w"
+                srcset="https://media.discordapp.net/attachments/1171897462299033623/1174075248417710080/Captura_de_pantalla_2023-11-14_a_las_16.55.46.png?ex=656645c8&is=6553d0c8&hm=3f995f7a25cae66963c89d8660ff106ffeb69a37c1c63a4a76ac59b42ff62641&=&width=1496&height=1056"
                 alt=""
                 class="image"
             />

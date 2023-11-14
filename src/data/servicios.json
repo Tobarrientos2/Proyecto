@@ -2,6 +2,7 @@
   "nacional": {
     "patentes": {
       "busqueda": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174057356791922688/image.png?ex=6566351e&is=6553c01e&hm=9595492529d9a0961691f39ca4aa1c62b244c7fce1a9e79946080be19cbc8e65&=&width=1888&height=1056",
         "slug": "/patentes/busqueda",
         "titulo": "Búsqueda de Patentes",
         "subtitulo": "Garantizando la Originalidad de tu Invento",
@@ -16,6 +17,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "solicitud": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059120475774996/Captura_de_pantalla_2023-11-14_a_las_15.51.37.png?ex=656636c3&is=6553c1c3&hm=1f7639cdd1ab26856a8e9f674908ea1d844565bc109bd29b097155169607e63c&=&width=1506&height=1056",
         "slug": "/patentes/solicitud",
         "titulo": "Registro de Patentes",
         "subtitulo": "Asesoramiento Legal Especializado",
@@ -30,6 +32,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "demanda": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174060898609025087/Captura_de_pantalla_2023-11-14_a_las_15.58.44.png?ex=6566386b&is=6553c36b&hm=ac57ed399bf2a911c7e9c04d65c8712875bec06355c63c1994616550d210d62e&=&width=702&height=1056",
         "slug": "/patentes/demanda",
         "titulo": "Demanda de Patentes",
         "subtitulo": "Asesoramiento Legal Especializado",
@@ -44,6 +47,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "apelaciones": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059541474857063/Captura_de_pantalla_2023-11-14_a_las_15.53.20.png?ex=65663727&is=6553c227&hm=06b6097dd993dd570f66677c790d06eace135b1a7550fb70bb505a1b3e8915ca&=&width=1590&height=1054",
         "slug": "/patentes/apelacion",
         "titulo": "Apelación de Patentes",
         "subtitulo": "Asesoramiento Legal Especializado",
@@ -58,6 +62,7 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "observacion": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174063932944678912/Captura_de_pantalla_2023-11-14_a_las_16.10.49.png?ex=65663b3e&is=6553c63e&hm=a834d537c7fd763a3018589e3366207d1edb93b2cc075505a6599d6d711bf6c5&=&width=790&height=1056",
         "slug": "/patentes/observacion",
         "titulo": "Observación de Patentes",
         "subtitulo": "Análisis Detallado y Estrategias Legales",
@@ -73,6 +78,7 @@
       }},
       "modelos_utilidad": {
         "busqueda": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174058379040272414/Captura_de_pantalla_2023-11-14_a_las_15.48.43.png?ex=65663612&is=6553c112&hm=d1c9aaa91064ba1a6b9af0cf1dc79a75fb1ce52d11eefe99411d038705d91a01&=&width=844&height=1056",
           "slug": "/modelos-de-utilidad/busqueda",
           "titulo": "Busqueda de Modelos",
           "subtitulo": "Evalúa la Singularidad de tu Modelo",
@@ -87,6 +93,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "solicitud": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174061720826814464/image.png?ex=6566392f&is=6553c42f&hm=1ef4767dbe67ad6ba91f5e71a3bc1c3864750f499121807de9c530cfe31594fa&=&width=1592&height=1056",
           "slug": "/modelos-de-utilidad/solicitud",
           "titulo": "Registro de Modelos",
           "subtitulo": "Análisis Práctico para el Registro",
@@ -101,6 +108,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "apelaciones": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059975081988196/Captura_de_pantalla_2023-11-14_a_las_15.55.05.png?ex=6566378f&is=6553c28f&hm=bbd18a0145e6c7db5086b43d27bef7d5ce4459d0a0aa8e16ba73da806fff740b&=&width=1614&height=1056",
           "slug": "/modelos-de-utilidad/apelacion",
           "titulo": "Apelación de Modelos",
           "subtitulo": "Garantizando la Vigencia Continua",
@@ -115,6 +123,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "observacion": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174063518883004586/Captura_de_pantalla_2023-11-14_a_las_16.09.09.png?ex=65663adb&is=6553c5db&hm=b68b217cd4891edb92825e41fc0bb41cbc68add8b3984bad00b8baff81d839f1&=&width=1584&height=1056",
           "slug": "/modelos-de-utilidad/observacion",
           "titulo": "Observación de Modelos",
           "subtitulo": "Estrategias para Reforzar la Protección",
@@ -129,6 +138,7 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "nulidades": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059658869223514/Captura_de_pantalla_2023-11-14_a_las_15.53.46.png?ex=65663743&is=6553c243&hm=6fc749c19b5f63703f115465b3ec166a365fb5ce7316fda0020f4ae14b834048&=&width=1590&height=1056",
           "slug": "/modelos-de-utilidad/nulidad",
           "titulo": "Nulidad de Modelos",
           "subtitulo": "Gestión Integral de tu Modelo",
@@ -147,7 +157,7 @@
   "mundial": {
       "disenos": {
         "envases_y_embalajes": {
-          "image": "https://www.marketeroslatam.com/wp-content/uploads/2020/02/dise%C3%B1o-empaque-embalaje-packagig.jpg",
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174077171233468536/Captura_de_pantalla_2023-11-14_a_las_17.03.25.png?ex=65664792&is=6553d292&hm=e7630f77cd8fa858e20cfe7707ddbc85d74ecc1ecc50787325749d3fb40cdb49&=&width=1596&height=1056",
           "slug": "/disenos/envases",
           "titulo": "Envases",
           "descripcion": "Optimiza la presentación y protección de tus productos con nuestros diseños industriales en envases y embalajes. Nos especializamos en soluciones creativas y eficientes que cumplen con los estándares de la industria y atraen la atención del consumidor.",
@@ -161,7 +171,8 @@
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
         "calzado": {
-          "image": "https://adefinitivas.com/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-17-at-19.53.54.jpeg",          "slug": "/disenos/moda-calzado",
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054348729372694/photo-1698926938575-877bdd3db228.png?ex=65663251&is=6553bd51&hm=4589f03ace6cc4a4c3180cf55d8a497cdc529fef5f97d217206c23aed08d5dd5&=&width=1592&height=1056",         
+          "slug": "/disenos/moda-calzado",
           "titulo": "Calzado",
           "descripcion": "Descubre tendencias y estilos únicos en el mundo de la moda y el calzado. Nuestros diseñadores industriales trabajan para crear productos distintivos que reflejen la identidad de tu marca y atraigan a los consumidores exigentes de la industria de la moda.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -175,6 +186,7 @@
         },
         "maquinaria": {
           "slug": "/disenos/maquinaria",
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174055374790348881/photo-1614562556758-ae0248358127.png?ex=65663346&is=6553be46&hm=c8d17cc3a6cb859bde0f0492c7358c5a402312c7163867ac7a69afe8350367a2&=&width=792&height=1056",
           "titulo": "Maquinaria",
           "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -188,6 +200,7 @@
         },
         "herramientas": {
           "slug": "/disenos/herramientas",
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054350935572671/photo-1562052579-b30d05e1ec93.png?ex=65663252&is=6553bd52&hm=9c940f32f9e6c73673f49ce0bddf96b59fb4c290faa1b0525e7206cb8dbd2b33&=&width=1584&height=1056",
           "titulo": "Herramientas",
           "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
@@ -201,6 +214,7 @@
         },
         "relojeria": {
           "slug": "/disenos/relojeria",
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054352294514748/photo-1629135458283-0c69f7cead37.png?ex=65663252&is=6553bd52&hm=894080f1dd25988815dfc859fb887b8e56c661cf853ac51dd2225ddc1948a294&=&width=1584&height=1056",
           "titulo": "Relojería",
           "descripcion": "Descubre la elegancia y la precisión en nuestros diseños industriales para joyería y relojería. Cada pieza se crea con atención al detalle, utilizando materiales de alta calidad para garantizar la excelencia en el diseño de joyas y relojes.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",

@@ -121,7 +121,7 @@
                         class="checkbox-wrapper contact-page"
                     >
                         <div class="text-block-6">
-                            Al enviar este formulario, Aceptro los términos y condiciones de Stocker Invenciones <a
+                            Al enviar este formulario, Aceptro los términos y condiciones de Stocker Invención. <a
                                 href="/terminos-condiciones"
                                 target="_blank"
                                 class="link">Términos y Condiciones</a

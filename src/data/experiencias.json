@@ -1,5 +1,6 @@
 {
     "experiencias": [{
+      "image": "https://media.discordapp.net/attachments/1171897462299033623/1174086180359393402/Captura_de_pantalla_2023-11-14_a_las_17.39.11.png?ex=65664ff6&is=6553daf6&hm=f5e897986de4e2e0b13c3f7453e008a1f94960eeecd8df05411364485ac37e69&=&width=1556&height=1056",
       "titulo": "Invento Revolucionario Chileno Recibe Patente por Tecnología Innovadora",
       "slug": "/experiencias/invento-revolucionario",
       "autor": "Equipo InventorX",
@@ -36,6 +37,7 @@
       ]
     },
     {
+      "image": "https://media.discordapp.net/attachments/1171897462299033623/1174086353894506496/Captura_de_pantalla_2023-11-14_a_las_17.39.51.png?ex=65665020&is=6553db20&hm=52cace388098c76ccd43e6859ae4daf5635d6d1524384a49728d4357a2d5760a&=&width=1888&height=1056",
         "titulo": "Chile Moderniza su Sistema de Propiedad Industrial con Nueva Ley",
         "slug": "/experiencias/modernizacion-propiedad-industrial",
         "autor": "Equipo LegalTech",

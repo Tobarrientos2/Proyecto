@@ -20,7 +20,7 @@
             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088257a21cb95b15ea6f161_Company%20Hero.jpg"
             loading="lazy"
             sizes="(max-width: 1439px) 100vw, 1438px"
-            srcset="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088257a21cb95b15ea6f161_Company%20Hero-p-800.jpeg 800w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088257a21cb95b15ea6f161_Company%20Hero-p-2000.jpeg 2000w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088257a21cb95b15ea6f161_Company%20Hero-p-2600.jpeg 2600w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088257a21cb95b15ea6f161_Company%20Hero.jpg 2880w"
+            srcset="https://media.discordapp.net/attachments/1171897462299033623/1174063518883004586/Captura_de_pantalla_2023-11-14_a_las_16.09.09.png?ex=65663adb&is=6553c5db&hm=b68b217cd4891edb92825e41fc0bb41cbc68add8b3984bad00b8baff81d839f1&=&width=1584&height=1056"
             alt="View of Earth from space"
             class="image"
         />
@@ -114,13 +114,10 @@
 </div>
 <div class="section dark-section featured-article-2">
     <div class="link-section-image">
-        <img
-            src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon.jpg"
+        <img 
+            src="https://media.discordapp.net/attachments/1171897462299033623/1174074367446098081/Captura_de_pantalla_2023-11-14_a_las_16.52.14.png?ex=656644f6&is=6553cff6&hm=4dbe9678816b8cf7568518be9b5f8082c1e8a0cf591d32de13f3484eba4582c9&=&width=1416&height=1056"
             loading="lazy"
-            sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 1439px) 100vw, 1438px"
-            srcset="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon-p-500.jpeg 500w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon-p-800.jpeg 800w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon-p-2000.jpeg 2000w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon-p-2600.jpeg 2600w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6088336af694de9c5d0024a9_Moon.jpg 2880w"
-            alt="Woman looking at a screen showing information about Earth's moon"
-            class="image"
+            class=""
         />
     </div>
 </div>
@@ -151,6 +148,7 @@
                         >
                             <div class="leader-image">
                                 <img
+                                style="background-color: white;"
                                     src={image}
                                     loading="lazy"
                                     alt={nombre}

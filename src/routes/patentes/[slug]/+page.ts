@@ -66,6 +66,7 @@ export const load: PageLoad = ({ params }) => {
     patentesAleatorios: patentesAleatorios,
     patenteEncontrado: {
       titulo: patenteEncontrado.titulo,
+      image: patenteEncontrado.image,
       descripcion: patenteEncontrado.descripcion,
       introduccion_desafio: patenteEncontrado.introduccion_desafio,
       explicacion_enfoque_tecnologia: patenteEncontrado.explicacion_enfoque_tecnologia,

@@ -1,30 +1,30 @@
 {
     "paginaBeneficiosEmpresa": {
-      "titulo": "Maximiza los Beneficios de Patentar tus Inventos con Stocker Invenciones",
+      "titulo": "Maximiza los Beneficios de Patentar tus Inventos con Stocker Invención",
       "subtitulo": "Innovación para el Éxito Empresarial",
-      "descripcion": "En Stocker Invenciones, estamos comprometidos con potenciar el éxito de tus inventos a través de nuestros servicios de patentamiento. Descubre cómo nuestra innovación puede beneficiar tu empresa:",
+      "descripcion": "En Stocker Invención, estamos comprometidos con potenciar el éxito de tus inventos a través de nuestros servicios de patentamiento. Descubre cómo nuestra innovación puede beneficiar tu empresa:",
       "beneficios": [
-        {
+        { "image": "https://creator-cdn.icons8.com/28CesXYhwIlZkvDaWzatybsd3IgiHaunabO7tUEoDbk/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3NlY3Vy/aXR5L3N2Z3NpbXAv/YXBwbGljYXRpb24t/c2hpZWxkLnN2Zw.png",
           "titulo": "Seguridad",
           "descripcion": "Obtén la máxima seguridad legal para tus inventos en Chile e internacionalmente. Nuestro equipo de expertos en propiedad intelectual garantiza la defensa de tus innovaciones contra posibles infracciones."
         },
-        {
+        {"image": "https://creator-cdn.icons8.com/xb1Jqi-1Mkj5Jp8EaUUP3JbeTLqJ2L1skehZYj4QQ-E/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3NlY3Vy/aXR5L3N2Z3NpbXAv/c2VjdXJpdHktdXNl/ci1tYWxlLnN2Zw.png",
           "titulo": "Confiabilidad",
           "descripcion": "Confía en nuestra experiencia y trayectoria en patentamiento. Estamos aquí para guiarte a lo largo de todo el proceso, desde la evaluación inicial hasta la concesión de la patente, brindándote la atención y orientación que tu empresa necesita."
         },
-        {
+        {"image": "https://creator-cdn.icons8.com/061tWepYlkSW4t-fwq-QSIc9zaRDKIXzDcMe2nDxfuA/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3NlY3Vy/aXR5L3N2Z3NpbXAv/c21hcnQtaG9tZS1z/aGllbGQuc3Zn.png",
           "titulo": "Contrato de Confidencialidad",
           "descripcion": "Protegemos la confidencialidad de tus invenciones con contratos sólidos. Tu propiedad intelectual está segura con nosotros, y trabajamos para mantenerla en secreto hasta que estés listo para revelarla al mundo."
         },
-        {
+        {"image": "https://creator-cdn.icons8.com/avXa1FgkYS6BtE9GIf5dT7HLa-jeHht6xEAA3Bzm8ic/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3VzZXIt/aW50ZXJmYWNlL3N2/Z3NpbXAvZXhpdC5z/dmc.png",
           "titulo": "Expertos en Patentes e Invención",
-          "descripcion": "Confía en nuestro equipo de expertos altamente calificados en patentes e invenciones. Somos galardonados y sumamente experimentados, lo que garantiza que tus innovaciones estén en las mejores manos."
+          "descripcion": "Confía en nuestro equipo de expertos altamente calificados en patentes e invenciones."
         },
-        {
+        {"image": "https://creator-cdn.icons8.com/ysqMXSS5lvGXxRghp9i0qJzixQjR_SEyKxs0AlRxfnY/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3RpbWUt/YW5kLWRhdGUvc3Zn/c2ltcC9mdXR1cmUu/c3Zn.png",
           "titulo": "Más de 15 años de Experiencia",
           "descripcion": "Benefíciate de nuestra vasta experiencia en patentamiento. Durante más de 15 años, hemos ayudado a inventores a proteger sus ideas y a alcanzar el éxito en el mercado."
         },
-        {
+        {"image": "https://creator-cdn.icons8.com/_DgRxK2N_CO12-AgDmWNqtR0MUMHAi4I3iaomeBhkWU/rs:fit:200:200/czM6Ly9pY29uczgt/aWNvbnM4LWNyZWF0/b3ItcHJvZC9pY29u/cy9pb3M3L3VzZXJz/L3N2Z3NpbXAvbGVh/ZGVyLnN2Zw.png",
           "titulo": "Miembros Sumamente Experimentados",
           "descripcion": "Nuestros miembros son reconocidos y galardonados, como por ejemplo, el 'Premio Roberto Ovalle Aguirre Instituto de Ingenieros de Chile'. Estamos comprometidos con la excelencia en la protección de la propiedad intelectual."
         }
@@ -32,7 +32,7 @@
       "colaboraciones": [
         {
           "nombre": "Asociación para el Desarrollo Tecnológico",
-          "descripcion": "Stocker Invenciones colabora con la Asociación para el Desarrollo Tecnológico en programas para fomentar la innovación y la protección de la propiedad intelectual en Chile."
+          "descripcion": "Stocker Invención colabora con la Asociación para el Desarrollo Tecnológico en programas para fomentar la innovación y la protección de la propiedad intelectual en Chile."
         },
         {
           "nombre": "Red de Empresas Innovadoras",

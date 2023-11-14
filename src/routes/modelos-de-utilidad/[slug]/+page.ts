@@ -66,6 +66,7 @@ export const load: PageLoad = ({ params, url }) => {
     modelosAleatorios: modelosAleatorios,
     modeloEncontrado: {
       titulo: modeloEncontrado.titulo,
+      image: modeloEncontrado.image,
       subtitulo: modeloEncontrado.subtitulo,
       descripcion: modeloEncontrado.descripcion,
       introduccion_desafio: modeloEncontrado.introduccion_desafio,

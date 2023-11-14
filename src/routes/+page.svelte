@@ -13,6 +13,8 @@ export function limitarPalabras(cadena, maxPalabras) {
 let patentes = data.props.dataPatente;
 let modelos = data.props.dataModelos;
 let disenos = data.props.dataDisenos;
+let experiencias = data.props.dataExperiencias;
+console.log(experiencias);
 
 let patentesFirst = data.props.dataPatente?.map(item => item)[0];
 let modelosFirst = data.props.dataModelos?.map(item => item)[0];
@@ -138,7 +140,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								</div>
 								<div class="slider-bar-element">
 									<img
-										src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6093a4cbe132663e8349e369_slider%20pagination.svg"
+										src=""
 										loading="lazy"
 										alt="Slider Pagination Decorative element"
 										class="slider-deco"
@@ -264,7 +266,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/649c809bac9d40ad0c85dfe0_Overcoming-the-Enterprise-LLM-blindspot-with-SparkBeyond.png"
+													src={patentes?.map(item => item.image)[0]}
 													loading="eager"
 													alt="Overcoming the Enterprise LLM Blindspot"
 													class="image hero-slider-image"
@@ -374,7 +376,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/646501649814022634020f99_SparkBeyond%20Turning%20Enterprise%20Data%20into%20accessible%20LLM%20knowledge.jpg"
+													src={patentes?.map(item => item.image)[1]}
 													loading="eager"
 													alt="Turning enterprise data into accessible knowledge for LLMs"
 													class="image hero-slider-image"
@@ -477,7 +479,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												class="hero-slider-image-wrapper"
 											>
 												<img
-													src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png"
+													src={patentes?.map(item => item.image)[1]}
 													loading="eager"
 													alt="Generative AI for data analytics: the future of enterprise sense-making"
 													sizes="(max-width: 991px) 100vw, (max-width: 1439px) 58vw, 899px"
@@ -607,10 +609,12 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 				>
 					<div class="camera">
 						<div class="collection-list-wrapper w-dyn-list">
+						
 							<div
 								role="list"
 								class="collection-list w-dyn-items"
 							>
+							{#each experiencias as {titulo,autor,image, slug, fecha, contenidos}}
 								<div
 									data-w-id="03028e60-30fc-24c6-1f8a-430d4cf7fc84"
 									role="listitem"
@@ -619,7 +623,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								>
 									<div class="p-img-wrp">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7bc7ca1e0d3f73352000_dp-header-1440x962px-70-percent-64kb.jpeg"
+											src={image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											loading="eager"
 											alt=""
 											class="p-img"
@@ -639,7 +643,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												>
 													<a
 														data-w-id="6bc5bcb1-566c-be9e-a2df-5a286487cc30"
-														href="/patentes/nacional"
+														href={slug}
 														class="cms-item-body-left w-inline-block"
 														><div
 															class="p-blur left"
@@ -651,18 +655,18 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 																<h5
 																	class="whitetext product"
 																>
-																	Patentes en Chile a través de
+																{fecha}
 																</h5>
 																<h2
 																	class="product-name"
 																>
-																	Análisis de Modelos de Utilidad
+																	Fuente: {autor}
 																</h2>
 															</div>
 															<h2
 																class="large-cms-title"
 															>
-																Patentes Nacionales
+															{limitarPalabras(titulo,4)}
 															</h2>
 															<div
 																id="w-node-_6bc5bcb1-566c-be9e-a2df-5a286487cc33-72decde7"
@@ -671,7 +675,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 																<p
 																	class="product-description-box"
 																>
-																En el contexto de las Patentes en Chile, se realiza un análisis de los Modelos de Utilidad. Estos análisis son esenciales para comprender y proteger las innovaciones en el país.
+																{limitarPalabras(contenidos.map(item => item.parrafo)[0],30)}
 																</p>
 															</div>
 															<div
@@ -728,128 +732,9 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 										</div>
 									</div>
 								</div>
-								<div
-									data-w-id="03028e60-30fc-24c6-1f8a-430d4cf7fc84"
-									role="listitem"
-									class="collection-item w-dyn-item"
-									style="will-change: transform; transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-								>
-									<div class="p-img-wrp">
-										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb.jpeg"
-											loading="eager"
-											alt=""
-											sizes="(max-width: 1439px) 100vw, 1440px"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb.jpeg 1440w"
-											class="p-img"
-										/>
-									</div>
-									<div
-										class="container grid square-positioning"
-									>
-										<div
-											id="w-node-_6bc5bcb1-566c-be9e-a2df-5a286487cc26-72decde7"
-											class="large-cms-links-wrapper"
-										>
-											<div class="w-layout-grid p-hp-cms">
-												<div
-													id="w-node-_6bc5bcb1-566c-be9e-a2df-5a286487cc2f-72decde7"
-													class="cms-item-body"
-												>
-													<a
-														data-w-id="6bc5bcb1-566c-be9e-a2df-5a286487cc30"
-														href="/products/research-studio"
-														class="cms-item-body-left w-inline-block"
-														><div
-															class="p-blur left"
-														/>
-														<div
-															class="div-block-4"
-														>
-															<div>
-																<h5
-																	class="whitetext product"
-																>
-																	Patentes Internacionales mediante
-																</h5>
-																<h2
-																	class="product-name"
-																>
-																	Diseños Industriales
-																</h2>
-															</div>
-															<h2
-																class="large-cms-title"
-															>
-																Patentes Internacionales
-															</h2>
-															<div
-																id="w-node-_6bc5bcb1-566c-be9e-a2df-5a286487cc33-72decde7"
-																class="p-wrap-arrow"
-															>
-																<p
-																	class="product-description-box"
-																>
-																Descubre cómo gestionar Patentes en más de 180 países, patentando los aspectos más relacionados con cada Diseño Industrial.
-																</p>
-															</div>
-															<div
-																id="w-node-_98fbcafc-5510-c7ae-61a4-d657a299a323-72decde7"
-																class="cms-card-button outline-white"
-																style="width: 40px;"
-															>
-																<div
-																	data-w-id="98fbcafc-5510-c7ae-61a4-d657a299a324"
-																	class="cms-card-button-text"
-																	style="opacity: 1;"
-																>
-																	Ver Más
-																</div>
-																<div
-																	class="cms-card-arrow"
-																>
-																	<img
-																		src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
-																		loading="lazy"
-																		alt="Arrow"
-																		class="image"
-																	/>
-																</div>
-															</div>
-														</div></a
-													>
-													<div
-														class="backdrop-code w-embed"
-													>
-														<style>
-															.p-blur {
-																backdrop-filter: blur(
-																	10px
-																);
-																-webkit-backdrop-filter: blur(
-																	10px
-																);
-															}
-														</style>
-													</div>
-													<div
-														class="mobile-product-mobile"
-													>
-														<img
-															src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb.jpeg"
-															loading="lazy"
-															alt=""
-															sizes="(max-width: 479px) 92vw, 100vw"
-															srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/614b7be9a965d3c2360089ff_rs-header-1440x962px-70-percent-160kb.jpeg 1440w"
-															class="image-blur"
-														/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+								{/each}	
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -1170,7 +1055,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											loading="lazy"
 											alt="Guided by a Moral Compass"
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9-p-800.jpeg 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9.jpeg 1440w"
+											srcset={patentes?.map(item => item.image)[2]}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
@@ -1183,102 +1068,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 				</div>
 				
 			</div>
-			<div id="events" class="section events-section hide" style="">
-				<div class="container grid">
-					<h2
-						id="w-node-_886e6c43-3384-7357-e14b-83f131b274c3-31b274c1"
-						class="explore-heading"
-					>
-						Stay up-to-date
-					</h2>
-					<div
-						id="w-node-_886e6c43-3384-7357-e14b-83f131b274c5-31b274c1"
-						class="featured-event-wrapper-1 w-dyn-list"
-					>
-						<div
-							role="list"
-							class="featured-event-list-1 w-dyn-items"
-						>
-							<div
-								role="listitem"
-								class="featured-event-item-1 w-dyn-item"
-							>
-								<a
-									href="/diseños-industriales/categoria/especializado"
-									><div
-										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
-									>
-										<div>
-											<h3
-												class="cms-card-heading event-heading"
-											>
-												Analytics: from mystery to
-												mastery
-											</h3>
-											<div class="card-time">
-												<div>April 29, 2021</div>
-												<div class="time-separator">
-													-
-												</div>
-												<div>4:00PM GMT</div>
-											</div>
-										</div>
-										<div class="cms-paragraph-and-cta">
-											<p class="cmscardp">
-												This exclusive event is the
-												third installment of our
-												successful ‘Game Changers’
-												series, where inside intel from
-												expert panels helps bridge the
-												gap between analytics aspiration
-												and ability.
-											</p>
-											<div
-												class="cms-card-button"
-												style="width: 40px;"
-											>
-												<div
-													class="cms-card-button-text"
-													style="opacity: 1;"
-												>
-													RSVP
-												</div>
-												<div class="cms-card-arrow">
-													<img
-														src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086aa5eb480063a0f5033fb_Arrow%20Black.svg"
-														loading="lazy"
-														alt="Arrow"
-														class="image"
-													/>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cms-card-bg">
-										
-										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60dcc952df21bb29772a5a03_361-header-beer.jpg"
-											loading="lazy"
-											alt="Analytics: from mystery to mastery"
-											sizes="100vw"
-											srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60dcc952df21bb29772a5a03_361-header-beer-p-1080.jpeg 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60dcc952df21bb29772a5a03_361-header-beer-p-1600.jpeg 1600w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/60dcc952df21bb29772a5a03_361-header-beer.jpg 2000w"
-											class="image"
-										/>
-									</div>
-						</div>
-					</div>
-					<div
-						id="w-node-_886e6c43-3384-7357-e14b-83f131b274dd-31b274c1"
-						class="featured-event-wrapper-2 w-dyn-list"
-					>
-						<div class="w-dyn-empty">
-							<div>No hay items.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 			
 
 	
