@@ -22,7 +22,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
   </script>
 
-
+<div class="page-wrapper">
 			<div class="section-title mobile-hidden">
 				<a href="#" class="nav-anchor w-inline-block"
 					><div class="anchor-text-container">Invenciones y Patentes</div></a
@@ -1073,3 +1073,4 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
 	
 
+		</div>
