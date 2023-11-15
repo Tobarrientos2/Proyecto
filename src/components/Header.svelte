@@ -60,14 +60,7 @@
                             class="underline products-underline"
                             style="opacity: 0;"
                         />
-                        <div class="dropdown-toggle-circle">
-                            <img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
-                                loading="lazy"
-                                alt="Arrow in circle pointing down"
-                                class="dropdown-arrow"
-                            />
-                        </div>
+                      
                     </div>
                 </div>
                 <div
@@ -213,14 +206,7 @@
                             class="underline products-underline"
                             style="opacity: 0;"
                         />
-                        <div class="dropdown-toggle-circle">
-                            <img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
-                                loading="lazy"
-                                alt="Arrow in circle pointing down"
-                                class="dropdown-arrow"
-                            />
-                        </div>
+                       
                     </div>
                 </div>
                 <div
@@ -247,14 +233,7 @@
                             class="underline products-underline"
                             style="opacity: 0;"
                         />
-                        <div class="dropdown-toggle-circle">
-                            <img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
-                                loading="lazy"
-                                alt="Arrow in circle pointing down"
-                                class="dropdown-arrow"
-                            />
-                        </div>
+                      
                     </div>
                 </div>
                 <div
@@ -282,79 +261,10 @@
                             class="underline products-underline"
                             style="opacity: 0;"
                         />
-                        <div class="dropdown-toggle-circle">
-                            <img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/60a6217bdf2dc27b1562d9d9_Menu%20Arrow.svg"
-                                loading="lazy"
-                                alt="Arrow in circle pointing down"
-                                class="dropdown-arrow"
-                            />
-                        </div>
+                       
                     </div>
                 </div>
-                <div class="nav-social-links">
-                    <div class="nav-separator" />
-                    <div class="nav-social-links-heading">Contactanos</div>
-                    <div class="social-links in-nav">
-                        <a
-                            href="https://www.linkedin.com/company/sparkbeyond"
-                            target="_blank"
-                            class="social-link nav-icon w-inline-block"
-                            ><img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d45b2406517df390f_LinkedIn%20Logo.svg"
-                                loading="lazy"
-                                alt="Linked In Logo"
-                                class="social-icon"
-                            />
-                            <div
-                                class="social-icon-bg"
-                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                            /></a
-                        ><a
-                            href="https://twitter.com/sparkbeyond"
-                            target="_blank"
-                            class="social-link w-inline-block"
-                            ><img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d8528525910eab81f_Twitter%20Logo.svg"
-                                loading="lazy"
-                                alt="Twitter Logo"
-                                class="social-icon"
-                            />
-                            <div
-                                class="social-icon-bg"
-                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                            /></a
-                        ><a
-                            href="https://www.facebook.com/sparkbeyond/"
-                            target="_blank"
-                            class="social-link w-inline-block"
-                            ><img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d23b7f35f4399abdf_Facebook%20Logo.svg"
-                                loading="lazy"
-                                alt="Facebook Logo"
-                                class="social-icon"
-                            />
-                            <div
-                                class="social-icon-bg"
-                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                            /></a
-                        ><a
-                            href="https://www.youtube.com/channel/UCctNa-70ktSNRsa_WPpNwnw"
-                            target="_blank"
-                            class="social-link w-inline-block"
-                            ><img
-                                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086913d372be95c8efea93f_Youtube%20Logo.svg"
-                                loading="lazy"
-                                alt="Youtube Logo"
-                                class="social-icon"
-                            />
-                            <div
-                                class="social-icon-bg"
-                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                            /></a
-                        >
-                    </div>
-                </div>
+               
             </div>
             <div class="nav-link-wrapper on-desktop">
                 <a href="/oficina-en-chile" class="nav-link w-inline-block"

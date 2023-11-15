@@ -21,9 +21,7 @@ let modelosFirst = data.props.dataModelos?.map(item => item)[0];
 let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
   </script>
-
-
-			<div class="section-title mobile-hidden">
+<div class="section-title mobile-hidden">
 				<a href="#" class="nav-anchor w-inline-block"
 					><div class="anchor-text-container">Invenciones y Patentes</div></a
 				><a href="#" class="nav-anchor top-anchor w-inline-block"
@@ -795,7 +793,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -864,7 +862,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -935,7 +933,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -1007,7 +1005,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; will-change: transform"
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
