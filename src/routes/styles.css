@@ -4382,7 +4382,7 @@ blockquote {
 	text-decoration: none;
 	display: flex;
 	position: relative;
-	overflow: hidden
+	overflow: scroll
 }
 
 .cms-card.left {
@@ -10639,7 +10639,7 @@ blockquote {
 		height: auto;
 		max-width: 660px;
 		flex: none;
-		margin-bottom: 155px
+		margin-bottom: 15px
 	}
 
 	.container.grid.square-positioning {

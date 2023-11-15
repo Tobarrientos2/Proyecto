@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { prerender } from './+layout.ts';
 
 export let data;
 
@@ -10,6 +11,12 @@ export function limitarPalabras(cadena, maxPalabras) {
     return cadena; // La cadena ya contiene o es menor que maxPalabras palabras
   }
 }
+
+let isLoaded = false;
+
+  function handleLoadedData() {
+    isLoaded = true;
+  }
 let patentes = data.props.dataPatente;
 let modelos = data.props.dataModelos;
 let disenos = data.props.dataDisenos;
@@ -217,7 +224,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 					</div>
 					<div
 						data-delay="6000"
-						data-animation="over"
+						data-animation="hover"
 						class="hero-slider w-slider"
 						data-autoplay="true"
 						data-easing="ease-out-expo"
@@ -753,7 +760,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								data-w-id="7141c305-095f-cc96-b461-3fe37abb3b79"
 								href="/experiencias"
 								class="button-link w-inline-block"
-								style="opacity: 0; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+								
 								><div>Ver Más</div>
 								<div class="arrow-icon">
 									<img
@@ -793,7 +800,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+										
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -860,9 +867,9 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								<a
 									href={disenos[1].slug}
 									class="cms-card w-inline-block"
-									><div
+									><div 
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+										
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -933,7 +940,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+										
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
@@ -1003,9 +1010,9 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								<a
 									href={disenos[3].slug}
 									class="cms-card w-inline-block"
-									><div
+									><div 
 										class="cms-inner-card"
-										style="transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; will-change: transform"
+										
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
