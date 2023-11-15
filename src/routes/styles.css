@@ -3819,7 +3819,7 @@ blockquote {
 .section-background.in-home-hero {
 	z-index: 0;
 	height: 100vh;
-	max-height: 800px;
+	max-height: none;
 	max-width: 1440px;
 	background-color: var(--color-base);
 	background-image: url();

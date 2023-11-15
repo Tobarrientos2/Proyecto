@@ -56,7 +56,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 					data-w-id="524b097b-9964-9f93-4703-c661a7df1dd9"
 					class="home-bg-wrapper"
 				>
-					<div class="section-background in-home-hero no-image">
+					<div class="section-background in-home-hero no-image" style="height: auto;">
 						<div
 							class="home-blob-1"
 							style="transform: translate3d(70.588px, 35.294px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(5.2002deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;"
@@ -390,7 +390,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</div>
 											<a
 												data-w-id="832b70d9-79b5-d753-a24f-ca9a297230a4"
-												href="/patentes/busqueda"
+												href={patentes?.map(item => item.slug)[1]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -401,14 +401,16 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 													<h2
 														class="featured-article-heading"
 														aria-hidden="true"
+													
 													>
-													Búsqueda de patentes e invenciones
+													{patentes?.map(item => item.titulo)[1]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
+													
 													>
-													Realizar búsquedas de patentes e invenciones existentes. Investigando a fondo con documentación suficiente, es necesario para asegurar una buena patente.
+													{patentes?.map(item => item.descripcion)[1]}
 													</p>
 												</div>
 												<div
@@ -484,11 +486,11 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												class="hero-slider-image-wrapper"
 											>
 												<img
-													src={patentes?.map(item => item.image)[1]}
+													src={patentes?.map(item => item.image)[2]}
 													loading="eager"
 													alt="Generative AI for data analytics: the future of enterprise sense-making"
 													sizes="(max-width: 991px) 100vw, (max-width: 1439px) 58vw, 899px"
-													srcset="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-500.png 500w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-800.png 800w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023-p-1080.png 1080w, https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/63ceee80d5d30e0e4816d45c_header-image-mckinsey-1440x962-test1px-23-01-2023.png 1440w"
+													srcset={patentes?.map(item => item.image)[2]}
 													class="image hero-slider-image"
 												/>
 											</div>
@@ -500,12 +502,12 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 													<h2
 														class="featured-article-heading"
 													>
-														{patentes?.map(item => item.titulo)[0]}
+														{patentes?.map(item => item.titulo)[2]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 													>
-													{patentes?.map(item => item.descripcion)[0]}
+													{patentes?.map(item => item.descripcion)[2]}
 													</p>
 												</div>
 												<div
@@ -680,7 +682,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 																<p
 																	class="product-description-box"
 																>
-																{limitarPalabras(contenidos.map(item => item.parrafo)[0],30)}
+																{limitarPalabras(contenidos.map(item => item.parrafo)[2],30)}
 																</p>
 															</div>
 															<div
@@ -1056,7 +1058,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src="https://global-uploads.webflow.com/6086c5175e6cdbe633da422a/6187cb1a49d3012b28f6af53_sagie-moral-compass-blog-01-11-2021-OC-9.jpeg"
+											src={patentes?.map(item => item.image)[2]}
 											loading="lazy"
 											alt="Guided by a Moral Compass"
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
