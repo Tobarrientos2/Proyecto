@@ -10639,7 +10639,7 @@ blockquote {
 		height: auto;
 		max-width: 660px;
 		flex: none;
-		margin-bottom: 60px
+		margin-bottom: 155px
 	}
 
 	.container.grid.square-positioning {
@@ -13534,7 +13534,7 @@ blockquote {
 	}
 
 	.container.grid.in-hero {
-		max-width: 300px
+		max-width: 300px;
 	}
 
 	.container.grid.square-positioning {
@@ -14029,12 +14029,12 @@ blockquote {
 
 	.large-cms-links-wrapper,
 	.cms-item-body {
-		padding: 0
+		padding: 10px;
 	}
 
 	.cms-item-body-left {
 		opacity: 1;
-		padding: 20px
+		padding: 30px;
 	}
 
 	.featured-article-card {
