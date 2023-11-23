@@ -27,13 +27,7 @@ export function limitarPalabras(cadena, maxPalabras) {
 
   </script>
 
-    <div class="section-title dark mobile-hidden">
-        <div class="section-labels-wrapper">
-            <div class="section-label">→</div>
-            <div class="section-label">{data.page.path}</div>
-            <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
-        </div>
-    </div>
+    
     <div class="section fullscreen-hero">
         <div class="container grid">
             <div
@@ -131,7 +125,7 @@ export function limitarPalabras(cadena, maxPalabras) {
                 class="new-product-card carda"
             >
                 <div class="product-image">
-                    <img style="filter: invert(1);"
+                    <img 
                         alt=""
                         loading="lazy"
                         width="120"
@@ -187,7 +181,7 @@ export function limitarPalabras(cadena, maxPalabras) {
                                 data-w-id="fdb63778-0855-5f8b-2fde-89fadcbf78de"
                                 href={slug}
                                 class="small-article-link w-inline-block"
-                                style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+                                style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0; color: var(--color-primario)"
                                 ><div class="small-article-item-body">
                                     <div class="small-article-thumbnail">
                                         <img 
@@ -204,7 +198,7 @@ export function limitarPalabras(cadena, maxPalabras) {
                                             {limitarPalabras(titulo,7)}
                                         </div>
                                         
-                                        <h5
+                                        <h5 style="color: var(--color-primario)"
                                             class="cards-heading climate-action"
                                         >
                                         {limitarPalabras(contenidos.map(item => item.parrafo)[0], 8)}
@@ -225,16 +219,16 @@ export function limitarPalabras(cadena, maxPalabras) {
                                         </div>
                                         <div
                                             class="cms-card-button outline-white"
-                                            style="width: 40px;"
+                                            style="width: 40px; color:var(--color-primario) "
                                         >
                                             <div
                                                 style="opacity: 1;"
-                                                class="cms-card-button-text"
+                                                class="cms-card-button-text "
                                             >
                                                 Leer Más
                                             </div>
-                                            <div class="cms-card-arrow">
-                                                <img
+                                            <div class="cms-card-arrow" >
+                                                <img 
                                                     src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                                                     loading="lazy"
                                                     alt="Arrow"

@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import { patentesData, unsubscribePatentes } from '../../../stores/DataStore.js';
+import { marcasData, unsubscribePatentes } from '../../../stores/DataStore.js';
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -25,31 +25,31 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
   return objetosAleatorios;
 }
 
-let patentes;
+let marcas;
 
 export const load: PageLoad = ({ params }) => {
-  const obtenerpatentes = patentesData.subscribe((data) => {
-    patentes  = data;
+  const obtenermarcas = marcasData.subscribe((data) => {
+    marcas  = data;
   });
   unsubscribePatentes();
 
-  let slugObtenido = "/patentes/" + params.slug;
+  let slugObtenido = "/marcas/" + params.slug;
   console.log(slugObtenido);
 
   // Utiliza la función obtenerObjetosAleatorios para obtener 3 modelos aleatorios
-  const patentesAleatorios = obtenerObjetosAleatorios(patentes, 3);
+  const marcasAleatorios = obtenerObjetosAleatorios(marcas, 3);
 
   // Muestra un mensaje de error si no hay suficientes modelos en el array
-  if (!patentesAleatorios) {
+  if (!marcasAleatorios) {
     console.error("No hay suficientes diseños para seleccionar aleatoriamente.");
     return null;
   }
 
   // Utiliza la función console.log para imprimir los tres objetos aleatorios
-  console.log("patentes Aleatorios:", patentesAleatorios);
+  console.log("marcas Aleatorios:", marcasAleatorios);
 
   // Utiliza el modeloEncontrado correspondiente al slug proporcionado en params
-  const patenteEncontrado = patentes.find((patente) => patente.slug === slugObtenido);
+  const marcaEncontrado = marcas.find((marca) => marca.slug === slugObtenido);
   
   let partes = slugObtenido.split('/');
   let palabra = partes[partes.length - 1]; // Obtener la última parte
@@ -63,18 +63,18 @@ export const load: PageLoad = ({ params }) => {
     page:{ 
         path: pathFinal
     }, 
-    patentesAleatorios: patentesAleatorios,
-    patenteEncontrado: {
-      titulo: patenteEncontrado.titulo,
-      image: patenteEncontrado.image,
-      descripcion: patenteEncontrado.descripcion,
-      introduccion_desafio: patenteEncontrado.introduccion_desafio,
-      explicacion_enfoque_tecnologia: patenteEncontrado.explicacion_enfoque_tecnologia,
-      importancia_relevancia_tema: patenteEncontrado.importancia_relevancia_tema,
-      funcionalidades_proceso_detallado: patenteEncontrado.funcionalidades_proceso_detallado,
-      ejemplos_casos_estudio: patenteEncontrado.ejemplos_casos_estudio,
-      adaptabilidad_flexibilidad: patenteEncontrado.adaptabilidad_flexibilidad,
-      consideraciones_postimplementacion: patenteEncontrado.consideraciones_postimplementacion
+    marcasAleatorios: marcasAleatorios,
+    marcaEncontrado: {
+      titulo: marcaEncontrado.titulo,
+      image: marcaEncontrado.image,
+      descripcion: marcaEncontrado.descripcion,
+      introduccion_desafio: marcaEncontrado.introduccion_desafio,
+      explicacion_enfoque_tecnologia: marcaEncontrado.explicacion_enfoque_tecnologia,
+      importancia_relevancia_tema: marcaEncontrado.importancia_relevancia_tema,
+      funcionalidades_proceso_detallado: marcaEncontrado.funcionalidades_proceso_detallado,
+      ejemplos_casos_estudio: marcaEncontrado.ejemplos_casos_estudio,
+      adaptabilidad_flexibilidad: marcaEncontrado.adaptabilidad_flexibilidad,
+      consideraciones_postimplementacion: marcaEncontrado.consideraciones_postimplementacion
     }
   };
 };

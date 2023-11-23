@@ -5,13 +5,7 @@ let modeloSlug = data.modeloEncontrado;
 let modelosSliders = data.modelosAleatorios;
 
 </script>
-<div class="section-title dark mobile-hidden">
-    <div class="section-labels-wrapper">
-        <div class="section-label">→</div>
-        <div class="section-label">{data.page.path}</div>
-        <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
-    </div>
-</div>
+
  <div class="section article-hero">
         <div class="container grid article-grid">
             <div
@@ -88,19 +82,7 @@ let modelosSliders = data.modelosAleatorios;
             </div>
         </div>
     </div>
-    <div id="TLDR" class="section dark-section">
-        <div class="container grid">
-            <div
-                id="w-node-b671c621-3752-558d-1da8-2600d586d471-bddece41"
-                class="article-xl-rich-text w-richtext"
-            >
-                <p>
-                    {modeloSlug.subtitulo}
-                    <br />
-                </p>
-            </div>
-        </div>
-    </div>
+    
     <div
         id="Image-1"
         class="section article-post-image-1 w-condition-invisible"

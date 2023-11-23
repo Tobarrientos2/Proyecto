@@ -2,7 +2,8 @@
 
 </script>
 
-<div id="contact" class="section prefooter">
+<div id="contact" class="section prefooter" >
+  
     <div class="container grid">
         <h3
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff4a-71ceff48"
@@ -18,8 +19,8 @@
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
-                    <div class="preefooter-icon-border">
-                        <img
+                    <div class="preefooter-icon-border" style="filter: invert(1);">
+                        <img 
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/609fb38cfc4ff90a2c83a513_prefooter%20icon%20x.svg"
                             loading="lazy"
                             alt=""
@@ -38,9 +39,10 @@
                     <br>
                 </p>
             </div>
-            <div
+            <div   
                 class="cms-card-button outline-white"
-                style="width: 40px;"
+                style="width: 40px;
+               "
             >
                 <div
                     class="cms-card-button-text"
@@ -49,12 +51,13 @@
                 >
                     Ver Más
                 </div>
-                <div class="cms-card-arrow">
+                <div class="cms-card-arrow ">
                     <img
+                        style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
-                        class="image"
+                        class="image "
                     />
                 </div>
             </div></a
@@ -66,8 +69,8 @@
             style="cursor:pointer; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
-                    <div class="preefooter-icon-border">
-                        <img
+                    <div class="preefooter-icon-border" style="filter: invert(1);">
+                        <img 
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/609fb6faa7191c32d1e8a090_prefooter%20icon%20quarters%20perfect.svg"
                             loading="lazy"
                             alt=""
@@ -92,6 +95,7 @@
                 </div>
                 <div class="cms-card-arrow">
                     <img
+                    style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
@@ -108,7 +112,7 @@
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
                     <div
-                        class="preefooter-icon-border with-circles"
+                        class="preefooter-icon-border with-circles" style="filter: invert(1);"
                     >
                         <div class="prefooter-circle circle-second">
                             <img
@@ -141,7 +145,7 @@
                 Nulidades de Patentes con documentación profesional.
                 </p>
             </div>
-            <div
+            <div 
                 class="cms-card-button outline-white"
                 style="width: 40px;"
             >
@@ -153,6 +157,7 @@
                 </div>
                 <div class="cms-card-arrow">
                     <img
+                    style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
@@ -173,7 +178,7 @@
             aria-current="page"
             class="footer-brand w-inline-block w--current"
             ><img
-                src="https://media.discordapp.net/attachments/1171897462299033623/1174097635246866502/Monochrome_Modern_Technology_Black_Logo__7_-removebg-preview.png?ex=65665aa1&is=6553e5a1&hm=993e27b68a0c41b1622e39c611a76f918cec985100417c1629f331bd2e120ec3&=&width=1000&height=1000"
+                src="https://patriciastocker.com/wp-content/uploads/2020/10/logo_menu.png"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="footer-logo"

@@ -7,12 +7,12 @@ export const sitemap = (<const>{
    "/disenos": true,
    "/experiencias": true,
    "/experiencias/[slug]": false,
+   "/marcas/[slug]": false,
+   "/marcas": true,
    "/modelos-de-utilidad/[slug]": false,
    "/modelos-de-utilidad": true,
    "/nuestro-equipo": false,
-   "/oficina-en-chile": false,
-   "/patentes/[slug]": false,
-   "/patentes": true
+   "/oficina-en-chile": false
 }) satisfies RO_Sitemap
 
 export type Sitemap = typeof sitemap

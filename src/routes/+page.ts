@@ -1,5 +1,5 @@
 import type { PageLoad } from "./$types";
-import { modelosData, patentesData, disenosIndustrialesData} from "../stores/DataStore";
+import { modelosData, marcasData, disenosIndustrialesData} from "../stores/DataStore";
 import { experienciasStore } from "../stores/ExperienciasStore";
 
 // Función para obtener objetos aleatorios sin repetición
@@ -27,14 +27,14 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
   }
 
 
-let patentes;
+let marcas;
 let disenos;
 let modelos;
 let experiencias;
 
 export const load: PageLoad =  ({ params, url }) =>{
-    const unsubscribePatentes = patentesData.subscribe((item) =>{
-    patentes = item;
+    const unsubscribePatentes = marcasData.subscribe((item) =>{
+    marcas = item;
     });
     unsubscribePatentes();
 
@@ -55,7 +55,7 @@ export const load: PageLoad =  ({ params, url }) =>{
 
       
         
-let patentesAleatorias = obtenerObjetosAleatorios(patentes, 4);
+let marcasAleatorias = obtenerObjetosAleatorios(marcas, 4);
      
 let modelosAleatorios= obtenerObjetosAleatorios(modelos, 3);
 
@@ -68,7 +68,7 @@ let experienciasAleatorias = obtenerObjetosAleatorios(experiencias, 2);
     return {
         props: {
             dataExperiencias: experienciasAleatorias,
-            dataPatente: patentesAleatorias,
+            dataPatente: marcasAleatorias,
             dataModelos: modelosAleatorios,
             dataDisenos: disenosAleatorios
         } 

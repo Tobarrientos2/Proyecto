@@ -1,10 +1,21 @@
-:root{
-	--color-primario: #d91220;
-	--color-base: #eef2f5;
-	--color-secundario: #252123;
-	--color-primarioHover: #ff5757;
-}  
+:root {
+    --persian-red-50: #fff1f2;
+    --persian-red-100: #ffe0e2;
+    --persian-red-200: #ffc6ca;
+    --persian-red-300: #ff9fa6;
+    --persian-red-400: #ff6772;
+    --persian-red-500: #fc3745;
+    --persian-red-600: #ea1827;
+    --persian-red-700: #d91220;
+    --persian-red-800: #a2121c;
+    --persian-red-900: #86161e;
+    --persian-red-950: #49060b;
 
+    --color-primario: var(--persian-red-50);  /* Cambiado a un tono más claro de persian-red */
+    --color-base: var(--persian-red-700);     /* Cambiado a un tono medio de persian-red */
+    --color-secundario: black; /* Cambiado a un tono oscuro de persian-red */
+    --color-primarioHover: var(--persian-red-300); /* Cambiado a un tono intermedio para hover */
+}
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -276,7 +287,7 @@ html {
 
 body {
 	min-height: 100%;
-	color: var(--color-secundario);
+	color: var(--color-primario);
 	background-color: var(--color-base);
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -2275,7 +2286,7 @@ textarea.w-select {
 }
 
 body {
-	color: var(--color-secundario);
+	color: var(--color-primario);
 	background-color: var(--color-secundario);
 	flex-direction: column;
 	align-items: center;
@@ -3276,7 +3287,7 @@ blockquote {
 
 .input-field {
 	height: 47px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	background-color: transparent;
 	border: 1px #000;
 	border-bottom: 1px solid #fff;
@@ -3293,11 +3304,11 @@ blockquote {
 }
 
 .input-field::-ms-input-placeholder {
-	color: #bdbcbc
+	color: var(--color-primario)
 }
 
 .input-field::placeholder {
-	color: #bdbcbc
+	color: var(--color-primario)
 }
 
 .input-field.black-line {
@@ -3311,23 +3322,23 @@ blockquote {
 }
 
 .input-field.free-trial-form---black::-ms-input-placeholder {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .input-field.free-trial-form---black::placeholder {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .input-field.white {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .input-field.white::-ms-input-placeholder {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .input-field.white::placeholder {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .form {
@@ -3385,7 +3396,7 @@ blockquote {
 }
 
 .margin-s {
-	color: var(--color-base);
+	color: var(--color-primario);
 	text-align: left;
 	margin-bottom: 20px
 }
@@ -3415,7 +3426,7 @@ blockquote {
 }
 
 .margin-l.contact-title {
-	color: var(--color-base);
+	color: var(--color-primario);
 	text-align: center;
 	margin-bottom: 40px
 }
@@ -3488,7 +3499,6 @@ blockquote {
 .section.prefooter {
 	color: var(--color-base);
 	background-color: var(--color-primario);
-	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60f198adf7b961004a8f4f3c_Mask%20Group%2073.svg);
 	background-size: cover;
 	padding-top: 60px;
 	padding-bottom: 60px
@@ -3496,7 +3506,7 @@ blockquote {
 
 .section.orchestrator-section {
 	height: 900px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	justify-content: flex-start;
 	padding-top: 100px;
 	padding-bottom: 100px
@@ -3512,7 +3522,7 @@ blockquote {
 .section.fullscreen-hero {
 	height: 600px;
 	max-height: 600px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	background-image: none;
 	background-position: 0 0;
 	background-size: auto;
@@ -3591,8 +3601,9 @@ blockquote {
 }
 
 .section.dark-section {
-	color: var(--color-base);
-	background-color: var(--color-secundario);
+	border-bottom: 2px solid var(--color-base);
+	color: var(--color-secundario);
+	background-color: var(--color-primario);
 	padding-top: 40px;
 	padding-bottom: 40px
 }
@@ -3669,7 +3680,7 @@ blockquote {
 }
 
 .section.bright-section {
-	background-color: var(--color-base);
+	background-color: var(--color-secundario);
 	padding-top: 20px;
 	padding-bottom: 20px
 }
@@ -3798,6 +3809,7 @@ blockquote {
 }
 
 .section-background {
+	background-color: var(--color-primario);
 	z-index: -1;
 	width: 100%;
 	height: 100%;
@@ -3902,7 +3914,6 @@ blockquote {
 
 .logo {
 	width: 100%;
-	height: 100%;
 	object-fit:cover;
 	object-position:center;
 }
@@ -4293,8 +4304,8 @@ blockquote {
 .button-link {
 	width: auto;
 	height: 40px;
-	color: var(--color-base);
-	border: 1px solid #e5e5e5;
+	color: var(--color-primario);
+	border: 1px solid var(--color-base);
 	border-radius: 50px;
 	justify-content: space-between;
 	align-items: center;
@@ -4422,7 +4433,7 @@ blockquote {
 
 .cmscardp {
 	z-index: 1;
-	color: var(--color-base);
+	color: var(--color-primario);
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 15px;
@@ -4434,7 +4445,8 @@ blockquote {
 .cms-card-button {
 	width: 40px;
 	height: 40px;
-	border: .75px solid var(--color-primario);;
+	color: var(--color-primario);
+	border: .75px solid var(--color-base);;
 	border-radius: 50px;
 	flex: none;
 	justify-content: center;
@@ -4444,7 +4456,7 @@ blockquote {
 }
 
 .cms-card-button.outline-white {
-	color: var(--color-base);
+	color: var(--color-secundario);
 	border-color: var(--color-base);
 	flex: none
 }
@@ -4456,12 +4468,15 @@ blockquote {
 }
 
 .cms-card-arrow {
+
 	width: 15px;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	position: static
 }
+
+
 
 .cms-card-button-text {
 	margin-left: 10px;
@@ -4503,7 +4518,7 @@ blockquote {
 }
 
 .product-name {
-	color: var(--color-base);
+	color: var(--color-primario);
 	font-family: aktiv-grotesk, sans-serif;
 	font-size: 28px;
 	font-weight: 300;
@@ -4897,7 +4912,7 @@ blockquote {
 .submit-button {
 	width: 160px;
 	height: 40px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	text-align: left;
 	background-color: transparent;
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/6086a181c7b29d2ee77e11eb_Gray%20Arrow.svg);
@@ -4917,7 +4932,7 @@ blockquote {
 }
 
 .submit-button:hover {
-	color: #1b4f6f;
+	color: var(--color-primario);
 	background-color: var(--color-base);
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60cb12817668533df28baf32_Arrow%20Blue%20New.svg);
 	background-size: 20px 18px;
@@ -5204,7 +5219,7 @@ blockquote {
 }
 
 .product-card-body {
-	color: var(--color-base);
+	color: var(--color-secundario);
 	flex: 1;
 	padding: 16px 24px 24px
 }
@@ -5364,7 +5379,7 @@ blockquote {
 
 .product-description-box {
 	max-width: 380px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	margin-top: 10px;
 	margin-bottom: 20px;
 	font-size: 16px;
@@ -5470,7 +5485,16 @@ blockquote {
 
 .small-article-link {
 	height: 100%;
-	color: var(--color-base);
+	color: var(--color-primario);
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	text-decoration: none;
+	display: flex
+}
+.small-article-link.black{
+	height: 100%;
+	color: var(--color-secundario);
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
@@ -5525,7 +5549,6 @@ blockquote {
 
 .slider-bar-element {
 	width: 75px;
-	filter: invert(-1);
 	height: 5px;
 	position: relative
 }
@@ -5660,7 +5683,6 @@ blockquote {
 	height: 100vh;
 	opacity: .05;
 	object-fit: contain;
-	filter: invert(1);
 	background-image: url(https://global-uploads.webflow.com/60866fa44e871fb63043a756/60ace9cb122cf0c6cdb5dcc9_Frame%2011108.svg);
 	background-position: 0 100%;
 	background-size: auto;
@@ -6028,7 +6050,7 @@ blockquote {
 .large-cms-title {
 	height: 2.5em;
 	max-width: 490px;
-	color: var(--color-base);
+	color: var(--color-primario);
 	margin-top: 20px;
 	font-family: aktiv-grotesk, sans-serif;
 	font-size: 52px;
@@ -6042,7 +6064,7 @@ blockquote {
 }
 
 .hero-slide-cms-para {
-	color: var(--color-base);
+	color: var(--color-primario);
 	letter-spacing: .5px;
 	font-weight: 300
 }
@@ -6063,7 +6085,7 @@ blockquote {
 }
 
 .cms-card-heading {
-	color: var(--color-base);
+	color: var(--color-primario);
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.1em;
@@ -6139,7 +6161,7 @@ blockquote {
 }
 
 .featured-article-heading {
-	color: var(--color-base);
+	color: var(--color-primario);
 	font-size: 24px;
 	line-height: 28px
 }
@@ -6440,9 +6462,9 @@ blockquote {
 	z-index: 0;
 	width: 100%;
 	height: 100%;
-	color: var(--color-base);
+	color: var(--color-primario);
 	text-transform: uppercase;
-	background-color: var(--color-primario);;
+	background-color: var(--color-base);;
 	border-top: .75px solid #fff;
 	border-bottom: .75px solid #fff;
 	justify-content: center;
@@ -7463,7 +7485,7 @@ blockquote {
 }
 
 .whitetext {
-	color: var(--color-base)
+	color: var(--color-primario)
 }
 
 .whitetext.applications {
@@ -7671,7 +7693,7 @@ blockquote {
 }
 
 .continue-reading {
-	color: var(--color-base);
+	color: var(--color-primario);
 	align-items: center;
 	display: flex
 }
@@ -7699,7 +7721,8 @@ blockquote {
 }
 
 .resource-textwrapper {
-	height: 280px;
+	height: auto;
+	max-height: 350px;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 20px;
@@ -8024,7 +8047,7 @@ blockquote {
 }
 
 .text-block-6 {
-	color: var(--color-base);
+	color: var(--color-primario);
 	white-space: nowrap;
 	margin-bottom: 0;
 	padding-top: 0
@@ -8162,7 +8185,7 @@ blockquote {
 
 .cards-heading {
 	min-height: 85px;
-	color: var(--color-base);
+	color: var(--color-secundario);
 	text-align: left;
 	margin-bottom: 20px
 }
@@ -10417,7 +10440,7 @@ blockquote {
 	}
 
 	.resource-textwrapper {
-		height: 260px
+		height: auto
 	}
 
 	.partner-hover.climate-action {
@@ -11838,7 +11861,7 @@ blockquote {
 	}
 
 	.dropdown-icon {
-		filter: invert()
+	
 	}
 }
 
@@ -12497,7 +12520,7 @@ blockquote {
 	}
 
 	.small-article-thumbnail {
-		height: 240px
+		height: auto
 	}
 
 	.fullscreen-article-deco {
@@ -14026,6 +14049,8 @@ blockquote {
 	.cms-card-arrow {
 		width: 15px
 	}
+
+
 
 	.large-cms-links-wrapper,
 	.cms-item-body {

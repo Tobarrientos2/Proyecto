@@ -1,7 +1,7 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { onMount, onDestroy } from "svelte";
-    import { patentesData, modelosData, unsubscribeDisenos, disenosIndustrialesData , unsubscribeModelos, unsubscribePatentes } from "../stores/DataStore";
+    import { marcasData, modelosData, unsubscribeDisenos, disenosIndustrialesData , unsubscribeModelos, unsubscribePatentes } from "../stores/DataStore";
     
     onDestroy(() => {
       unsubscribePatentes();
@@ -10,7 +10,29 @@
     });
    
   </script>
-
+<div class="section-title mobile-hidden">
+    <a href="#" class="nav-anchor w-inline-block"
+        ><div class="anchor-text-container">Invenciones y Patentes</div></a
+    ><a href="#" class="nav-anchor top-anchor w-inline-block"
+        ><div class="anchor-text-container">Servicios</div></a
+    ><a href="#Company" class="nav-anchor top-anchor w-inline-block"
+        ><div class="anchor-text-container">Red de Categorias</div></a
+    ><a
+        href="#explore"
+        class="nav-anchor top-anchor bright w-inline-block"
+        ><div class="anchor-text-container">Diseños Industriales</div></a
+    ><a
+        href="#events"
+        class="nav-anchor top-anchor bright w-inline-block"
+        ><div class="anchor-text-container"><br />Beneficios</div></a
+    ><a href="#contact" class="nav-anchor top-anchor w-inline-block"
+        ><div class="anchor-text-container">Modelos de Utilidad</div></a
+    >
+    <div class="nav-anchor menu-anchor">
+        <div class="anchor-text-container">Menu</div>
+    </div>
+    
+</div>
 <div
     data-collapse="medium"
     data-animation="default"
@@ -28,7 +50,7 @@
             class="brand-logo w-nav-brand w--current"
             aria-label="home"
             ><img 
-                src="https://media.discordapp.net/attachments/1171897462299033623/1174097635246866502/Monochrome_Modern_Technology_Black_Logo__7_-removebg-preview.png?ex=65665aa1&is=6553e5a1&hm=993e27b68a0c41b1622e39c611a76f918cec985100417c1629f331bd2e120ec3&=&width=1000&height=1000"
+                src="https://patriciastocker.com/wp-content/uploads/2020/10/logo_menu.png"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="logo"
@@ -111,11 +133,11 @@
                                                 Patentes
                                             </h3>
                                             <div class="dropdown-scroller">
-                                             {#each $patentesData as patente}
+                                             {#each $marcasData as marca}
                                                     <a class="dropdown-text-link" style="cursor: pointer;"
                                                         tabindex="0"
-                                                    href={patente.slug}>
-                                                    {patente.titulo}
+                                                    href={marca.slug}>
+                                                    {marca.titulo}
 
                                                         </a>
                                                 {/each}

@@ -1,12 +1,7 @@
 <script lang="ts">
     export let data;
 </script>
-    <div class="section-title dark mobile-hidden">
-        <div class="section-labels-wrapper">
-            <div class="section-label">Oficina en Chile</div>
-            <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
-        </div>
-    </div>
+
     <div
         data-w-id="2800893c-35d4-844c-166e-e1a549e96f55"
         class="section contact-page"
@@ -255,11 +250,10 @@
         </div>
         <div class="contact-grid" />
         <div class="contact-links-wrapper">
-            <img
-                src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6102d3184540f37bed6bd655_dp-header-1440x962px-26-07-2021.jpg"
-                loading="lazy"
+            <img  
+                src=""
                 sizes="(max-width: 991px) 100vw, (max-width: 1439px) 360px, 420px"
-                srcset="https://global-uploads.webflow.com/60866fa44e871fb63043a756/6102d3184540f37bed6bd655_dp-header-1440x962px-26-07-2021-p-1080.jpeg 1080w, https://global-uploads.webflow.com/60866fa44e871fb63043a756/6102d3184540f37bed6bd655_dp-header-1440x962px-26-07-2021.jpg 1440w"
+                srcset=""
                 alt=""
                 class="contact-image"
             />

@@ -1,18 +1,12 @@
 <script lang="ts">
     export let data;
 
-    let patenteSlug = data.patenteEncontrado;
-    let patentesSliders = data.patentesAleatorios;
+    let marcaSlug = data.marcaEncontrado;
+    let marcasSliders = data.marcasAleatorios;
     console.log(data);
     
 </script>
-<div class="section-title dark mobile-hidden">
-    <div class="section-labels-wrapper">
-        <div class="section-label">→</div>
-        <div class="section-label">{data.page.path}</div>
-        <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
-    </div>
-</div>
+
      <div class="section article-hero">
             <div class="container grid article-grid">
                 <div
@@ -29,7 +23,7 @@
                     style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
                 >
                 <h1 class="article-post-h1">
-                {patenteSlug.titulo}
+                {marcaSlug.titulo}
                   </h1>
                     <div class="article-post-info hide">
                         <div class="author-text">By</div>
@@ -40,11 +34,11 @@
             </div>
             <div class="article-hero-image">
                 <img
-                    src={patenteSlug.image}
+                    src={marcaSlug.image}
                     loading="lazy"
                     alt=""
                     sizes="(max-width: 991px) 100vw, (max-width: 1439px) 60vw, 862.796875px"
-                    srcset={patenteSlug.image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+                    srcset={marcaSlug.image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
                     class="image"
                 />
             </div>
@@ -89,19 +83,7 @@
                 </div>
             </div>
         </div>
-        <div id="TLDR" class="section dark-section">
-            <div class="container grid">
-                <div
-                    id="w-node-b671c621-3752-558d-1da8-2600d586d471-bddece41"
-                    class="article-xl-rich-text w-richtext"
-                >
-                    <p>
-                        {patenteSlug.titulo}
-                        <br />
-                    </p>
-                </div>
-            </div>
-        </div>
+     
         <div
             id="Image-1"
             class="section article-post-image-1 w-condition-invisible"
@@ -120,7 +102,7 @@
                     id="w-node-_380bd10b-b071-fd82-decb-27d930481b0d-bddece41"
                     class="article-rich-text w-richtext"
                 >
-                    <p>{patenteSlug.descripcion}
+                    <p>{marcaSlug.descripcion}
                     </p>
                 </div>
             </div>
@@ -358,7 +340,7 @@
                     class="small-articles-wrapper w-dyn-list"
                 >
                     <div role="list" class="small-articles-list w-dyn-items">
-                        {#each patentesSliders as {titulo, descripcion, slug, image} }
+                        {#each marcasSliders as {titulo, descripcion, slug, image} }
                         <div
                             id="w-node-a6cd336b-d080-c002-fafb-2eb18224a62e-bddece41"
                             role="listitem"

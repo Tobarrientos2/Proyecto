@@ -3,14 +3,7 @@
     let miembrosData = data.dataJSON;
 </script>
 
-<div class="section-title dark mobile-hidden">
-    <div class="section-labels-wrapper">
-        <div class="section-label">Nuestro Equipo</div>
-        <div class="nav-anchor menu-anchor no-borders">
-            <div>Menu</div>
-        </div>
-    </div>
-</div>
+
 <div class="section fullscreen-hero">
     <div
         class="section-background hero-parallax-image"

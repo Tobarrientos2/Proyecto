@@ -1,12 +1,12 @@
 {
   "nacional": {
-    "patentes": {
+    "marcas": {
       "busqueda": {
-        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174057356791922688/image.png?ex=6566351e&is=6553c01e&hm=9595492529d9a0961691f39ca4aa1c62b244c7fce1a9e79946080be19cbc8e65&=&width=1888&height=1056",
-        "slug": "/patentes/busqueda",
-        "titulo": "Búsqueda de Patentes",
-        "subtitulo": "Garantizando la Originalidad de tu Invento",
-        "descripcion": "Nuestra búsqueda exhaustiva de patentes tiene como objetivo asegurar la originalidad de tu invento. Utilizamos herramientas avanzadas y conocimientos legales para identificar posibles conflictos y brindarte la tranquilidad de que tu patente es única y valiosa.",
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174057356791922688/image.png",
+        "slug": "/marcas/busqueda",
+        "titulo": "Búsqueda de Marcas",
+        "subtitulo": "Garantizando la Distintividad de tu Marca",
+        "descripcion": "Nuestra búsqueda exhaustiva de marcas tiene como objetivo asegurar la distintividad de tu marca. Utilizamos herramientas avanzadas y conocimientos legales para identificar posibles conflictos y brindarte la tranquilidad de que tu marca es única y protegible.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
         "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
         "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -17,11 +17,11 @@
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
       "solicitud": {
-        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059120475774996/Captura_de_pantalla_2023-11-14_a_las_15.51.37.png?ex=656636c3&is=6553c1c3&hm=1f7639cdd1ab26856a8e9f674908ea1d844565bc109bd29b097155169607e63c&=&width=1506&height=1056",
-        "slug": "/patentes/solicitud",
-        "titulo": "Registro de Patentes",
-        "subtitulo": "Asesoramiento Legal Especializado",
-        "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059120475774996/Captura_de_pantalla_2023-11-14_a_las_15.51.37.png",
+        "slug": "/marcas/solicitud",
+        "titulo": "Registro de Marcas",
+        "subtitulo": "Protección y Estrategia de Marca",
+        "descripcion": "Te ayudamos a registrar tu marca, asegurando su protección legal. Nuestro equipo legal especializado te brindará asesoramiento en cada paso, desde la solicitud hasta la obtención del registro, para defender eficientemente tu identidad de marca.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
         "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
         "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -31,12 +31,12 @@
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
-      "demanda": {
-        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174060898609025087/Captura_de_pantalla_2023-11-14_a_las_15.58.44.png?ex=6566386b&is=6553c36b&hm=ac57ed399bf2a911c7e9c04d65c8712875bec06355c63c1994616550d210d62e&=&width=702&height=1056",
-        "slug": "/patentes/demanda",
-        "titulo": "Demanda de Patentes",
-        "subtitulo": "Asesoramiento Legal Especializado",
-        "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
+      "oposicion": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174060898609025087/Captura_de_pantalla_2023-11-14_a_las_15.58.44.png",
+        "slug": "/marcas/oposicion",
+        "titulo": "Oposición de Marcas",
+        "subtitulo": "Defensa y Representación Legal",
+        "descripcion": "Representamos a nuestros clientes en procedimientos de oposición, ya sea defendiendo su marca o impugnando el registro de terceros. Nuestro enfoque se basa en una sólida estrategia legal para proteger tus derechos de marca.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
         "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
         "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -46,12 +46,12 @@
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       },
-      "apelaciones": {
-        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059541474857063/Captura_de_pantalla_2023-11-14_a_las_15.53.20.png?ex=65663727&is=6553c227&hm=06b6097dd993dd570f66677c790d06eace135b1a7550fb70bb505a1b3e8915ca&=&width=1590&height=1054",
-        "slug": "/patentes/apelaciones",
-        "titulo": "Apelación de Patentes",
-        "subtitulo": "Asesoramiento Legal Especializado",
-        "descripcion": "Enfrentar demandas o apelaciones relacionadas con patentes puede ser complicado. Nuestro equipo legal especializado está aquí para brindarte el asesoramiento necesario. Defendemos tus derechos de propiedad intelectual y trabajamos para resolver cualquier disputa de manera eficiente y efectiva.",
+      "renovacion": {
+        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059541474857063/Captura_de_pantalla_2023-11-14_a_las_15.53.20.png",
+        "slug": "/marcas/renovacion",
+        "titulo": "Renovación de Marcas",
+        "subtitulo": "Mantenimiento Continuo de tu Marca",
+        "descripcion": "Ofrecemos servicios de renovación de marcas para garantizar su protección a largo plazo. Nos encargamos de todo el proceso, asegurándonos de que cumplas con los plazos y requisitos para mantener activo tu registro.",
         "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
         "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
         "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -60,22 +60,8 @@
         "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-      },
-      "observacion": {
-        "image": "https://media.discordapp.net/attachments/1171897462299033623/1174063932944678912/Captura_de_pantalla_2023-11-14_a_las_16.10.49.png?ex=65663b3e&is=6553c63e&hm=a834d537c7fd763a3018589e3366207d1edb93b2cc075505a6599d6d711bf6c5&=&width=790&height=1056",
-        "slug": "/patentes/observaciones",
-        "titulo": "Observación de Patentes",
-        "subtitulo": "Análisis Detallado y Estrategias Legales",
-        "descripcion": "Realizamos análisis detallados de patentes y presentamos observaciones de fondo y nulidades cuando sea necesario. Nuestro enfoque estratégico y nuestra experiencia legal nos permiten abordar de manera efectiva cualquier cuestión relacionada con la validez de las patentes, asegurando la protección sólida de tus activos intelectuales.",
-        "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-        "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-        "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-        "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-        "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-        "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-        "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-        "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-      }},
+      }
+    },
       "modelos_utilidad": {
         "busqueda": {
           "image": "https://media.discordapp.net/attachments/1171897462299033623/1174058379040272414/Captura_de_pantalla_2023-11-14_a_las_15.48.43.png?ex=65663612&is=6553c112&hm=d1c9aaa91064ba1a6b9af0cf1dc79a75fb1ce52d11eefe99411d038705d91a01&=&width=844&height=1056",

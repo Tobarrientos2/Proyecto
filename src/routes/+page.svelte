@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { prerender } from './+layout.ts';
 
 export let data;
 
@@ -17,40 +16,18 @@ let isLoaded = false;
   function handleLoadedData() {
     isLoaded = true;
   }
-let patentes = data.props.dataPatente;
+let marcas = data.props.dataPatente;
 let modelos = data.props.dataModelos;
 let disenos = data.props.dataDisenos;
 let experiencias = data.props.dataExperiencias;
 console.log(experiencias);
 
-let patentesFirst = data.props.dataPatente?.map(item => item)[0];
+let marcasFirst = data.props.dataPatente?.map(item => item)[0];
 let modelosFirst = data.props.dataModelos?.map(item => item)[0];
 let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
   </script>
-<div class="section-title mobile-hidden">
-				<a href="#" class="nav-anchor w-inline-block"
-					><div class="anchor-text-container">Invenciones y Patentes</div></a
-				><a href="#" class="nav-anchor top-anchor w-inline-block"
-					><div class="anchor-text-container">Servicios</div></a
-				><a href="#Company" class="nav-anchor top-anchor w-inline-block"
-					><div class="anchor-text-container">Red de Categorias</div></a
-				><a
-					href="#explore"
-					class="nav-anchor top-anchor bright w-inline-block"
-					><div class="anchor-text-container">Diseños Industriales</div></a
-				><a
-					href="#events"
-					class="nav-anchor top-anchor bright w-inline-block"
-					><div class="anchor-text-container"><br />Beneficios</div></a
-				><a href="#contact" class="nav-anchor top-anchor w-inline-block"
-					><div class="anchor-text-container">Modelos de Utilidad</div></a
-				>
-				<div class="nav-anchor menu-anchor">
-					<div class="anchor-text-container">Menu</div>
-				</div>
-				<div class="navigation-anchors-overlay" />
-			</div>
+
 			<div class="home-inner-wrapper">
 				<div
 					data-w-id="524b097b-9964-9f93-4703-c661a7df1dd9"
@@ -271,7 +248,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src={patentes?.map(item => item.image)[0]}
+													src={marcas?.map(item => item.image)[0]}
 													loading="eager"
 													alt="Overcoming the Enterprise LLM Blindspot"
 													class="image hero-slider-image"
@@ -280,7 +257,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</div>
 											<a
 												data-w-id="bfec00f1-348e-10be-10c2-61408148ca5d"
-												href={patentes?.map(item => item.slug)[0]}
+												href={marcas?.map(item => item.slug)[0]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -292,24 +269,24 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 														class="featured-article-heading"
 														aria-hidden="true"
 													>
-													{patentes?.map(item => item.titulo)[0]}
+													{marcas?.map(item => item.titulo)[0]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
 													>
-													{limitarPalabras(patentes?.map(item => item.descripcion)[0], 30)}
+													{limitarPalabras(marcas?.map(item => item.descripcion)[0], 30)}
 													</p>
 												</div>
 												<div
-													class="cms-card-button outline-white"
+													class="cms-card-button"
 													style="width: 40px;"
 													aria-hidden="true"
 												>
 													<div
 														data-w-id="1800e508-76e0-6dd6-09d8-b6f2d4457153"
-														class="cms-card-button-text"
-														style="opacity: 1;"
+														class="cms-card-button-text "
+														style="opacity: 1; "
 														aria-hidden="true"
 													>
 													Ver Más
@@ -381,7 +358,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src={patentes?.map(item => item.image)[1]}
+													src={marcas?.map(item => item.image)[1]}
 													loading="eager"
 													alt="Turning enterprise data into accessible knowledge for LLMs"
 													class="image hero-slider-image"
@@ -390,7 +367,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</div>
 											<a
 												data-w-id="832b70d9-79b5-d753-a24f-ca9a297230a4"
-												href={patentes?.map(item => item.slug)[1]}
+												href={marcas?.map(item => item.slug)[1]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -403,18 +380,18 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 														aria-hidden="true"
 													
 													>
-													{patentes?.map(item => item.titulo)[1]}
+													{marcas?.map(item => item.titulo)[1]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
 													
 													>
-													{patentes?.map(item => item.descripcion)[1]}
+													{marcas?.map(item => item.descripcion)[1]}
 													</p>
 												</div>
 												<div
-													class="cms-card-button outline-white"
+													class="cms-card-button"
 													style="width: 40px;"
 													aria-hidden="true"
 												>
@@ -486,15 +463,15 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												class="hero-slider-image-wrapper"
 											>
 												<img
-													src={patentes?.map(item => item.image)[2]}
+													src={marcas?.map(item => item.image)[2]}
 													loading="eager"
 													alt="Generative AI for data analytics: the future of enterprise sense-making"
 													sizes="(max-width: 991px) 100vw, (max-width: 1439px) 58vw, 899px"
-													srcset={patentes?.map(item => item.image)[2]}
+													srcset={marcas?.map(item => item.image)[2]}
 													class="image hero-slider-image"
-												/>
-											</div>
-											<a
+													/>
+												</div>
+												<a
 												data-w-id="11e73cd9-e14f-2eb3-3f03-596855fdd9bb"
 												href="/articles/generative-ai-for-analytics-the-future-of-enterprise-sense-making"
 												class="featured-article-card w-inline-block"
@@ -502,16 +479,16 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 													<h2
 														class="featured-article-heading"
 													>
-														{patentes?.map(item => item.titulo)[2]}
+														{marcas?.map(item => item.titulo)[2]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 													>
-													{patentes?.map(item => item.descripcion)[2]}
+													{marcas?.map(item => item.descripcion)[2]}
 													</p>
 												</div>
 												<div
-													class="cms-card-button outline-white"
+													class="cms-card-button"
 													style="width: 40px;"
 												>
 													<div
@@ -687,7 +664,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 															</div>
 															<div
 																id="w-node-_98fbcafc-5510-c7ae-61a4-d657a299a323-72decde7"
-																class="cms-card-button outline-white"
+																class="cms-card-button"
 																style="width: 40px;"
 															>
 																<div
@@ -813,7 +790,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</p>
 										</div>
 										<div
-											class="cms-card-button outline-white"
+											class="cms-card-button"
 											style="width: 40px;"
 										>
 											<div
@@ -884,7 +861,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</p>
 										</div>
 										<div
-											class="cms-card-button outline-white"
+											class="cms-card-button"
 											style="width: 40px;"
 										>
 											<div
@@ -954,7 +931,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 										</div>
 										<div class="cms-paragraph-and-cta">
 											<div
-												class="cms-card-button outline-white"
+												class="cms-card-button "
 												style="width: 40px;"
 											>
 												<div
@@ -1026,7 +1003,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 										</div>
 										<div class="cms-paragraph-and-cta">
 											<div
-												class="cms-card-button outline-white"
+												class="cms-card-button"
 												style="width: 40px;"
 											>
 												<div
@@ -1058,11 +1035,11 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src={patentes?.map(item => item.image)[2]}
+											src={marcas?.map(item => item.image)[2]}
 											loading="lazy"
 											alt="Guided by a Moral Compass"
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset={patentes?.map(item => item.image)[2]}
+											srcset={marcas?.map(item => item.image)[2]}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />

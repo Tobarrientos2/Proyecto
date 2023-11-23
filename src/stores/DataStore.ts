@@ -4,7 +4,7 @@ import servicios from '../data/servicios.json';
 
 
 // Crear instancias separadas para cada tipo de dato
-export const patentesData = writable({});
+export const marcasData = writable({});
 export const modelosData = writable({});
 export const disenosIndustrialesData = writable({});
 
@@ -12,16 +12,16 @@ export const disenosIndustrialesData = writable({});
 const serviciosNacional = servicios?.nacional || {};
 const serviciosMundial = servicios?.mundial || {};
 
-// Obtener listas de patentes, modelos y diseños industriales
-const patentes = Object.values(serviciosNacional.patentes || {});
+// Obtener listas de marcas, modelos y diseños industriales
+const marcas = Object.values(serviciosNacional.marcas || {});
 const modelos = Object.values(serviciosNacional.modelos_utilidad || {});
 const disenosIndustriales = Object.values(serviciosMundial.disenos || {});
 
-patentesData.set(patentes);
+marcasData.set(marcas);
 modelosData.set(modelos);
 disenosIndustrialesData.set(disenosIndustriales);
 
-export const unsubscribePatentes = patentesData.subscribe((data) => {
+export const unsubscribePatentes = marcasData.subscribe((data) => {
     console.log(data);
 })
 

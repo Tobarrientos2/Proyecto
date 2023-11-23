@@ -12,13 +12,7 @@
   
 </script>
 
-    <div class="section-title dark mobile-hidden">
-        <div class="section-labels-wrapper">
-            <div class="section-label">→</div>
-            <div class="section-label">{data.page.path}</div>
-            <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
-        </div>
-    </div>
+   
     <div class="section fullscreen-hero">
         <div class="container grid">
             <div
@@ -122,7 +116,7 @@
                         <a
                             data-w-id="a9b4d72a-0052-04ce-733e-fec12782c63f"
                             href={slug}
-                            class="small-article-link w-inline-block"
+                            class="small-article-link w-inline-block black"
                             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
                             ><div class="small-article-item-body">
                                 <div class="small-article-thumbnail">
@@ -157,17 +151,18 @@
                                         </style>
                                     </div>
                                     <div
+                                    style="width: 40px; "
                                         class="cms-card-button outline-white"
-                                        style="width: 40px;"
+                                      
                                     >
                                         <div
                                             data-w-id="a9b4d72a-0052-04ce-733e-fec12782c646"
                                             class="cms-card-button-text"
-                                            style="opacity: 1;"
+                                            
                                         >
                                             Leer Más
                                         </div>
-                                        <div class="cms-card-arrow">
+                                        <div class="cms-card-arrow" style="filter:invert(1)">
                                             <img
                                                 src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                                                 loading="lazy"
