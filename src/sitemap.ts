@@ -9,8 +9,8 @@ export const sitemap = (<const>{
    "/experiencias/[slug]": false,
    "/marcas/[slug]": false,
    "/marcas": true,
-   "/modelos-de-utilidad/[slug]": false,
-   "/modelos-de-utilidad": true,
+   "/marcasInternacionales/[slug]": false,
+   "/marcasInternacionales": true,
    "/nuestro-equipo": false,
    "/oficina-en-chile": false
 }) satisfies RO_Sitemap

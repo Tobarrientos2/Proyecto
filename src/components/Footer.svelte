@@ -1,6 +1,4 @@
-<script>
 
-</script>
 
 <div id="contact" class="section prefooter" >
   

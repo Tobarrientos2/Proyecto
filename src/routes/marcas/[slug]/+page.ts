@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import { marcasData, unsubscribePatentes } from '../../../stores/DataStore.js';
+import { readableMarcasNacionales, unsubscribePatentes } from '../../../stores/DataStore.js';
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -28,7 +28,7 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
 let marcas;
 
 export const load: PageLoad = ({ params }) => {
-  const obtenermarcas = marcasData.subscribe((data) => {
+  const obtenermarcas = readableMarcasNacionales.subscribe((data) => {
     marcas  = data;
   });
   unsubscribePatentes();

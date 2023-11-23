@@ -1,4 +1,5 @@
 import type { PageLoad } from './$types';
+import { readableMarcasInternacionales } from '../../../stores/DataStore';
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -24,33 +25,32 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
   return objetosAleatorios;
 }
 
-let disenos;
+let marcas;
 
 export const load: PageLoad = ({ params }) => {
-  const obtenerDisenos = disenosIndustrialesData.subscribe((data) => {
-    disenos  = data;
+  const obtenermarcas = readableMarcasInternacionales.subscribe((data) => {
+    marcas  = data;
   });
-  unsubscribeDisenos();
+ 
 
-  let slugObtenido = "/disenos/" + params.slug;
+  let slugObtenido = "/marcasInternacionales/" + params.slug;
   console.log(slugObtenido);
 
   // Utiliza la función obtenerObjetosAleatorios para obtener 3 modelos aleatorios
-  const disenosAleatorios = obtenerObjetosAleatorios(disenos, 3);
+  const marcasAleatorios = obtenerObjetosAleatorios(marcas, 3);
 
   // Muestra un mensaje de error si no hay suficientes modelos en el array
-  if (!disenosAleatorios) {
+  if (!marcasAleatorios) {
     console.error("No hay suficientes diseños para seleccionar aleatoriamente.");
     return null;
   }
 
   // Utiliza la función console.log para imprimir los tres objetos aleatorios
-  console.log("Disenos Aleatorios:", disenosAleatorios);
+  console.log("marcas Aleatorios:", marcasAleatorios);
 
   // Utiliza el modeloEncontrado correspondiente al slug proporcionado en params
-  const disenoEncontrado = disenos.find((diseno) => diseno.slug === slugObtenido);
-  console.log(disenoEncontrado)
-
+  const marcaEncontrado = marcas.find((marca) => marca.slug === slugObtenido);
+  
   let partes = slugObtenido.split('/');
   let palabra = partes[partes.length - 1]; // Obtener la última parte
   let palabrasSeparadas = palabra.split('-');
@@ -59,24 +59,22 @@ export const load: PageLoad = ({ params }) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   }).join(' ');
 
-  
-  
-  return {
-    page:{
-      path: pathFinal
-    },
-    disenosAleatorios: disenosAleatorios,
-    disenoEncontrado: {
-      titulo: disenoEncontrado.titulo,
-      image: disenoEncontrado.image,
-      descripcion: disenoEncontrado.descripcion,
-      introduccion_desafio: disenoEncontrado.introduccion_desafio,
-      explicacion_enfoque_tecnologia: disenoEncontrado.explicacion_enfoque_tecnologia,
-      importancia_relevancia_tema: disenoEncontrado.importancia_relevancia_tema,
-      funcionalidades_proceso_detallado: disenoEncontrado.funcionalidades_proceso_detallado,
-      ejemplos_casos_estudio: disenoEncontrado.ejemplos_casos_estudio,
-      adaptabilidad_flexibilidad: disenoEncontrado.adaptabilidad_flexibilidad,
-      consideraciones_postimplementacion: disenoEncontrado.consideraciones_postimplementacion
+  return { 
+    page:{ 
+        path: pathFinal
+    }, 
+    marcasAleatorios: marcasAleatorios,
+    marcaEncontrado: {
+      titulo: marcaEncontrado.titulo,
+      image: marcaEncontrado.image,
+      descripcion: marcaEncontrado.descripcion,
+      introduccion_desafio: marcaEncontrado.introduccion_desafio,
+      explicacion_enfoque_tecnologia: marcaEncontrado.explicacion_enfoque_tecnologia,
+      importancia_relevancia_tema: marcaEncontrado.importancia_relevancia_tema,
+      funcionalidades_proceso_detallado: marcaEncontrado.funcionalidades_proceso_detallado,
+      ejemplos_casos_estudio: marcaEncontrado.ejemplos_casos_estudio,
+      adaptabilidad_flexibilidad: marcaEncontrado.adaptabilidad_flexibilidad,
+      consideraciones_postimplementacion: marcaEncontrado.consideraciones_postimplementacion
     }
   };
 };

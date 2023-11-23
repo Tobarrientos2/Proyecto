@@ -1,11 +1,10 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { onMount, onDestroy } from "svelte";
-    import { marcasData, modelosData, unsubscribeDisenos, disenosIndustrialesData , unsubscribeModelos, unsubscribePatentes } from "../stores/DataStore";
+    import { readableMarcasNacionales, unsubscribeDisenos, readableMarcasInternacionales, unsubscribePatentes } from "../stores/DataStore";
     
     onDestroy(() => {
       unsubscribePatentes();
-      unsubscribeModelos();
       unsubscribeDisenos();
     });
    
@@ -130,33 +129,16 @@
                                             class="dropdown-list-column no-margin"
                                         >
                                             <h3 class="dropdown-heading nav">
-                                                Patentes
+                                                Marcas
                                             </h3>
                                             <div class="dropdown-scroller">
-                                             {#each $marcasData as marca}
+                                             {#each $readableMarcasNacionales as marca}
                                                     <a class="dropdown-text-link" style="cursor: pointer;"
                                                         tabindex="0"
                                                     href={marca.slug}>
                                                     {marca.titulo}
 
                                                         </a>
-                                                {/each}
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="w-node-f06a532e-1b06-67cf-ceaf-13f279efdbc5-f7ef6077"
-                                            class="dropdown-list-column byfunction"
-                                        >
-                                            <h3 class="dropdown-heading nav">
-                                                Modelos de Utilidad
-                                            </h3>
-                                            <div class="dropdown-scroller">
-                                                {#each $modelosData as modelo }
-                                                    <a href={modelo.slug}
-                                                        class="dropdown-text-link"
-                                                        tabindex="0"
-                                                        >{modelo.titulo}</a
-                                                    >
                                                 {/each}
                                             </div>
                                         </div>
@@ -181,12 +163,12 @@
                                                 Diseños Ind.
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each $disenosIndustrialesData as diseno}
-                                                    <a href={diseno.slug}
+                                                {#each $readableMarcasInternacionales as marcaInternacional}
+                                                    <a href={marcaInternacional.slug}
                                                             class="dropdown-text-link"
                                                             tabindex="0"
                                                             > 
-                                                            {diseno.titulo}
+                                                            {marcaInternacional.titulo}
                                                         </a>
                                                 {/each}
                                             </div>

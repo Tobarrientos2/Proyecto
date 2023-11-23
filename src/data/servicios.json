@@ -61,92 +61,16 @@
         "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
         "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
       }
-    },
-      "modelos_utilidad": {
-        "busqueda": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174058379040272414/Captura_de_pantalla_2023-11-14_a_las_15.48.43.png?ex=65663612&is=6553c112&hm=d1c9aaa91064ba1a6b9af0cf1dc79a75fb1ce52d11eefe99411d038705d91a01&=&width=844&height=1056",
-          "slug": "/modelos-de-utilidad/busqueda",
-          "titulo": "Busqueda de Modelos",
-          "subtitulo": "Evalúa la Singularidad de tu Modelo",
-          "descripcion": "Antes de registrar tu modelo de utilidad, evaluamos su novedad en detalle. Nuestros expertos analizan exhaustivamente la literatura existente y las patentes similares para garantizar que tu modelo sea verdaderamente único. Este paso crucial es fundamental para el éxito de tu registro y la protección a largo plazo de tu invención.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "solicitud": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174061720826814464/image.png?ex=6566392f&is=6553c42f&hm=1ef4767dbe67ad6ba91f5e71a3bc1c3864750f499121807de9c530cfe31594fa&=&width=1592&height=1056",
-          "slug": "/modelos-de-utilidad/solicitud",
-          "titulo": "Registro de Modelos",
-          "subtitulo": "Análisis Práctico para el Registro",
-          "descripcion": "Analizamos la utilidad práctica de tu modelo de utilidad para respaldar su registro. Nuestro enfoque va más allá de la novedad, asegurándonos de que tu modelo tenga aplicaciones prácticas y beneficios tangibles. Este análisis detallado fortalece tu caso durante el proceso de registro y mejora la protección de tu invención.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "apelaciones": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059975081988196/Captura_de_pantalla_2023-11-14_a_las_15.55.05.png?ex=6566378f&is=6553c28f&hm=bbd18a0145e6c7db5086b43d27bef7d5ce4459d0a0aa8e16ba73da806fff740b&=&width=1614&height=1056",
-          "slug": "/modelos-de-utilidad/apelacion",
-          "titulo": "Apelación de Modelos",
-          "subtitulo": "Garantizando la Vigencia Continua",
-          "descripcion": "Ofrecemos servicios de mantenimiento para garantizar la vigencia continua de tu modelo de utilidad. Nos encargamos de los trámites y renovaciones necesarias, asegurándonos de que tu modelo esté siempre protegido. Nuestra atención meticulosa a los plazos y requisitos legales te permite concentrarte en aprovechar al máximo tu invención.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "observacion": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174063518883004586/Captura_de_pantalla_2023-11-14_a_las_16.09.09.png?ex=65663adb&is=6553c5db&hm=b68b217cd4891edb92825e41fc0bb41cbc68add8b3984bad00b8baff81d839f1&=&width=1584&height=1056",
-          "slug": "/modelos-de-utilidad/observacion",
-          "titulo": "Observación de Modelos",
-          "subtitulo": "Estrategias para Reforzar la Protección",
-          "descripcion": "Implementamos estrategias específicas para fortalecer la protección legal de tu modelo de utilidad. Desde acuerdos de confidencialidad hasta medidas preventivas, trabajamos contigo para minimizar los riesgos y garantizar que tu invención esté resguardada de manera integral. La protección sólida es la base de la longevidad y el éxito de tu modelo.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "nulidades": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174059658869223514/Captura_de_pantalla_2023-11-14_a_las_15.53.46.png?ex=65663743&is=6553c243&hm=6fc749c19b5f63703f115465b3ec166a365fb5ce7316fda0020f4ae14b834048&=&width=1590&height=1056",
-          "slug": "/modelos-de-utilidad/nulidad",
-          "titulo": "Nulidad de Modelos",
-          "subtitulo": "Gestión Integral de tu Modelo",
-          "descripcion": "Gestionamos el registro inicial y nos encargamos del mantenimiento periódico de tu modelo de utilidad. Desde la presentación de documentos hasta la renovación de registros, nuestro equipo se encarga de todos los aspectos legales y administrativos. Así, puedes enfocarte en desarrollar y comercializar tu invención con total tranquilidad.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        }
-      }
+    }
     },
   "mundial": {
-      "disenos": {
-        "envases_y_embalajes": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174077171233468536/Captura_de_pantalla_2023-11-14_a_las_17.03.25.png?ex=65664792&is=6553d292&hm=e7630f77cd8fa858e20cfe7707ddbc85d74ecc1ecc50787325749d3fb40cdb49&=&width=1596&height=1056",
-          "slug": "/disenos/envases",
-          "titulo": "Envases",
-          "descripcion": "Optimiza la presentación y protección de tus productos con nuestros diseños industriales en envases y embalajes. Nos especializamos en soluciones creativas y eficientes que cumplen con los estándares de la industria y atraen la atención del consumidor.",
+      "marcasInternacionales": {
+        "registro_internacional": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174077171233468536/Captura_de_pantalla_2023-11-14_a_las_17.03.25.png",
+          "slug": "/marcasInternacionales/internacional",
+          "titulo": "Registro Internacional de Marcas",
+          "subtitulo": "Expande tu Marca Globalmente",
+          "descripcion": "Ofrecemos servicios de registro de marcas a nivel internacional, ayudándote a proteger tu marca en múltiples jurisdicciones. Nuestro equipo te guiará a través de los procedimientos de registro en diferentes países, garantizando una cobertura amplia para tu marca.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
           "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -156,11 +80,12 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "calzado": {
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054348729372694/photo-1698926938575-877bdd3db228.png?ex=65663251&is=6553bd51&hm=4589f03ace6cc4a4c3180cf55d8a497cdc529fef5f97d217206c23aed08d5dd5&=&width=1592&height=1056",         
-          "slug": "/disenos/moda-calzado",
-          "titulo": "Calzado",
-          "descripcion": "Descubre tendencias y estilos únicos en el mundo de la moda y el calzado. Nuestros diseñadores industriales trabajan para crear productos distintivos que reflejen la identidad de tu marca y atraigan a los consumidores exigentes de la industria de la moda.",
+        "monitoreo_y_proteccion": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054348729372694/photo-1698926938575-877bdd3db228.png",
+          "slug": "/marcasInternacionales/monitoreo",
+          "titulo": "Monitoreo y Protección de Marcas",
+          "subtitulo": "Vigilancia Activa de tu Marca a Nivel Mundial",
+          "descripcion": "Brindamos servicios de monitoreo y protección de marcas a nivel mundial, asegurando que tu marca esté segura contra infracciones y mal uso. Nuestro equipo realiza una vigilancia constante y toma acciones legales cuando es necesario para preservar la integridad de tu marca.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
           "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
@@ -170,39 +95,12 @@
           "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
           "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
         },
-        "maquinaria": {
-          "slug": "/disenos/maquinaria",
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174055374790348881/photo-1614562556758-ae0248358127.png?ex=65663346&is=6553be46&hm=c8d17cc3a6cb859bde0f0492c7358c5a402312c7163867ac7a69afe8350367a2&=&width=792&height=1056",
-          "titulo": "Maquinaria",
-          "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "herramientas": {
-          "slug": "/disenos/herramientas",
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054350935572671/photo-1562052579-b30d05e1ec93.png?ex=65663252&is=6553bd52&hm=9c940f32f9e6c73673f49ce0bddf96b59fb4c290faa1b0525e7206cb8dbd2b33&=&width=1584&height=1056",
-          "titulo": "Herramientas",
-          "descripcion": "Optimiza procesos y aumenta la productividad con nuestros diseños industriales en maquinaria y herramientas. Nos enfocamos en la ergonomía y la eficiencia para ofrecer soluciones que impulsen el rendimiento en entornos industriales y de manufactura.",
-          "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
-          "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
-          "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",
-          "aplicaciones_practicas": "Ejemplos concretos de cómo se aplica la solución o enfoque en situaciones del mundo real.",
-          "funcionalidades_proceso_detallado": "Detalles sobre cómo funciona la tecnología o el proceso, resaltando características clave o pasos importantes.",
-          "ejemplos_casos_estudio": "Presentación de casos específicos o ejemplos prácticos que ilustren el éxito o la eficacia de la solución propuesta.",
-          "adaptabilidad_flexibilidad": "Discusión sobre la capacidad de adaptarse a cambios o condiciones variables, si es aplicable.",
-          "consideraciones_postimplementacion": "Explorar cómo la solución o enfoque aborda problemas futuros o se adapta a evoluciones en el entorno."
-        },
-        "relojeria": {
-          "slug": "/disenos/relojeria",
-          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174054352294514748/photo-1629135458283-0c69f7cead37.png?ex=65663252&is=6553bd52&hm=894080f1dd25988815dfc859fb887b8e56c661cf853ac51dd2225ddc1948a294&=&width=1584&height=1056",
-          "titulo": "Relojería",
-          "descripcion": "Descubre la elegancia y la precisión en nuestros diseños industriales para joyería y relojería. Cada pieza se crea con atención al detalle, utilizando materiales de alta calidad para garantizar la excelencia en el diseño de joyas y relojes.",
+        "gestion_de_portafolio": {
+          "image": "https://media.discordapp.net/attachments/1171897462299033623/1174055374790348881/photo-1614562556758-ae0248358127.png",
+          "slug": "/marcasInternacionales/gestion",
+          "titulo": "Gestión de Portafolio de Marcas",
+          "subtitulo": "Administración Efectiva de tus Marcas",
+          "descripcion": "Ofrecemos gestión de portafolio de marcas, asegurando que todas tus marcas estén correctamente administradas y protegidas. Desde la renovación hasta la expansión de tus marcas, nuestro equipo proporciona un servicio integral para mantener tu portafolio en óptimas condiciones.",
           "introduccion_desafio": "Presentación del problema o desafío que se abordará en el texto.",
           "explicacion_enfoque_tecnologia": "Descripción de la metodología, tecnología o enfoque que se emplea para resolver el problema o enfrentar el tema.",
           "importancia_relevancia_tema": "Destacar la importancia o relevancia del tema en el contexto actual o en un escenario más amplio.",

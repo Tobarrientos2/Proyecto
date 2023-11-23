@@ -1,5 +1,8 @@
 <script lang="ts">
 
+import { readableMarcasInternacionales, readableMarcasNacionales } from '../stores/DataStore.js';
+	
+
 export let data;
 
 export function limitarPalabras(cadena, maxPalabras) {
@@ -17,14 +20,11 @@ let isLoaded = false;
     isLoaded = true;
   }
 let marcas = data.props.dataPatente;
-let modelos = data.props.dataModelos;
-let disenos = data.props.dataDisenos;
+let marcasInternacionales = data.props.dataMarcasInternacionales;
 let experiencias = data.props.dataExperiencias;
 console.log(experiencias);
 
 let marcasFirst = data.props.dataPatente?.map(item => item)[0];
-let modelosFirst = data.props.dataModelos?.map(item => item)[0];
-let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 
   </script>
 
@@ -248,7 +248,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src={marcas?.map(item => item.image)[0]}
+													src={$readableMarcasNacionales?.map(item => item.image)[0]}
 													loading="eager"
 													alt="Overcoming the Enterprise LLM Blindspot"
 													class="image hero-slider-image"
@@ -257,7 +257,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</div>
 											<a
 												data-w-id="bfec00f1-348e-10be-10c2-61408148ca5d"
-												href={marcas?.map(item => item.slug)[0]}
+												href={$readableMarcasNacionales?.map(item => item.slug)[0]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -269,13 +269,13 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 														class="featured-article-heading"
 														aria-hidden="true"
 													>
-													{marcas?.map(item => item.titulo)[0]}
+													{$readableMarcasNacionales?.map(item => item.titulo)[0]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
 													>
-													{limitarPalabras(marcas?.map(item => item.descripcion)[0], 30)}
+													{limitarPalabras($readableMarcasNacionales?.map(item => item.descripcion)[0], 30)}
 													</p>
 												</div>
 												<div
@@ -358,7 +358,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												aria-hidden="true"
 											>
 												<img
-													src={marcas?.map(item => item.image)[1]}
+													src={$readableMarcasNacionales?.map(item => item.image)[1]}
 													loading="eager"
 													alt="Turning enterprise data into accessible knowledge for LLMs"
 													class="image hero-slider-image"
@@ -367,7 +367,7 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 											</div>
 											<a
 												data-w-id="832b70d9-79b5-d753-a24f-ca9a297230a4"
-												href={marcas?.map(item => item.slug)[1]}
+												href={$readableMarcasNacionales?.map(item => item.slug)[1]}
 												class="featured-article-card w-inline-block"
 												tabindex="-1"
 												aria-hidden="true"
@@ -380,14 +380,14 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 														aria-hidden="true"
 													
 													>
-													{marcas?.map(item => item.titulo)[1]}
+													{$readableMarcasNacionales?.map(item => item.titulo)[1]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 														aria-hidden="true"
 													
 													>
-													{marcas?.map(item => item.descripcion)[1]}
+													{$readableMarcasNacionales?.map(item => item.descripcion)[1]}
 													</p>
 												</div>
 												<div
@@ -437,7 +437,8 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 															}
 														</style>
 													</div>
-												</div></a
+												</div>
+												</a
 											>
 										</div>
 									</div>
@@ -463,11 +464,11 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 												class="hero-slider-image-wrapper"
 											>
 												<img
-													src={marcas?.map(item => item.image)[2]}
+													src={$readableMarcasNacionales?.map(item => item.image)[2]}
 													loading="eager"
 													alt="Generative AI for data analytics: the future of enterprise sense-making"
 													sizes="(max-width: 991px) 100vw, (max-width: 1439px) 58vw, 899px"
-													srcset={marcas?.map(item => item.image)[2]}
+													srcset={$readableMarcasNacionales?.map(item => item.image)[2]}
 													class="image hero-slider-image"
 													/>
 												</div>
@@ -479,12 +480,12 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 													<h2
 														class="featured-article-heading"
 													>
-														{marcas?.map(item => item.titulo)[2]}
+														{$readableMarcasNacionales?.map(item => item.titulo)[2]}
 													</h2>
 													<p
 														class="hero-slide-cms-para"
 													>
-													{marcas?.map(item => item.descripcion)[2]}
+													{$readableMarcasNacionales?.map(item => item.descripcion)[2]}
 													</p>
 												</div>
 												<div
@@ -774,8 +775,8 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								role="listitem"
 								class="explore-item-1 w-dyn-item"
 							>
-								<a
-									href={disenos[0].slug}
+								<!-- <a
+									href={marcasInternacionales[0].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -783,10 +784,10 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												{disenos[0].titulo}
+												{marcasInternacionales[0].titulo}
 											</h5>
 											<p class="cmscardp">
-												{disenos[0].descripcion}
+												{marcasInternacionales[0].descripcion}
 											</p>
 										</div>
 										<div
@@ -811,26 +812,26 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src={disenos[0].image}
+											src={marcasInternacionales[0].image}
 											loading="lazy"
-											alt={disenos[0].titulo}
+											alt={marcasInternacionales[0].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset={disenos[0].image}
+											srcset={marcasInternacionales[0].image}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src={disenos[0].image}
+											src={marcasInternacionales[0].image}
 											loading="lazy"
-											alt={disenos[0].titulo}
+											alt={marcasInternacionales[0].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset={disenos[0].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+											srcset={marcasInternacionales[0].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
 									</div></a
-								>
+								> -->
 							</div>
 						</div>
 					</div>
@@ -843,8 +844,8 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								role="listitem"
 								class="explore-item-2 w-dyn-item"
 							>
-								<a
-									href={disenos[1].slug}
+								<!-- <a
+									href={marcasInternacionales[1].slug}
 									class="cms-card w-inline-block"
 									><div 
 										class="cms-inner-card"
@@ -852,12 +853,12 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												{disenos[1].titulo}
+												{marcasInternacionales[1].titulo}
 											</h5>
 										</div>
 										<div class="cms-paragraph-and-cta">
 											<p class="cmscardp">
-												{disenos[1].descripcion}
+												{marcasInternacionales[1].descripcion}
 											</p>
 										</div>
 										<div
@@ -882,26 +883,26 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src={disenos[1].image}
+											src={marcasInternacionales[1].image}
 											loading="lazy"
-											alt={disenos[1].titulo}
+											alt={marcasInternacionales[1].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset={disenos[1].image}
+											srcset={marcasInternacionales[1].image}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src={disenos[1].image}
+											src={marcasInternacionales[1].image}
 											loading="lazy"
-											alt={disenos[1].titulo}
+											alt={marcasInternacionales[1].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset={disenos[1].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+											srcset={marcasInternacionales[1].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
 									</div></a
-								>
+								> -->
 							</div>
 						</div>
 					</div>
@@ -914,8 +915,8 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								role="listitem"
 								class="explore-item-3 w-dyn-item"
 							>
-								<a
-									href={disenos[2].slug}
+								<!-- <a
+									href={marcasInternacionales[2].slug}
 									class="cms-card w-inline-block"
 									><div
 										class="cms-inner-card"
@@ -923,10 +924,10 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												{disenos[2].titulo}
+												{marcasInternacionales[2].titulo}
 											</h5>
 											<p class="cmscardp">
-												{disenos[2].descripcion}
+												{marcasInternacionales[2].descripcion}
 											</p>
 										</div>
 										<div class="cms-paragraph-and-cta">
@@ -953,26 +954,26 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src={disenos[2].image}
+											src={marcasInternacionales[2].image}
 											loading="lazy"
-											alt={disenos[2].titulo}
+											alt={marcasInternacionales[2].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset={disenos[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+											srcset={marcasInternacionales[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src={disenos[2].image}
+											src={marcasInternacionales[2].image}
 											loading="lazy"
-											alt={disenos[2].titulo}
+											alt={marcasInternacionales[2].titulo}
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset={disenos[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+											srcset={marcasInternacionales[2].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
 									</div></a
-								>
+								> -->
 							</div>
 						</div>
 					</div>
@@ -986,8 +987,8 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 								role="listitem"
 								class="explore-item-4 w-dyn-item"
 							>
-								<a
-									href={disenos[3].slug}
+								<!-- <a
+									href={marcasInternacionales[3].slug}
 									class="cms-card w-inline-block"
 									><div 
 										class="cms-inner-card"
@@ -995,10 +996,10 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									>
 										<div class="cms-card-header">
 											<h5 class="cms-card-heading">
-												{disenos[3].titulo}
+												{marcasInternacionales[3].titulo}
 											</h5>
 											<p class="cmscardp">
-												{disenos[3].descripcion}
+												{marcasInternacionales[3].descripcion}
 											</p>
 										</div>
 										<div class="cms-paragraph-and-cta">
@@ -1025,26 +1026,26 @@ let disenosFirst = data.props.dataDisenos?.map(item => item)[0];
 									</div>
 									<div class="cms-card-bg">
 										<img
-											src={disenos[3].image}
+											src={marcasInternacionales[3].image}
 											loading="lazy"
-											alt={disenos[3].titulo}
+											alt={marcasInternacionales[3].titulo}
 											sizes="(max-width: 767px) 220px, 100vw"
-											srcset={disenos[3].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
+											srcset={marcasInternacionales[3].image || "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR0NrOJEpfjkM0zxD-aO9b-bWqW3mhY57jPMg3aSbxTYO__R4jOvx8T2Oa7Fm9yxXOGg4B_ns3SZaZGCiBOPQw"}
 											class="image"
 										/>
 									</div>
 									<div class="cms-card-bg-blur">
 										<img
-											src={marcas?.map(item => item.image)[2]}
+											src={$readableMarcasNacionales?.map(item => item.image)[2]}
 											loading="lazy"
 											alt="Guided by a Moral Compass"
 											sizes="(max-width: 479px) 336px, (max-width: 767px) 392px, (max-width: 991px) 560px, 392px"
-											srcset={marcas?.map(item => item.image)[2]}
+											srcset={$readableMarcasNacionales?.map(item => item.image)[2]}
 											class="image blurredimage"
 										/>
 										<div class="dark-image-overlay" />
 									</div></a
-								>
+								> -->
 							</div>
 						</div>
 					</div>

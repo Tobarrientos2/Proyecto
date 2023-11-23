@@ -1,5 +1,5 @@
 import type { PageLoad } from "./$types";
-import { modelosData, marcasData, disenosIndustrialesData} from "../stores/DataStore";
+import { readableMarcasNacionales, readableMarcasInternacionales} from "../stores/DataStore";
 import { experienciasStore } from "../stores/ExperienciasStore";
 
 // Función para obtener objetos aleatorios sin repetición
@@ -28,23 +28,20 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
 
 
 let marcas;
-let disenos;
-let modelos;
+let marcasInternacionales;
+
 let experiencias;
 
 export const load: PageLoad =  ({ params, url }) =>{
-    const unsubscribePatentes = marcasData.subscribe((item) =>{
+    const unsubscribePatentes = readableMarcasNacionales.subscribe((item) =>{
     marcas = item;
     });
     unsubscribePatentes();
 
-    const unsubscribeModelos = modelosData.subscribe((item) =>{
-        modelos = item;
-        });
-        unsubscribeModelos();
+   
 
-        const unsubscribeDisenos = disenosIndustrialesData.subscribe((item) =>{
-            disenos = item;
+        const unsubscribeDisenos = readableMarcasInternacionales.subscribe((item) =>{
+            marcasInternacionales = item;
             });
         unsubscribeDisenos();
 
@@ -57,10 +54,9 @@ export const load: PageLoad =  ({ params, url }) =>{
         
 let marcasAleatorias = obtenerObjetosAleatorios(marcas, 4);
      
-let modelosAleatorios= obtenerObjetosAleatorios(modelos, 3);
 
      
-let disenosAleatorios = obtenerObjetosAleatorios(disenos, 4);
+let marcasInternacionalesAleatorias = obtenerObjetosAleatorios(marcasInternacionales, 4);
   
 let experienciasAleatorias = obtenerObjetosAleatorios(experiencias, 2);
 
@@ -69,8 +65,7 @@ let experienciasAleatorias = obtenerObjetosAleatorios(experiencias, 2);
         props: {
             dataExperiencias: experienciasAleatorias,
             dataPatente: marcasAleatorias,
-            dataModelos: modelosAleatorios,
-            dataDisenos: disenosAleatorios
+            dataMarcasInternacionales: marcasInternacionalesAleatorias
         } 
 } 
 }
