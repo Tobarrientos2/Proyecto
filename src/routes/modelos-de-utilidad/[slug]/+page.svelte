@@ -113,13 +113,13 @@ let modelosSliders = data.modelosAleatorios;
                 id="w-node-d7f81f6d-2b17-57c6-9863-30fa20e9e25c-bddece41"
                 class="sticky-article-heading"
             >
-                ¿En qué consiste?
+            {modeloSlug.tituloContenidos}
             </h2>
             <div
                 id="w-node-_380bd10b-b071-fd82-decb-27d930481b0d-bddece41"
                 class="article-rich-text w-richtext"
             >
-                <p>{modeloSlug.descripcion}
+                <p>{modeloSlug.detalle}
                 </p>
             </div>
         </div>
@@ -130,7 +130,7 @@ let modelosSliders = data.modelosAleatorios;
                 id="w-node-_7c33199e-e6a1-f33d-f6b9-68024ecd718b-bddece41"
                 class="column"
             >
-                <p class="h2-style w-dyn-bind-empty" />
+               
                 <div class="quote-author-info">
                     <div class="quote-author w-dyn-bind-empty" />
                     <div class="w-dyn-bind-empty" />

@@ -1,14 +1,18 @@
-import { writable } from "svelte/store";
+import { readable } from "svelte/store";
 import equipo from "../data/equipo.json"
 
-//Crear writable
-export const equipoStore = writable({});
+
 
 //Obtener Servicios desde el JSON
-const data = equipo.miembros || {};
-console.log(data);
+const data = equipo || {};
 
-equipoStore.set(data);
-export const unsubscribe = equipoStore.subscribe(() => {
+//Crear readable
+export const readableEquipo = readable({}, (set) => {
+    set(data)
+});
+
+export const unsubscribeEquipo = readableEquipo.subscribe(() => {
 } );
+
+
 

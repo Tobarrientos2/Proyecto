@@ -1,19 +1,18 @@
 import type { PageLoad } from "../$types";
-import { experienciasStore, unsubscribe} from "../../../stores/ExperienciasStore";
+import { readableExperiencias, unsubscribeExperiencias} from "../../../stores/ExperienciasStore";
 
 
 let experiencias;
 
 export const load: PageLoad =  ({ params, url }) =>{
-    const obtenerexperienciasStore = experienciasStore.subscribe((item) =>{
+    const obtenerexperienciasStore = readableExperiencias.subscribe((item) =>{
 
     experiencias = item;
     });
-    unsubscribe();
+    unsubscribeExperiencias();
 
 const slugObtenido = "/experiencias/" +  params.slug;
-console.log(experiencias);
-console.log(slugObtenido)
+
 
 const experienciaEncontrada = experiencias.find((experiencia) => experiencia.slug === slugObtenido);
 
@@ -27,13 +26,22 @@ let pathFinal = palabrasSeparadas.map(function(word) {
 
 
 
-console.log(experienciaEncontrada);
+let contenidosExperiencia = experienciaEncontrada?.contenidos || [];
+
+let tituloContenidos = contenidosExperiencia.map(item => item?.subtitulo || '');
+let detalleContenidos = contenidosExperiencia.map(item => item?.parrafo || '');
+console.log(detalleContenidos);
 
     return {
         page:{
             slug: params.slug,
             path: pathFinal
     }, 
-    dataJSON: experienciaEncontrada
+    dataJSON: experienciaEncontrada,
+    dataExtra:{ 
+        tituloContenido: tituloContenidos,
+        detalleContenido: detalleContenidos,
+        dataContenido: contenidosExperiencia
+    } 
 } 
 }

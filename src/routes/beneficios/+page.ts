@@ -1,5 +1,5 @@
 import type { PageLoad } from "../$types";
-import { beneficiosStore} from "../../stores/BeneficiosStore";
+import { readableBeneficios} from "../../stores/BeneficiosStore";
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -30,7 +30,7 @@ let beneficios;
 let experiencias;
 
 export const load: PageLoad =  ({ params, url }) =>{
-    const obtenerBeneficiosStore = beneficiosStore.subscribe((item) =>{
+    const obtenerBeneficiosStore = readableBeneficios.subscribe((item) =>{
 
     beneficios = item;
     });
@@ -54,7 +54,7 @@ export const load: PageLoad =  ({ params, url }) =>{
 let path = url.pathname.split('/')[1];
 let pathLetter = path.charAt(0).toUpperCase();
 let pathFinal = pathLetter + path.slice(1);
-console.log(pathFinal);
+
 
 
     return {

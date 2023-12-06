@@ -3,6 +3,7 @@
       "image": "https://media.discordapp.net/attachments/1171897462299033623/1174086180359393402/Captura_de_pantalla_2023-11-14_a_las_17.39.11.png?ex=65664ff6&is=6553daf6&hm=f5e897986de4e2e0b13c3f7453e008a1f94960eeecd8df05411364485ac37e69&=&width=1556&height=1056",
       "titulo": "Invento Revolucionario Chileno Recibe Patente por Tecnología Innovadora",
       "slug": "/experiencias/invento-revolucionario",
+      "subtitulo": "Test",
       "autor": "Equipo InventorX",
       "fecha": "13 de noviembre de 2023",
       "contenidos": [
@@ -42,6 +43,7 @@
         "slug": "/experiencias/modernizacion-propiedad-industrial",
         "autor": "Equipo LegalTech",
         "fecha": "13 de noviembre de 2023",
+        "subtitulo": "Test",
         "contenidos": [
           {
             "subtitulo": "Un gran avance en la legislación de propiedad industrial...",

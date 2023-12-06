@@ -1,5 +1,5 @@
 import type { PageLoad } from "../$types";
-import { equipoStore } from "../../stores/EquipoStore";
+import { readableEquipo } from "../../stores/EquipoStore";
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
@@ -29,7 +29,7 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
 let miembros;
 
 export const load: PageLoad =  ({ params, url }) =>{
-    const obtenerMiembros = equipoStore.subscribe((item) =>{
+    const obtenerMiembros = readableEquipo.subscribe((item) =>{
 
     miembros = item;
     });
@@ -41,7 +41,6 @@ export const load: PageLoad =  ({ params, url }) =>{
     let palabra = partes[partes.length - 1]; // Obtener la última parte
     let palabrasSeparadas = palabra.split('-');
 
-console.log(slugObtenido);
     
     let pathFinal = palabrasSeparadas.map(function(word) {
       return word.charAt(0).toUpperCase() + word.slice(1);

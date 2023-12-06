@@ -1,16 +1,18 @@
 <script lang="ts">
+    import { readableEquipo, unsubscribeEquipo } from '../../stores/EquipoStore.js';
     export let data;
-    let miembrosData = data.dataJSON;
-</script>
 
+    unsubscribeEquipo();
+
+</script>
 <div class="section-title dark mobile-hidden">
     <div class="section-labels-wrapper">
-        <div class="section-label">Nuestro Equipo</div>
-        <div class="nav-anchor menu-anchor no-borders">
-            <div>Menu</div>
-        </div>
+        <div class="section-label">→</div>
+        <div class="section-label">{data.page.path}</div>
+        <div class="nav-anchor menu-anchor no-borders"><div>menu</div></div>
     </div>
 </div>
+
 <div class="section fullscreen-hero">
     <div
         class="section-background hero-parallax-image"
@@ -33,8 +35,7 @@
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
         >
             <h1 class="h2-style no-margin hide-stuff">
-                Guarda tu innovación, protege tu creatividad: Tu patente es
-                tuya.
+                {$readableEquipo.slogan}
             </h1>
             <div class="typed-title-embed w-embed w-script">
                 <h1 class="h2-style no-margin typed-heading" />
@@ -48,7 +49,7 @@
                         // May now use jQuery and Webflow ap
                         var typed = new Typed(".typed-heading", {
                             strings: [
-                                "Guarda tu innovación, protege tu creatividad: Tu patente es tuya.",
+                                "Guarda tu innovación, protege tu creatividad: Tu patente es tuya..",
                             ],
                             typeSpeed: 35,
                             backSpeed: 50,
@@ -98,17 +99,9 @@
             id="w-node-_8bf60a71-9c72-5f42-b0c0-d9b4aa73b8cc-a5dece3e"
             class="paragraph-large no-margin"
         >
-            Creemos en el poder de la innovación y la creatividad. En un mundo
-            donde las ideas valiosas pueden transformar industrias y mejorar
-            vidas, nos dedicamos a proteger tu ingenio.
-            <br /><br />            Nuestra misión es proporcionar un espacio seguro y confiable para que
-            los innovadores como tú resguarden sus creaciones mediante patentes.
-            Estamos comprometidos con la preservación de la originalidad y el fomento
-            de un entorno donde la inventiva florezca.
-            <br /><br />
-            En última instancia, estamos aquí para asegurarnos de que tu patente
-            sea tuya, preservando y respetando el esfuerzo único que has dedicado
-            a dar vida a tus ideas.
+        {@html $readableEquipo["por_que_estamos_aqui"].split('.').join('.<br /><br />')}
+
+            
         </p>
     </div>
 </div>
@@ -134,7 +127,7 @@
             class="leaders-collection-wrapper w-dyn-list"
         >
             <div role="list" class="leader-collection-list w-dyn-items">
-                {#each miembrosData as { nombre, puesto, descripcion, image }}
+                {#each $readableEquipo.miembros as { nombre, puesto, descripcion, image }}
                     <div
                         id="w-node-_29ff1378-e41d-4a1a-20a5-375a61848743-a5dece3e"
                         data-w-id="29ff1378-e41d-4a1a-20a5-375a61848743"

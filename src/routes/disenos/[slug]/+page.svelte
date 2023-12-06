@@ -3,8 +3,7 @@
 
     let disenoSlug = data.disenoEncontrado;
     let disenosSliders = data.disenosAleatorios;
-    console.log(data);
-    console.log(disenoSlug.image);
+ 
 </script>
 <div class="section-title dark mobile-hidden">
     <div class="section-labels-wrapper">
@@ -96,7 +95,7 @@
                     class="article-xl-rich-text w-richtext"
                 >
                     <p>
-                        {disenoSlug.titulo}
+                        {disenoSlug.subtitulo}
                         <br />
                     </p>
                 </div>
@@ -114,13 +113,13 @@
                     id="w-node-d7f81f6d-2b17-57c6-9863-30fa20e9e25c-bddece41"
                     class="sticky-article-heading"
                 >
-                    ¿En qué consiste?
+                   {disenoSlug.tituloContenido}
                 </h2>
                 <div
                     id="w-node-_380bd10b-b071-fd82-decb-27d930481b0d-bddece41"
                     class="article-rich-text w-richtext"
                 >
-                    <p>{disenoSlug.descripcion}
+                    <p>{disenoSlug.detalleContenido}
                     </p>
                 </div>
             </div>

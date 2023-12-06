@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import { disenosIndustrialesData, unsubscribeDisenos } from '../../../stores/DataStore.js';
+import { readableDisenosInternacionales, unsubscribeDisenosInternacionales } from '../../../stores/DataStore.js';
 import { serialize } from 'cookie';
 
 // Función para obtener objetos aleatorios sin repetición
@@ -29,13 +29,13 @@ function obtenerObjetosAleatorios(array: Array<object>, cantidad:number) {
 let disenos;
 
 export const load: PageLoad = ({ params }) => {
-  const obtenerDisenos = disenosIndustrialesData.subscribe((data) => {
+  const obtenerDisenos = readableDisenosInternacionales.subscribe((data) => {
     disenos  = data;
   });
-  unsubscribeDisenos();
 
+unsubscribeDisenosInternacionales();
   let slugObtenido = "/disenos/" + params.slug;
-  console.log(slugObtenido);
+  
 
   // Utiliza la función obtenerObjetosAleatorios para obtener 3 modelos aleatorios
   const disenosAleatorios = obtenerObjetosAleatorios(disenos, 3);
@@ -46,12 +46,9 @@ export const load: PageLoad = ({ params }) => {
     return null;
   }
 
-  // Utiliza la función console.log para imprimir los tres objetos aleatorios
-  console.log("Disenos Aleatorios:", disenosAleatorios);
-
   // Utiliza el modeloEncontrado correspondiente al slug proporcionado en params
   const disenoEncontrado = disenos.find((diseno) => diseno.slug === slugObtenido);
-  console.log(disenoEncontrado)
+
 
   let partes = slugObtenido.split('/');
   let palabra = partes[partes.length - 1]; // Obtener la última parte
@@ -62,6 +59,10 @@ export const load: PageLoad = ({ params }) => {
   }).join(' ');
 
   
+  let contenidosPatente = disenoEncontrado?.contenidos || null;
+  let detallesContenidos = contenidosPatente.map(item => item.detalle).join(0);
+  let titulosContenidos = contenidosPatente.map(item => item.titulo).join(0);
+
   
   return {
     page:{
@@ -72,13 +73,9 @@ export const load: PageLoad = ({ params }) => {
       titulo: disenoEncontrado.titulo,
       image: disenoEncontrado.image,
       descripcion: disenoEncontrado.descripcion,
-      introduccion_desafio: disenoEncontrado.introduccion_desafio,
-      explicacion_enfoque_tecnologia: disenoEncontrado.explicacion_enfoque_tecnologia,
-      importancia_relevancia_tema: disenoEncontrado.importancia_relevancia_tema,
-      funcionalidades_proceso_detallado: disenoEncontrado.funcionalidades_proceso_detallado,
-      ejemplos_casos_estudio: disenoEncontrado.ejemplos_casos_estudio,
-      adaptabilidad_flexibilidad: disenoEncontrado.adaptabilidad_flexibilidad,
-      consideraciones_postimplementacion: disenoEncontrado.consideraciones_postimplementacion
+      detalleContenido: detallesContenidos,
+      tituloContenido: titulosContenidos,
+      subtitulo: disenoEncontrado.subtitulo
     }
   };
 };

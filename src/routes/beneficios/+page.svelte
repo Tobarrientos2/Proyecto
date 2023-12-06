@@ -1,19 +1,20 @@
   <script lang="ts">
-    import { experienciasStore } from "../../stores/ExperienciasStore";
+	import { readableExperiencias, unsubscribeExperiencias } from './../../stores/ExperienciasStore.ts';
     export let data;
-    console.log(data);
-
+    
     let beneficios = data.dataJSON.beneficios.map(item => item);
     let colaboraciones = data.dataJSON.colaboraciones.map(item => item);
-    console.log(beneficios);
-    console.log(colaboraciones);
+
 
     let experiencias;
 
 
-    experienciasStore.subscribe((data) => {
+    readableExperiencias.subscribe((data) => {
         experiencias = data; 
     })
+
+    unsubscribeExperiencias();
+
 export function limitarPalabras(cadena, maxPalabras) {
   const palabras = cadena.split(' '); // Dividir la cadena en palabras
   if (palabras.length > maxPalabras) {

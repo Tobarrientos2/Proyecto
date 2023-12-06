@@ -1,8 +1,7 @@
-<script>
 
-</script>
 
-<div id="contact" class="section prefooter">
+<div id="contact" class="section prefooter" >
+  
     <div class="container grid">
         <h3
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff4a-71ceff48"
@@ -18,8 +17,8 @@
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
-                    <div class="preefooter-icon-border">
-                        <img
+                    <div class="preefooter-icon-border" style="filter: invert(1);">
+                        <img 
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/609fb38cfc4ff90a2c83a513_prefooter%20icon%20x.svg"
                             loading="lazy"
                             alt=""
@@ -38,9 +37,10 @@
                     <br>
                 </p>
             </div>
-            <div
+            <div   
                 class="cms-card-button outline-white"
-                style="width: 40px;"
+                style="width: 40px;
+               "
             >
                 <div
                     class="cms-card-button-text"
@@ -49,12 +49,13 @@
                 >
                     Ver Más
                 </div>
-                <div class="cms-card-arrow">
+                <div class="cms-card-arrow ">
                     <img
+                        style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
-                        class="image"
+                        class="image "
                     />
                 </div>
             </div></a
@@ -66,8 +67,8 @@
             style="cursor:pointer; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
-                    <div class="preefooter-icon-border">
-                        <img
+                    <div class="preefooter-icon-border" style="filter: invert(1);">
+                        <img 
                             src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/609fb6faa7191c32d1e8a090_prefooter%20icon%20quarters%20perfect.svg"
                             loading="lazy"
                             alt=""
@@ -92,6 +93,7 @@
                 </div>
                 <div class="cms-card-arrow">
                     <img
+                    style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
@@ -102,13 +104,13 @@
         ><a
             id="w-node-_2a2881fa-7cef-00cf-1269-e78271ceff6b-71ceff48"
             data-w-id="2a2881fa-7cef-00cf-1269-e78271ceff6b"
-            href="/patentes/observacion"
+            href="/patentes/observaciones"
             class="prefooter-link w-inline-block"
             style="transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
             ><div class="prefooter-outer-wrapper">
                 <div class="prefooter-inner-wrapper">
                     <div
-                        class="preefooter-icon-border with-circles"
+                        class="preefooter-icon-border with-circles" style="filter: invert(1);"
                     >
                         <div class="prefooter-circle circle-second">
                             <img
@@ -135,13 +137,13 @@
                             />
                         </div>
                     </div>
-                    <h3 class="no-margin">Nulidad de Patentes</h3>
+                    <h3 class="no-margin">Observación de Patentes</h3>
                 </div>
                 <p class="prefooter-link-text">
-                Nulidades de Patentes con documentación profesional.
+                Observación de Patentes con documentación profesional.
                 </p>
             </div>
-            <div
+            <div 
                 class="cms-card-button outline-white"
                 style="width: 40px;"
             >
@@ -153,6 +155,7 @@
                 </div>
                 <div class="cms-card-arrow">
                     <img
+                    style="filter:invert(1)"
                         src="https://global-uploads.webflow.com/60866fa44e871fb63043a756/608696cc0243311086991783_Button%20Arrow.svg"
                         loading="lazy"
                         alt="Arrow"
@@ -173,9 +176,9 @@
             aria-current="page"
             class="footer-brand w-inline-block w--current"
             ><img
-                src="https://media.discordapp.net/attachments/1171897462299033623/1174097635246866502/Monochrome_Modern_Technology_Black_Logo__7_-removebg-preview.png?ex=65665aa1&is=6553e5a1&hm=993e27b68a0c41b1622e39c611a76f918cec985100417c1629f331bd2e120ec3&=&width=1000&height=1000"
+                src="https://media.discordapp.net/attachments/1175612381922082886/1181625405191487488/log-pat.png?ex=6581bd6a&is=656f486a&hm=85c1b885147d60a128cb7a4ce52c8dba2999c8e885eff2d63321ba0991beceb5&=&format=webp&quality=lossless&width=1000&height=122"
                 loading="lazy"
-                alt="Spark Beyond Logo"
+                alt=""
                 class="footer-logo"
             />
             </a
@@ -192,7 +195,7 @@
             <br>
                  +56 9 7689 9543
                  <br>
-                 oficina@stockerinvenciones.com
+                 oficina@stockerinvencion.com
                 
             </div>
             <div
@@ -200,7 +203,7 @@
             class="copyright-text"
         >
        
-                © 2023 Stocker Invenciones
+                © 2023 Stocker Invencion
         </div>
         </div>
      

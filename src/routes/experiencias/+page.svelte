@@ -1,14 +1,13 @@
 <script lang="ts">
 
 	 export let data; 
-    console.log(data);
+
 
     let page = data.page;
     let dataExperiencias = data.dataJSON;
     let dataSlug = dataExperiencias.map(item => item.slug);
     let dataParrafo = dataExperiencias.map(item => item.contenidos[0].parrafo);
 
-    console.log(dataParrafo);
   
 </script>
 

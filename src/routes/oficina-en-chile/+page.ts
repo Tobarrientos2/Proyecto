@@ -8,7 +8,7 @@ let slugObtenido = (url.pathname);
     let palabra = partes[partes.length - 1]; // Obtener la última parte
     let palabrasSeparadas = palabra.split('-');
 
-console.log(slugObtenido);
+
     
     let pathFinal = palabrasSeparadas.map(function(word) {
       return word.charAt(0).toUpperCase() + word.slice(1);

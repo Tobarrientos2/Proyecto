@@ -3,7 +3,7 @@
 
     let patenteSlug = data.patenteEncontrado;
     let patentesSliders = data.patentesAleatorios;
-    console.log(data);
+   
     
 </script>
 <div class="section-title dark mobile-hidden">
@@ -96,7 +96,7 @@
                     class="article-xl-rich-text w-richtext"
                 >
                     <p>
-                        {patenteSlug.titulo}
+                        {patenteSlug.subtitulo}
                         <br />
                     </p>
                 </div>
@@ -114,13 +114,13 @@
                     id="w-node-d7f81f6d-2b17-57c6-9863-30fa20e9e25c-bddece41"
                     class="sticky-article-heading"
                 >
-                    ¿En qué consiste?
+                 {patenteSlug.tituloContenido}
                 </h2>
                 <div
                     id="w-node-_380bd10b-b071-fd82-decb-27d930481b0d-bddece41"
                     class="article-rich-text w-richtext"
                 >
-                    <p>{patenteSlug.descripcion}
+                    <p>{patenteSlug.detalleContenido}
                     </p>
                 </div>
             </div>

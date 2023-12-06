@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { experienciasStore } from '../../../stores/ExperienciasStore.js';
+    import { readableExperiencias } from '../../../stores/ExperienciasStore.js';
 
 	 export let data; 
 
@@ -8,7 +8,7 @@
     let contenidos = data.dataJSON.contenidos.slice(0,-1).map((item) => item);
 
     let ultimoContenido = data.dataJSON.contenidos.slice(-1)[0];
-    console.log(contenidos);
+
 
 </script>
 <div class="section-title dark mobile-hidden">
@@ -101,7 +101,7 @@
                 class="article-xl-rich-text w-richtext"
             >
                 <p>
-                    <!-- {experienciaEncontrada.contenidos[0]} -->
+                   {data.dataJSON.subtitulo}
                 </p>
             </div>
         </div>
@@ -112,7 +112,7 @@
     >
         <img src="" loading="lazy" alt="" class="image w-dyn-bind-empty" />
     </div>
-    {#each contenidos as {parrafo, subtitulo}}
+    {#each data.dataExtra.dataContenido as {subtitulo, parrafo} }
     <div id="Text-1" class="section bright-section">
         <div class="container grid">
             <h2

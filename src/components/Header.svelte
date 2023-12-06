@@ -1,12 +1,12 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { onMount, onDestroy } from "svelte";
-    import { patentesData, modelosData, unsubscribeDisenos, disenosIndustrialesData , unsubscribeModelos, unsubscribePatentes } from "../stores/DataStore";
-    
+    import { readableModelosNacionales, readablePatentesNacionales, readableDisenosInternacionales  } from "../stores/DataStore";
+    import { unsubscribePatentesNacionales, unsubscribeDisenosInternacionales, unsubscribeModelosNacionales } from "../stores/DataStore";
     onDestroy(() => {
-      unsubscribePatentes();
-      unsubscribeModelos();
-      unsubscribeDisenos();
+        unsubscribePatentesNacionales();
+        unsubscribeModelosNacionales();
+        unsubscribeDisenosInternacionales();
     });
    
   </script>
@@ -23,12 +23,12 @@
     <div class="nav-container">
         <a
             href="/"
-            style="width:40vw; max-width:350px;"
+            style=""
             aria-current="page"
             class="brand-logo w-nav-brand w--current"
             aria-label="home"
             ><img 
-                src="https://media.discordapp.net/attachments/1171897462299033623/1174097635246866502/Monochrome_Modern_Technology_Black_Logo__7_-removebg-preview.png?ex=65665aa1&is=6553e5a1&hm=993e27b68a0c41b1622e39c611a76f918cec985100417c1629f331bd2e120ec3&=&width=1000&height=1000"
+                src="https://media.discordapp.net/attachments/1175612381922082886/1181625405191487488/log-pat.png?ex=6581bd6a&is=656f486a&hm=85c1b885147d60a128cb7a4ce52c8dba2999c8e885eff2d63321ba0991beceb5&=&format=webp&quality=lossless&width=1000&height=122"
                 loading="lazy"
                 alt="Spark Beyond Logo"
                 class="logo"
@@ -111,7 +111,7 @@
                                                 Patentes
                                             </h3>
                                             <div class="dropdown-scroller">
-                                             {#each $patentesData as patente}
+                                             {#each $readablePatentesNacionales as patente}
                                                     <a class="dropdown-text-link" style="cursor: pointer;"
                                                         tabindex="0"
                                                     href={patente.slug}>
@@ -129,7 +129,7 @@
                                                 Modelos de Utilidad
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each $modelosData as modelo }
+                                                {#each $readableModelosNacionales as modelo }
                                                     <a href={modelo.slug}
                                                         class="dropdown-text-link"
                                                         tabindex="0"
@@ -159,7 +159,7 @@
                                                 Diseños Ind.
                                             </h3>
                                             <div class="dropdown-scroller">
-                                                {#each $disenosIndustrialesData as diseno}
+                                                {#each $readableDisenosInternacionales as diseno}
                                                     <a href={diseno.slug}
                                                             class="dropdown-text-link"
                                                             tabindex="0"

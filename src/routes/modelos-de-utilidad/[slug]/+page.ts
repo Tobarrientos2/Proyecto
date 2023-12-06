@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import { modelosData, unsubscribeModelos } from '../../../stores/DataStore.js';
+import { readableModelosNacionales, unsubscribeModelosNacionales } from '../../../stores/DataStore.js';
 
 // Función para obtener objetos aleatorios sin repetición
 function obtenerObjetosAleatorios(array, cantidad) {
@@ -28,10 +28,11 @@ function obtenerObjetosAleatorios(array, cantidad) {
 let modelos;
 
 export const load: PageLoad = ({ params, url }) => {
-  const obtenerModelos = modelosData.subscribe((data) => {
+  const obtenerModelos = readableModelosNacionales.subscribe((data) => {
     modelos = data;
   });
-  unsubscribeModelos();
+  unsubscribeModelosNacionales();
+
 
   let slugObtenido = "/modelos-de-utilidad/" + params.slug;
 
@@ -44,8 +45,6 @@ export const load: PageLoad = ({ params, url }) => {
     return null;
   }
 
-  // Utiliza la función console.log para imprimir los tres objetos aleatorios
-  console.log("Modelos Aleatorios:", modelosAleatorios);
   let partes = slugObtenido.split('/');
   let palabra = partes[partes.length - 1]; // Obtener la última parte
   let palabrasSeparadas = palabra.split('-');
@@ -59,6 +58,14 @@ export const load: PageLoad = ({ params, url }) => {
   // Utiliza el modeloEncontrado correspondiente al slug proporcionado en params
   const modeloEncontrado = modelos.find((modelo) => modelo.slug === slugObtenido);
 
+
+  let contenidosModelo = modeloEncontrado?.contenidos || [];
+
+  let tituloContenidos = contenidosModelo.map(item => item?.titulo || '').join(0);
+  let detalleContenidos = contenidosModelo.map(item => item?.detalle || '').join(0);
+  
+
+
   return {
     page:{ 
         path: pathFinal
@@ -69,13 +76,8 @@ export const load: PageLoad = ({ params, url }) => {
       image: modeloEncontrado.image,
       subtitulo: modeloEncontrado.subtitulo,
       descripcion: modeloEncontrado.descripcion,
-      introduccion_desafio: modeloEncontrado.introduccion_desafio,
-      explicacion_enfoque_tecnologia: modeloEncontrado.explicacion_enfoque_tecnologia,
-      importancia_relevancia_tema: modeloEncontrado.importancia_relevancia_tema,
-      funcionalidades_proceso_detallado: modeloEncontrado.funcionalidades_proceso_detallado,
-      ejemplos_casos_estudio: modeloEncontrado.ejemplos_casos_estudio,
-      adaptabilidad_flexibilidad: modeloEncontrado.adaptabilidad_flexibilidad,
-      consideraciones_postimplementacion: modeloEncontrado.consideraciones_postimplementacion,
+      detalle: detalleContenidos,
+      tituloContenidos: tituloContenidos
     },
   };
 };
