@@ -1,7 +1,5 @@
-const API_KEY_OCTOPUS = import.meta.env.VITE_API_KEY;
+import { API_KEY_OCTOPUS } from '$env/static/private'
 import type { Actions } from './$types';
-
-
 
 export const actions: Actions = {
 	default: async (event) => {
