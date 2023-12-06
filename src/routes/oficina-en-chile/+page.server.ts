@@ -1,4 +1,4 @@
-import { API_KEY_OCTOPUS } from '$env/static/private';
+const API_KEY_OCTOPUS = import.meta.env.VITE_API_KEY;
 import type { Actions } from './$types';
 
 
